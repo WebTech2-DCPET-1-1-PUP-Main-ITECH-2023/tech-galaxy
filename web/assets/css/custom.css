@@ -1,0 +1,231 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&family=Rubik:wght@500&display=swap");
+
+/* SS BVariables */
+:root {
+    --primaryColor: #6f42c1;
+    --secondaryColor: #0d0e10;
+    --tertiaryColor: #FFFFFF;
+    --defaultBorderButton: 1px solid #6F42C1;
+    --secondaryBorderButton: 1px solid #FFFFFF;
+    --primaryfont: "Roboto Mono", monospace;
+    --secondaryfont: "Rubik", sans-serif;
+}
+
+body {
+    background-color: var(--secondaryColor);
+    -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* NavBar.jsp */
+.navbar {
+    background-color: var(--secondaryColor);
+    border-bottom: #3C4043;
+    border-bottom: 1px solid #3C4043;
+}
+.color-white {
+    color: white;
+}
+.color-primary {
+    color: #6f42c1;
+}
+.btn {
+    color: #6f42c1;
+    padding: 5px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border: var(--defaultBorderButton);
+}
+.btn:hover {
+    background-color: var(--primaryColor);
+    color: white;
+}
+
+.second-btn{
+    color: var(--tertiaryColor);
+    background-color: var(--primaryColor);
+    padding: 5px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border: var(--secondaryBorderButton);
+    border-radius: 10px;
+}
+.second-btn:hover {
+    background-color: var(--tertiaryColor);
+    color: var(--primaryColor);
+}
+.bi {
+    color: var(--primaryColor);
+    font-size: 1.5em;
+    transition-duration: 0.4s;
+}
+.bi:hover{
+    color: var(--tertiaryColor);
+}
+.second-navbar {
+    background-color: var(--primaryColor);
+}
+
+.first-navbar-link-change:hover, .logo-hover:hover{
+    color: var(--primaryColor);
+}
+.form-control{
+    display: block;
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1rem;
+    line-height: 1;
+    color: #212529;
+    background-clip: padding-box;
+    border: 1px solid black;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.form-control:focus,
+.form-control:active {
+  box-shadow: 0 0 0 0.25rem rgba(60, 64, 67, 0.25); /* Change box shadow on focus or active state */
+}
+
+/* Modal */
+
+.modal-content {
+    background-color: var(--secondaryColor);
+}
+
+.modal-header {
+    border-bottom: var(--defaultBorderButton);
+}
+
+.modal-footer {
+    border-top: var(--defaultBorderButton);
+}
+
+/* LandingPage.jsp */
+.card-img-top {
+    height: 350px;
+}
+.card {
+    color: var(--tertiaryColor);
+    background-color: var(--secondaryColor);
+    border: var(--defaultBorderButton);
+    height: 100%;
+}
+.card:hover {
+    background-color: var(--primaryColor);
+}
+.primary-color-underline {
+    font-size: 1.5em;
+    color: var(--tertiaryColor);
+    text-decoration: underline;
+    text-decoration-color: var(--primaryColor);
+    text-underline-offset: 8px;
+}
+
+.img-height {
+    height: 550px;
+}
+.bold {
+    font-weight: bold;
+}
+
+/* Customer Registration Page*/
+.give-primary-bg {
+    background-color: var(--primaryColor);
+}
+
+.form-label {
+    color: var(--tertiaryColor);
+}
+.img-crs-height {
+    height: 630px;
+}
+
+/* Customer Registration Page.jsp*/
+
+.secondary-color-underline {
+    font-size: 1.5em;
+    color: var(--tertiaryColor);
+    text-decoration: underline;
+    text-decoration-color: var(--secondaryColor);
+    text-underline-offset: 8px;
+}
+    
+/* Footer.jsp */
+
+footer {
+  background-color: var(--secondaryColor);
+  border-top: var(--defaultBorderButton);
+}
+.text-justify {
+    text-align: justify;
+}
+.copyright {
+  font-size: 1em;
+  font-family: var(--secondaryfont);
+}
+
+.primary-font {
+    font-weight: bold;
+    font-family: var(--primaryfont);
+}
+
+.secondary-font {
+    font-family: var(--secondaryfont);
+}
+
+.container-fluid {
+    padding: 0;
+}
+.center {
+    text-align: center;
+}
+.product-inputs {
+    border: var(--defaultBorderButton);
+    background-color: var(--tertiaryColor);
+}
+.product-inputs::placeholder {
+    font-size: 0.8em;
+}
+.table-border-bottom {
+    border-bottom: 1px solid var(--primaryColor);
+}
+
+
+/* Admin Home Page */
+.admin-page-navbar-link-change:hover {
+    text-decoration: underline;
+    color: var(--primaryColor);
+}
+
+a {
+     text-decoration: none;
+}
+.admin-page-directory-links {
+    color: #6f42c1;
+    padding: 5px 32px;
+    text-decoration: none;
+    font-size: 16px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    
+}
+
+.admin-page-directory-links:hover {
+    border: var(--defaultBorderButton);
+}
+
+.admin-page-directory-links:hover h1 {
+    text-decoration: underline;
+}
