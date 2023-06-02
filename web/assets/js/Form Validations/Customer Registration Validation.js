@@ -21,7 +21,7 @@ $(document).ready(function () {
         isBirthDateValidated = validate('#birthDate', "#birthDateLabel", /^(0[1-9]|1[0-2])\-(0[1-9]|[12][0-9]|3[01])\-\d{4}$/, "Please follow correct date format(MM-DD-YYYY).", 0, 0, true, false, false)
     });
     $("#mobileNumber").on( "focusout", function () {
-        isMobileNumberValidated = validate('#mobileNumber', "#mobileNumberLabel", /^[0-9]*[0-9]*[0-9]/,"Please use numeric characters only.",11,0,true,true,true)
+        isMobileNumberValidated = validate('#mobileNumber', "#mobileNumberLabel", /^[0-9]*[0-9]*[0-9]/,"Please use numeric characters only.",11,0,true,true,false)
     });
     $('#submit').click(function () {
         if (isUsernameValidated && isFirstNameValidated && isMiddleNameValidated && isLastNameValidated && isAddressValidated && isBirthDateValidated && isMobileNumberValidated) {

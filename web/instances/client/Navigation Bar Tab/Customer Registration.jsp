@@ -1,9 +1,4 @@
-<%-- 
-    Document   : Customer Registration
-    Created on : 05 27, 23, 5:14:03 PM
-    Author     : ACER
---%>
-
+<%@ taglib prefix = "c" uri = "http://java.sun.com/jsp/jstl/core" %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -51,7 +46,8 @@
                 </div>
                 <div class ="col container-fluid give-primary-bg rounded p-4 mx-2 ">
                     <div class = "d-flex justify-content-center"><h1 class = "secondary-color-underline primary-font">Account Registration</h1></div>
-                    <form id = "customerRegistrationForm" method="post">
+                    <p class ="form-label">Username: "<c:out value="${customerRegistration.username}"/>" has been added.</p>
+                    <form id = "customerRegistrationForm" method="post" action="<%=request.getContextPath()%>/customerRegistrationForm">
                         <div class="mb-3">
                             <label class="form-label ">Preferred Username:</label>
                             <input required placeholder="Required, alphanumeric characters only, minimum: 4, maximum: 12" type="text" id = "username" name = "username" class="form-control">

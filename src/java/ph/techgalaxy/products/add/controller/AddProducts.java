@@ -25,14 +25,11 @@ public class AddProducts extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         String action = request.getServletPath();
-        System.out.println("AddProducts-Action: " + action);
         switch (action) {
             case "/addProducts":
-                System.out.println("You are in the case!");
                 getAddProducts(request, response);
                 break;
             default:
-                System.out.println("You are in the default!");
                 showAddProductsForm(request, response);
                 break;
         }
@@ -53,13 +50,9 @@ public class AddProducts extends HttpServlet {
         double productPrice = Double.parseDouble(request.getParameter("productPrice"));
         int quantity = Integer.parseInt(request.getParameter("quantity"));
         AddProductsModel addProducts = new AddProductsModel(productID, productName, description, size, productPrice, quantity);
-        System.out.println("From the model: " + addProducts);
         AddProductsDao addProductsDao = new AddProductsDao();
-        System.out.println("From the dao: " + addProductsDao);
         AddProductsModel getAddProducts = addProductsDao.getAddProductDetails(addProducts);
-        System.out.println("From the get details: " + getAddProducts);
         request.setAttribute("addProducts", getAddProducts);
-        System.out.println();
         RequestDispatcher rd = getServletContext().getRequestDispatcher("/instances/admin/Admin Tools/Products Page/AllProducts.jsp");
         rd.forward(request, response);
 
