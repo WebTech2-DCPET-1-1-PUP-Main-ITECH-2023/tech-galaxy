@@ -1,110 +1,98 @@
-<%-- 
-    Document   : Add Users Modal
-    Created on : 05 29, 23, 4:12:10 PM
-    Author     : ACER
---%>
-
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Add Products | Tech Galaxy</title>
+        <title>Add Users | Tech Galaxy</title>
         <link rel="icon" type="image/x-icon" href="<%=request.getContextPath()%>/assets/images/tech-galaxy.png">
         <link href="<%=request.getContextPath()%>/assets/css/bootstrap.min.css" rel="stylesheet">
         <script src="<%=request.getContextPath()%>/assets/js/bootstrap.bundle.min.js"></script>
         <link href="<%=request.getContextPath()%>/assets/css/custom.css" rel="stylesheet">
         <script src="<%=request.getContextPath()%>/assets/js/jquery-3.6.4.min.js"></script>
-        <script type = "module" src="<%=request.getContextPath()%>/assets/js/Form Validations/Add Products Validation.js"></script>
+        <script type = "module" src="<%=request.getContextPath()%>/assets/js/Form Validations/Add Users Validation.js"></script>
     </head>
     <body>
-<div class="modal-dialog modal-dialog-centered">
+        <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h1 class="color-white modal-title fs-5" id="exampleModalLabel">Products Form</h1>
+                    <h1 class="color-white modal-title fs-5">Products Form</h1>
                 </div>
                 <div class="modal-body">
-                    <form method="POST" action="<%=request.getContextPath()%>/addProducts">
+                    <form method="POST" action="<%=request.getContextPath()%>/addUsers">
                         <div class="row align-items-center my-2">
                             <div class="col">
-                                <label for="productID" class="col-form-label color-white">Product ID</label>
+                                <label for="userID" class="col-form-label color-white">User ID</label>
                             </div>
                             <div class="col-8">
-                                <input required type="number" id="productID" name="productID" class="color-white form-control product-inputs" placeholder="Required; Integer; must be greater than 0.">
+                                <input required type="text" id="userID" name="userID" class="color-white form-control product-inputs" placeholder="Required; Alphanumeric; 5 characters">
                             </div>
                         </div>
                         <div class = "row align-items-center my-2">
                             <p class = "col"></p>
-                            <p id = "productIDLabel" class= "col-8 form-label"></p>
+                            <p id = "userIDLabel" class= "col-8 form-label"></p>
                         </div>
                         <div class="row align-items-center my-2">
                             <div class="col">
-                                <label for="productName" class="col-form-label color-white">Product Name</label>
+                                <label for="userFirstName" class="col-form-label color-white">First Name</label>
                             </div>
                             <div class="col-8">
-                                <input required type="text" id="productName" name="productName" class="color-white form-control product-inputs" placeholder="Required; Letters only; must be at least 3 characters">
+                                <input required type="text" id="userFirstName" name="userFirstName" class="color-white form-control product-inputs" placeholder="Required; Letters only; must be at least 1 character(s)">
                             </div>
 
                         </div>
                         <div class="row">
                             <p class = "col"></p>
-                            <p id = "productNameLabel" class = "col-8 form-label"></p>
+                            <p id = "userFirstNameLabel" class = "col-8 form-label"></p>
                         </div>
+
                         <div class="row align-items-center my-2">
                             <div class="col">
-                                <label for="description" class="col-form-label color-white">Description</label>
+                                <label for="userMiddleName" class="col-form-label color-white">Middle Name</label>
                             </div>
                             <div class="col-8">
-                                <input required type="text" id="description" name="description" class="color-white form-control product-inputs" placeholder="Required; Letters only; must be at least 3 characters">
+                                <input required type="text" id="userMiddleName" name="userMiddleName" class="color-white form-control product-inputs" placeholder="Required; Letters only; must be at least 3 characters">
                             </div>
 
                         </div>
                         <div class="row">
                             <p class = "col"></p>
-                            <p id = "descriptionLabel" class = "col-8 form-label"></p>
-                        </div>
-                        <div class="row align-items-center my-2">
-                            <div class="col">
-                                <label for="size" class="col-form-label color-white">Size</label>
-                            </div>
-                            <div class="col-8">
-                                <input required type="text" id="size" name="size" class="color-white form-control product-inputs" placeholder="Alphanumeric; [e.g., 30 mL]">
-                            </div>
-                        </div>
-                        <div class="row">
-                            <p class = "col"></p>
-                            <p id = "sizeLabel" class = "col-8 form-label"></p>
+                            <p id = "userMiddleNameLabel" class = "col-8 form-label"></p>
                         </div>
 
                         <div class="row align-items-center my-2">
                             <div class="col">
-                                <label for="productPrice" class="col-form-label color-white">Price</label>
+                                <label for="userLastName" class="col-form-label color-white">Last Name</label>
                             </div>
                             <div class="col-8">
-                                <input required type="text" id="productPrice" name="productPrice" class="form-control product-inputs" placeholder="Required; Integer; must be greater than 0.00">
+                                <input required type="text" id="userLastName" name="userLastName" class="color-white form-control product-inputs" placeholder="Required; Letters only; must be atleast 1 character(s)">
                             </div>
                         </div>
                         <div class="row">
                             <p class = "col"></p>
-                            <p id = "productPriceLabel" class = "col-8 form-label"></p>
+                            <p id = "userLastNameLabel" class = "col-8 form-label"></p>
                         </div>
 
                         <div class="row align-items-center my-2">
                             <div class="col">
-                                <label for="quantity" class="col-form-label color-white">Quantity</label>
+                                <label for="userRole" class="col-form-label color-white">User Role</label>
                             </div>
                             <div class="col-8">
-                                <input required type="number" id="quantity" name="quantity" class="form-control product-inputs" placeholder="Required; Integer; must be greater than 0.00">
+                                <select class="form-control user-inputs" id="userRole" name="userRole" required>
+                                    <option value="default">--select user role--</option>
+                                    <option value="Admin">Admin</option>
+                                    <option value="Manager">Manager</option>
+                                    <option value="Staff">Staff</option>
+                                </select>
                             </div>
                         </div>
                         <div class="row">
                             <p class = "col"></p>
-                            <p id = "quantityLabel" class = "col-8 form-label"></p>
+                            <p id = "userRoleLabel" class = "col-8 form-label"></p>
                         </div>
 
                         <div class="modal-footer">
-                            <button id = "addProductsSave" class="btn">Save</button>
+                            <button id = "addUsersSave" class="btn">Save</button>
                         </div>
                     </form>
                 </div>

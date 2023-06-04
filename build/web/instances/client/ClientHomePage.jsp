@@ -1,9 +1,3 @@
-<%-- 
-    Document   : ClientHomePage
-    Created on : 05 27, 23, 4:56:54 PM
-    Author     : ACER
---%>
-
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -188,7 +182,7 @@
                                     <img src="https://pcx.com.ph/wp-content/uploads/2023/01/1-1.jpg" class="card-img-top" alt="...">
                                     <div class="card-body">
                                         <h5 class="card-title">Gigabyte GeForce RTX™ 4070Ti AORUS ELITE (GV-N407TAORUS-E-12GD) 12GB GDDR6X 192BIT Graphics Card</h5>
-                                        <p class = "card-text">S63,700</p>
+                                        <p class = "card-text">PHP63,700</p>
                                         <ul>
                                             <li>Powered by NVIDIA DLSS 3, ultra-efficient Ada Lovelace arch, and full ray tracing</li>
                                             <li>4th Generation Tensor Cores: Up to 4x performance with DLSS 3 vs. brute-force rendering</li>

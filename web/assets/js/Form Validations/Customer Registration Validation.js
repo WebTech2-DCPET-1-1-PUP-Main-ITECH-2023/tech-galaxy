@@ -1,4 +1,4 @@
-import { validate } from './Validate Function.js';
+import validate from './validate';
 $(document).ready(function () {
     let isUsernameValidated, isFirstNameValidated, isMiddleNameValidated, isLastNameValidated, isAddressValidated, isBirthDateValidated, isMobileNumberValidated = false;
 

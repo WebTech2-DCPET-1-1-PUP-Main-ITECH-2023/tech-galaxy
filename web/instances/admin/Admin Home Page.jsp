@@ -34,7 +34,7 @@
                 </a>
             </div>
         </div>
-        <%@include file="Custom Components/Footer.jsp" %>
+                <%@include file="Custom Components/Footer.jsp" %>
     </body>
 </html>
 

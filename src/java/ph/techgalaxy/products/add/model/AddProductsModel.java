@@ -76,7 +76,7 @@ public class AddProductsModel {
         return quantity;
     }
 
-    public void setProductPrice(int quantity) {
+    public void setQuantity(int quantity) {
         this.quantity = quantity;
     }
 

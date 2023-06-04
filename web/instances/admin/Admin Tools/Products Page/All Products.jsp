@@ -18,27 +18,27 @@
             <form>
                 <div class="row align-items-center my-2">
                     <div class="col col-lg-1">
-                        <label for="productId" class="col-form-label color-white">Product ID:</label>
+                        <label for="searchProductId" class="col-form-label color-white">Product ID:</label>
                     </div>
                     <div class="col col-lg-2">
-                        <input type="password" id="productId" class="form-control product-inputs" aria-labelledby="passwordHelpInline">
+                        <input type="text" id="searchProductId" class="form-control product-inputs">
                     </div>
                 </div>
 
                 <div class="row align-items-center my-2">
                     <div class="col col-lg-1">
-                        <label for="inputPassword6" class="col-form-label color-white">Product Name:</label>
+                        <label for="searchProductName" class="col-form-label color-white">Product Name:</label>
                     </div>
                     <div class="col col-lg-2">
-                        <input type="password" id="inputPassword6" class="form-control product-inputs" aria-labelledby="passwordHelpInline">
+                        <input type="password" id="searchProductName" class="form-control product-inputs">
                     </div>
                 </div>
                 <div class="row align-items-center my-2">
                     <div class="col col-lg-1">
-                        <label for="search" class="col-form-label color-white"></label>
+                        <label for="searchProducts" class="col-form-label color-white"></label>
                     </div>
                     <div class="col col-lg-2">
-                        <button class="btn primary-font" id = "search">Search</button>
+                        <button class="btn primary-font" id = "searchProducts">Search</button>
                     </div>
                 </div>
             </form>

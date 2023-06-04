@@ -28,7 +28,7 @@
                         <a class="nav-link first-navbar-link-change mx-3 color color-white primary-font" href="<%=request.getContextPath()%>/instances/client/Navigation Bar Tab/About.jsp">About</a>
                         <a class="nav-link first-navbar-link-change mx-3 color color-white primary-font" href="<%=request.getContextPath()%>/instances/client/Navigation Bar Tab/Account.jsp">Account</a>
                         <a class="nav-link first-navbar-link-change mx-3 color color-white center" data-bs-toggle="modal" data-bs-target="#exampleModal">Log In</a>
-                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal fade" id="clientFooterLoginModal" tabindex="-1" aria-labelledby="clientFooterLoginModal" aria-hidden="true">
                             <%@ include file="../Navigation Bar Tab/Login Page.jsp" %>
                         </div>
                         <a class="nav-link first-navbar-link-change mx-3 color color-white" href="<%=request.getContextPath()%>/instances/client/Navigation Bar Tab/Customer Registration.jsp">Register</a>

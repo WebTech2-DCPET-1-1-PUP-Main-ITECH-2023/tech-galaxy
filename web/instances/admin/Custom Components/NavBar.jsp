@@ -18,8 +18,8 @@
                     <p class = "color-white m-0 px-3 logo-hover primary-font">Tech Galaxy</p>
                 </a>
                 <div class = "d-flex flex-row align-items-center">
-                    <button class="btn ms-3 primary-font" data-bs-toggle="modal" data-bs-target="#exampleModal">Log In</button></div>
-                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <button class="btn ms-3 primary-font" data-bs-toggle="modal" data-bs-target="#adminLoginModal">Log In</button></div>
+                <div class="modal fade" id="adminLoginModal" tabindex="-1" aria-labelledby="adminLoginModal" aria-hidden="true">
                     <%@ include file="../Navigation Bar Tab/Login Page.jsp" %>
                 </div>
             </div>
@@ -32,7 +32,7 @@
             <a class="nav-link link-change color-white " href="<%=request.getContextPath()%>/instances/admin/Admin Tools/Products Page/All Products.jsp">Products Page</a>
             <a class="nav-link link-change color-white " href="<%=request.getContextPath()%>/instances/admin/Admin Tools/User Management Page/User Management.jsp">User Management</a>
             <form class="d-flex" role="search">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <input class="form-control me-2" id ="adminSearchNavBar" type="search" placeholder="Search" aria-label="Search">
                 <button class="second-btn" type="submit">Search</button>
             </form>
         </div>

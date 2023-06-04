@@ -9,7 +9,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Log In | Tech Galaxy</title>
+        <title>Client Log In | Tech Galaxy</title>
         <link rel="icon" type="image/x-icon" href="<%=request.getContextPath()%>/assets/images/tech-galaxy.png">
         <link href="<%=request.getContextPath()%>/assets/css/bootstrap.min.css" rel="stylesheet">
         <script src="<%=request.getContextPath()%>/assets/js/bootstrap.bundle.min.js"></script>
@@ -19,12 +19,12 @@
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h1 class="primary-color-underline modal-title fs-5" id="exampleModalLabel">Log In</h1>
+                    <h1 class="primary-color-underline modal-title fs-5">Log In</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <input type="email" class="form-control my-3" id="exampleFormControlInput1" placeholder="Username:" disabled>
-                    <input type="email" class="form-control my-3" id="exampleFormControlInput1" placeholder="Password:" disabled>
+                    <input type="text" class="form-control my-3" id="clientUsername" placeholder="Username:" disabled>
+                    <input type="password" class="form-control my-3" id="clientPassword" placeholder="Password:" disabled>
                     <div class ="d-flex flex-column align-items-center">
                         <p class = "my-2 color-white">Don’t have an account yet? Register here</p>
                         <a href="<%=request.getContextPath()%>/instances/client/Navigation Bar Tab/Customer Registration.jsp"><button class="btn">Register</button></a>

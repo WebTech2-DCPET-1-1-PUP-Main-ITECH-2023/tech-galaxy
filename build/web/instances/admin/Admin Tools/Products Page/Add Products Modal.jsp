@@ -16,7 +16,7 @@
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h1 class="color-white modal-title fs-5" id="exampleModalLabel">Products Form</h1>
+                    <h1 class="color-white modal-title fs-5">Products Form</h1>
                 </div>
                 <div class="modal-body">
                     <form method="POST" action="<%=request.getContextPath()%>/addProducts">

@@ -53,14 +53,14 @@ public class AddProducts extends HttpServlet {
         AddProductsDao addProductsDao = new AddProductsDao();
         AddProductsModel getAddProducts = addProductsDao.getAddProductDetails(addProducts);
         request.setAttribute("addProducts", getAddProducts);
-        RequestDispatcher rd = getServletContext().getRequestDispatcher("/instances/admin/Admin Tools/Products Page/AllProducts.jsp");
+        RequestDispatcher rd = getServletContext().getRequestDispatcher("/instances/admin/Admin Tools/Products Page/All Products.jsp");
         rd.forward(request, response);
 
     }
 
     private void showAddProductsForm(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        RequestDispatcher rd = getServletContext().getRequestDispatcher("/instances/admin/Admin Tools/Products Page/AllProducts.jsp");
+        RequestDispatcher rd = getServletContext().getRequestDispatcher("/instances/admin/Admin Tools/Products Page/All Products.jsp");
         rd.forward(request, response);
     }
 

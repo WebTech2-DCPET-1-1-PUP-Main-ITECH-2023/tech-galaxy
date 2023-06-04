@@ -23,9 +23,9 @@
                     <a class="nav-link first-navbar-link-change mx-3 color color-white primary-font" href="<%=request.getContextPath()%>/instances/client/Navigation Bar Tab/Wishlist.jsp">Wishlist</a>
                     <a class="nav-link first-navbar-link-change mx-3 color color-white primary-font" href="<%=request.getContextPath()%>/instances/client/Navigation Bar Tab/About.jsp">About</a>
                     <a class="nav-link first-navbar-link-change mx-3 color color-white primary-font" href="<%=request.getContextPath()%>/instances/client/Navigation Bar Tab/Account.jsp">Account</a>
-                    <a class="nav-link first-navbar-link-change mx-3 pb-2" href="<%=request.getContextPath()%>/instances/client/Navigation Bar Tab/Cart.jsp"><i class="bi bi-cart-plus"></i></a>
-                    <button class="btn ms-3 primary-font" data-bs-toggle="modal" data-bs-target="#exampleModal">Log In</button></div>
-                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <a class="nav-link first-navbar-link-change mx-3 pb-2" href="<%=request.getContextPath()%>/instances/client/Navigation Bar Tab/Cart.jsp"><i class="cart-icon bi bi-cart-plus"></i></a>
+                    <button class="btn ms-3 primary-font" data-bs-toggle="modal" data-bs-target="#clientLogInModal">Log In</button></div>
+                <div class="modal fade" id="clientLogInModal" tabindex="-1" aria-labelledby="clientLogInModal" aria-hidden="true">
                     <%@ include file="../Navigation Bar Tab/Login Page.jsp" %>
                 </div>
             </div>
@@ -35,18 +35,18 @@
     </nav>
     <nav class="navbar second-navbar py-2 px-4">
         <div class="container-fluid d-flex flex-row justify-content-between">
-            <a class="nav-link link-change color-white " href="<%=request.getContextPath()%>/instances/client/Categories Tab/Category Page.jsp">Laptops</a>
-            <a class="nav-link link-change color-white " href="<%=request.getContextPath()%>/instances/client/Categories Tab/Category Page.jsp">Prebuilt</a>
-            <a class="nav-link link-change color-white " href="<%=request.getContextPath()%>/instances/client/Categories Tab/Category Page.jsp">Motherboard</a>
-            <a class="nav-link link-change color-white " href="<%=request.getContextPath()%>/instances/client/Categories Tab/Category Page.jsp">CPU</a>
-            <a class="nav-link link-change color-white " href="<%=request.getContextPath()%>/instances/client/Categories Tab/Category Page.jsp">GPU</a>
-            <a class="nav-link link-change color-white " href="<%=request.getContextPath()%>/instances/client/Categories Tab/Category Page.jsp">Memory</a>
-            <a class="nav-link link-change color-white " href="<%=request.getContextPath()%>/instances/client/Categories Tab/Category Page.jsp">Storage</a>
-            <a class="nav-link link-change color-white " href="<%=request.getContextPath()%>/instances/client/Categories Tab/Category Page.jsp">Coolers</a>
-            <a class="nav-link link-change color-white " href="<%=request.getContextPath()%>/instances/client/Categories Tab/Category Page.jsp">Peripherals</a>
-            <a class="nav-link link-change color-white " href="<%=request.getContextPath()%>/instances/client/Categories Tab/Category Page.jsp">Utilities</a>
+            <a class="nav-link link-change color-white " href="<%=request.getContextPath()%>/instances/client/Categories Tab/Laptop.jsp">Laptops</a>
+            <a class="nav-link link-change color-white " href="<%=request.getContextPath()%>/instances/client/Categories Tab/Prebuilt.jsp">Prebuilt</a>
+            <a class="nav-link link-change color-white " href="<%=request.getContextPath()%>/instances/client/Categories Tab/Motherboard.jsp">Motherboard</a>
+            <a class="nav-link link-change color-white " href="<%=request.getContextPath()%>/instances/client/Categories Tab/CPU.jsp">CPU</a>
+            <a class="nav-link link-change color-white " href="<%=request.getContextPath()%>/instances/client/Categories Tab/GPU.jsp">GPU</a>
+            <a class="nav-link link-change color-white " href="<%=request.getContextPath()%>/instances/client/Categories Tab/Memory.jsp">Memory</a>
+            <a class="nav-link link-change color-white " href="<%=request.getContextPath()%>/instances/client/Categories Tab/Storage.jsp">Storage</a>
+            <a class="nav-link link-change color-white " href="<%=request.getContextPath()%>/instances/client/Categories Tab/Coolers.jsp">Coolers</a>
+            <a class="nav-link link-change color-white " href="<%=request.getContextPath()%>/instances/client/Categories Tab/Pheriperals.jsp">Peripherals</a>
+            <a class="nav-link link-change color-white " href="<%=request.getContextPath()%>/instances/client/Categories Tab/Utilities.jsp">Utilities</a>
             <form class="d-flex" role="search">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <input class="form-control me-2" id ="clientSearchNavBar" type="search" placeholder="Search" aria-label="Search">
                 <button class="second-btn" type="submit">Search</button>
             </form>
         </div>

@@ -1,5 +1,5 @@
-import { validate } from './Validate Function.js';
-import { validateNumber } from './Validate Function.js';
+import validate from './validate';
+import validateNumber from './validateNumbern';
 $(document).ready(function () {
     let isProductIdValidated, isProductNameValidated, isDescriptionValidated, isSizeValidated, isPriceValidated, isQuantityValidated = false;
 
