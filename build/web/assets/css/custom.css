@@ -11,6 +11,7 @@
     --secondaryfont: "Rubik", sans-serif;
 }
 
+/* global*/
 body {
     background-color: var(--secondaryColor);
     -ms-overflow-style: none;  /* IE and Edge */
@@ -20,6 +21,25 @@ body {
 ::-webkit-scrollbar {
     display: none;
 }
+
+.form-control{
+    display: block;
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1rem;
+    line-height: 1;
+    color: #212529;
+    background-clip: padding-box;
+    border: 1px solid black;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.form-control:focus,
+.form-control:active {
+    box-shadow: 0 0 0 0.25rem rgba(60, 64, 67, 0.25); /* Change box shadow on focus or active state */
+}
+
+/* global*/
 
 /* NavBar.jsp */
 .navbar {
@@ -83,22 +103,6 @@ body {
 
 .first-navbar-link-change:hover, .logo-hover:hover{
     color: var(--primaryColor);
-}
-.form-control{
-    display: block;
-    width: 100%;
-    padding: 0.5rem;
-    font-size: 1rem;
-    line-height: 1;
-    color: #212529;
-    background-clip: padding-box;
-    border: 1px solid black;
-    border-radius: 0.25rem;
-    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-}
-.form-control:focus,
-.form-control:active {
-    box-shadow: 0 0 0 0.25rem rgba(60, 64, 67, 0.25); /* Change box shadow on focus or active state */
 }
 
 /* Modal */

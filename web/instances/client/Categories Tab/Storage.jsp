@@ -9,7 +9,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Category-Placeholder | Tech Galaxy</title>
+        <title>Storage | Tech Galaxy</title>
         <link rel="icon" type="image/x-icon" href="<%=request.getContextPath()%>/assets/images/tech-galaxy.png">
         <link href="<%=request.getContextPath()%>/assets/css/bootstrap.min.css" rel="stylesheet">
         <script src="<%=request.getContextPath()%>/assets/js/bootstrap.bundle.min.js"></script>

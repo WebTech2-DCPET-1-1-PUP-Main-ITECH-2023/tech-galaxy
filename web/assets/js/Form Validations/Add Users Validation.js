@@ -21,6 +21,12 @@ $(document).ready(function () {
     $('#addUsersSave').click(function () {
         if (isUserIDValidated && isUserFirstNameValidated && isUserMiddleNameValidated && isUserLastNameValidated && isUserRole) {
             alert("Form Registration Success!");
+        } else {
+            event.preventDefault();
+            alert("Form Registration Failed!");
+        } else {
+            event.preventDefault();
+            alert("Form Registration Failed!");
         }
     })
 })
