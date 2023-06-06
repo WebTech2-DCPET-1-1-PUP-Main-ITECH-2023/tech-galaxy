@@ -4,7 +4,7 @@ $(document).ready(function () {
     let isUserIDValidated, isUserFirstNameValidated, isUserMiddleNameValidated, isUserLastNameValidated, isUserRole = false;
 
     $("#userID").on( "focusout", function () {
-        isUserIDValidated = validate('#userID', "#userIDLabel", /^[0-9a-zA-Z]*[0-9a-zA-Z]/,"Please use alphanumeric characters.", 1,5,true,true,true);
+        isUserIDValidated = validate('#userID', "#userIDLabel", /^[0-9a-zA-Z]*[0-9a-zA-Z]/,"Please use alphanumeric characters.", 5,0,true,true, false);
     });
     $("#userFirstName").on( "focusout", function () {
         isUserFirstNameValidated = validate('#userFirstName', "#userFirstNameLabel",/^[a-zA-Z]/,"Please use letters only.",1,0,true,true,false);
