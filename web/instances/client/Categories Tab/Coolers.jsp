@@ -23,7 +23,7 @@
 
                     <div class="col">
                         <div class="card container-fluid">
-                            <img src="https://o.remove.bg/downloads/2e20b00d-5fef-4e2a-9d14-2a512b23984b/image-removebg-preview.png" class="card-img-top" alt="...">
+                            <img src="https://m.media-amazon.com/images/S/aplus-media-library-service-media/5f574714-39dc-45f9-9055-285d59e1f6fa.__CR0,0,600,450_PT0_SX600_V1___.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">THERMALTAKE TH240 (CL-W286-PL12SW-A) 240MM ARGB AIO CPU Liquid Cooler (Black)</h5>
                                 <p class = "card-text">₱4,800.00</p>
@@ -40,7 +40,7 @@
 
                     <div class="col">
                         <div class="card container-fluid">
-                            <img src=https://o.remove.bg/downloads/d11580fd-0a6f-46ac-ba49-52f9dfe0f0bb/image-removebg-preview.png class="" alt="...">
+                            <img src="https://www.silverstonetek.com/upload/images/products/pf240-argb/pf240-2.jpg" class="" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">SILVERSTONE PERMAFROST 240 ARGB (PF240-ARGB / V2 ) All-In-One CPU Liquid Cooler</h5>
                                 <p class = "card-text">₱4,500.00</p>
@@ -57,7 +57,7 @@
                     </div>
                     <div class="col">
                         <div class="card container-fluid">
-                            <img src="https://o.remove.bg/downloads/ebd9cdf6-190a-45d4-af20-e71c57e4c813/image-removebg-preview.png" class="card-img-top" alt="...">
+                            <img src="https://i.ytimg.com/vi/7fjuwwUw_44/maxresdefault.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">MSI MAG CORELIQUID C240 EVA E-PROJECT RGB 240MM All-In-One Liquid Cooling Fan</h5>
                                 <p class = "card-text">₱7,500.00</p>
@@ -74,7 +74,7 @@
                     </div>
                     <div class="col">
                         <div class="card container-fluid">
-                            <img src="https://o.remove.bg/downloads/5119059b-0f4d-45d2-8ff3-531fab921a1f/image-removebg-preview.png" class="card-img-top" alt="...">
+                            <img src="https://media.ldlc.com/bo/images/fiches/watercooling/antec/symphony%20240%20argb/symphony240argb_800_1.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">ANTEC SYMPHONY 240 ARGB (2 X 120MM FANS) All-In-One CPU Liquid Cooler</h5>
                                 <p class = "card-text">₱4,500.00</p>

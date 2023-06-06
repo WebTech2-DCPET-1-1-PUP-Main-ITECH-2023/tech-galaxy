@@ -23,7 +23,7 @@
 
                     <div class="col">
                         <div class="card container-fluid">
-                            <img src="https://o.remove.bg/downloads/6ec6c3af-a6ca-4496-831a-b4175fd6f7f4/image-removebg-preview.png" class="card-img-top" alt="...">
+                            <img src="https://ph-test-11.slatic.net/p/5f52557f3b33c75b5099eab350479bea.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">HDMI CABLE</h5>
                                 <p class = "card-text">₱550.00</p>
@@ -36,7 +36,7 @@
                     </div>
                     <div class="col">
                                 <div class="card container-fluid">
-                                    <img src="https://o.remove.bg/downloads/32f57204-6f86-40b2-a83a-8b5d55337719/image-removebg-preview.png" class="card-img-top" alt="...">
+                                    <img src="https://i.ytimg.com/vi/NHavSZtz7PI/maxresdefault.jpg" class="card-img-top" alt="...">
                                     <div class="card-body">
                                         <h5 class="card-title">ZYXEL NBG7510-EU0101F AX1800 WIFI6 Dual-Band Gigabit Wireless Router
                                         </h5>
@@ -56,7 +56,7 @@
                             </div>
                     <div class="col">
                         <div class="card container-fluid">
-                            <img src="https://o.remove.bg/downloads/02c0c800-742e-4e93-b850-df65515a0d35/image-removebg-preview.png" class="card-img-top" alt="...">
+                            <img src="https://gameone.ph/media/catalog/product/cache/7a2235b416a1900151232a782f707140/l/a/lan-cable-24awg-.jpeg" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">NETWORK CABLE</h5>
                                 <p class = "card-text">₱250.00</p>
@@ -69,7 +69,7 @@
                     </div>
                     <div class="col">
                         <div class="card container-fluid">
-                            <img src="https://o.remove.bg/downloads/9256c339-5ddd-4ea5-aa91-feef932ff3e1/image-removebg-preview.png" class="card-img-top" alt="...">
+                            <img src="https://lzd-img-global.slatic.net/g/p/e840c5177b9cc6fa176875f148158b22.jpg_720x720q80.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">AX3000 Mesh WiFi 6 Extender</h5>
                                 <p class = "card-text">₱550.00</p>

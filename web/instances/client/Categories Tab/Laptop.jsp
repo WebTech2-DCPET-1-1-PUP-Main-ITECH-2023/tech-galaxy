@@ -40,7 +40,7 @@
                         
                           <div class="col">
                             <div class="card container-fluid">
-                                <img src="https://o.remove.bg/downloads/0cf0b644-83eb-464b-9468-b11d5319d60e/medias-removebg-preview.png" class="card-img-top" alt="...">
+                                <img src="https://i.pcmag.com/imagery/reviews/038PiIbnEo36ILsKLjlj6oW-2.fit_lim.size_1050x.jpg" class="card-img-top" alt="...">
                                 <div class="card-body">
                                     <h5 class="card-title">Legion 7i (16, Gen 7)</h5>
                                     <p class = "card-text">₱109,295.00</p>
@@ -58,7 +58,7 @@
                         </div>
                          <div class="col">
                             <div class="card container-fluid">
-                                <img src="https://o.remove.bg/downloads/9b49cc56-f3ca-415e-8d43-c235c1be0b55/image-removebg-preview.png" class="card-img-top" alt="...">
+                                <img src="https://scontent.fmnl7-1.fna.fbcdn.net/v/t39.30808-6/251779400_2372132132929443_807508151673142500_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=0debeb&_nc_eui2=AeF0_EK4_zVXpQyIuXgJBiP5gwDq5qRNBEKDAOrmpE0EQjMn429T5c2NgkgqZe3tNGZTG0YHUJankOSDMWRsZDFH&_nc_ohc=oC7R46puHXoAX9Tvurb&_nc_ht=scontent.fmnl7-1.fna&oh=00_AfCGkPs3WqhRIYVi0cvJR7O9RrZbQHRR4Vzoam6GOpupfg&oe=64824DBE" class="card-img-top" alt="...">
                                 <div class="card-body">
                                     <h5 class="card-title">ACER Nitro5 AN515-45-R2NV AMD Ryzen 7 (Shale Black)</h5>
                                     <p class = "card-text">₱66,999.00</p>

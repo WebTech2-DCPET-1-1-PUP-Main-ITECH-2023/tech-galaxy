@@ -23,7 +23,7 @@
 
                         <div class="col">
                             <div class="card container-fluid">
-                                <img src="https://o.remove.bg/downloads/5d966b14-7d4b-4cd5-95f7-0d9462b0f49e/image-removebg-preview.png" class="card-img-top" alt="...">
+                                <img src="https://hardwarenexus.com/wp-content/uploads/2022/12/Intel-Core-i5-Processor.jpg.webp" class="card-img-top" alt="...">
                                 <div class="card-body">
                                     <h5 class="card-title">Intel Core i5-13400</h5>
                                     <p class = "card-text">₱15,100.00</p>
@@ -41,7 +41,7 @@
                         
                           <div class="col">
                             <div class="card container-fluid">
-                                <img src=https://o.remove.bg/downloads/b20323da-5fe4-4bc4-9994-390b798c72c5/image-removebg-preview.png class="" alt="...">
+                                <img src="https://d2j6dbq0eux0bg.cloudfront.net/images/81001528/3471314644.jpg" class="card-img-top" alt="...">
                                 <div class="card-body">
                                     <h5 class="card-title">AMD Ryzen 5 7600</h5>
                                     <p class = "card-text">₱14,250.00</p>
@@ -59,7 +59,7 @@
                         </div>
                          <div class="col">
                             <div class="card container-fluid">
-                                <img src="https://o.remove.bg/downloads/e00d4668-2033-490c-afbf-c82f1178deff/image-removebg-preview.png" class="card-img-top" alt="...">
+                                <img src="https://cdn.mos.cms.futurecdn.net/Z2heTbscnwpDsQNjJzxH2X.jpg" class="card-img-top" alt="...">
                                 <div class="card-body">
                                     <h5 class="card-title">Intel Core i7-13700K</h5>
                                     <p class = "card-text">₱26,295.00</p>

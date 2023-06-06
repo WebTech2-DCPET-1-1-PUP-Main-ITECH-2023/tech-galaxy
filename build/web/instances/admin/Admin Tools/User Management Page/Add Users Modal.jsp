@@ -78,7 +78,7 @@
                                 <label for="userRole" class="col-form-label color-white">User Role</label>
                             </div>
                             <div class="col-8">
-                                <select class="form-control user-inputs" id="userRole" name="userRole" required>
+                                <select required class="form-control user-inputs" id="userRole" name="userRole" required>
                                     <option value="default">--select user role--</option>
                                     <option value="Admin">Admin</option>
                                     <option value="Manager">Manager</option>

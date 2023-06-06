@@ -23,7 +23,7 @@
 
                     <div class="col">
                         <div class="card container-fluid">
-                            <img src="https://o.remove.bg/downloads/8c8ac0f9-d7fd-4619-8b2f-ad3b03b5c867/yQ5exgydojgsxNsgJgZnWV-970-80-removebg-preview.png" class="" alt="...">
+                            <img src="https://www.nvidia.com/content/dam/en-zz/Solutions/geforce/ada/rtx-4090/geforce-ada-4090-web-og-1200x630.jpg" class="" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">Nvidia GeForce RTX 4090</h5>
                                 <p class = "card-text">₱121,999.00</p>
@@ -42,7 +42,7 @@
 
                     <div class="col">
                         <div class="card container-fluid">
-                            <img src="https://o.remove.bg/downloads/f7229700-ddbd-4d24-92c9-2fdbf6f66cf7/image-removebg-preview.png" class="" alt="...">
+                            <img src="https://www.amd.com/system/files/2022-10/1678052-radeon-7900-xtx-og-1200x628.jpg" class="" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">AMD Radeon RX 7900 XTX</h5>
                                 <p class = "card-text">₱71,000.00</p>
@@ -61,7 +61,7 @@
                     </div>
                     <div class="col">
                         <div class="card container-fluid">
-                            <img src="https://o.remove.bg/downloads/3806f248-69a5-4694-9f42-2922978941ba/image-removebg-preview.png" class="" alt="...">
+                            <img src="https://www.nvidia.com/content/dam/en-zz/Solutions/geforce/ada/rtx-4070-4070ti/geforce-ada-4070-family-og-1200x630.jpg" class="" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">Nvidia GeForce RTX 4070</h5>
                                 <p class = "card-text">₱55,790.00</p>
@@ -79,7 +79,7 @@
                     </div>
                     <div class="col">
                         <div class="card container-fluid">
-                            <img src="https://o.remove.bg/downloads/09a60b8b-f0b1-4e85-8225-cc56047040d6/image-removebg-preview.png" class="" alt="...">
+                            <img src="https://www.nvidia.com/content/dam/en-zz/Solutions/geforce/ada/rtx-4060-4060ti/geforce-rtx-4060-ti-og-1200x630.jpg" class="" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">Nvidia GeForce RTX 4060 Ti</h5>
                                 <p class = "card-text">₱27,530.00</p>

@@ -54,6 +54,16 @@
                             <p id = "usernameLabel" class = "form-label"></p>
                         </div>
                         <div class="mb-3">
+                            <label class="form-label">Password:</label>
+                            <input required placeholder="Required, Alphanumeric; 8-16; Atleast with 1 capital, small, number, and special." id = "password" type="password" name = "password" class="form-control">
+                            <p id = "passwordLabel" class = "form-label"></p>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Confirm Password:</label>
+                            <input required placeholder="Required, must be same with password" id = "confirmPassword" type="password" name = "confirmPassword" class="form-control">
+                            <p id = "confirmPasswordLabel" class = "form-label"></p>
+                        </div>
+                        <div class="mb-3">
                             <label class="form-label">First Name:</label>
                             <input required placeholder="Required, characters only, minimum: 1" id = "firstName" type="text" name = "firstName" class="form-control">
                             <p id = "firstNameLabel" class = "form-label"></p>
@@ -76,7 +86,7 @@
                         <div class ="row">
                             <div class="col mb-3">
                                 <label class="form-label">Birth Date:</label>
-                                <input required type="text" placeholder="MM-DD-YYYY" id = "birthDate" name = "birthDate" class="form-control">
+                                <input required type="text" placeholder="MM/DD/YYYY" id = "birthDate" name = "birthDate" class="form-control">
                                 <p id = "birthDateLabel" class = "form-label"></p>
                             </div>
                             <div class="col mb-3">

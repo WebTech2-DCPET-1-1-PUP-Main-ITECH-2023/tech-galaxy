@@ -42,7 +42,7 @@
 
                     <div class="col">
                         <div class="card container-fluid">
-                            <img src="https://o.remove.bg/downloads/b12c379c-f60b-4044-bbfc-7cc221f93983/image-removebg-preview.png" class="card-img-top" alt="...">
+                            <img src="https://www.techspot.com/articles-info/2399/images/2022-02-25-image-7.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">Wooting Two HE</h5>
                                 <p class = "card-text">₱4,982.00</p>

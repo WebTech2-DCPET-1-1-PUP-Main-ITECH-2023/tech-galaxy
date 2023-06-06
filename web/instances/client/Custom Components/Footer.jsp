@@ -27,7 +27,7 @@
                         <a class="nav-link first-navbar-link-change mx-3 color color-white primary-font" href="<%=request.getContextPath()%>/instances/client/Navigation Bar Tab/Wishlist.jsp">Wishlist</a>
                         <a class="nav-link first-navbar-link-change mx-3 color color-white primary-font" href="<%=request.getContextPath()%>/instances/client/Navigation Bar Tab/About.jsp">About</a>
                         <a class="nav-link first-navbar-link-change mx-3 color color-white primary-font" href="<%=request.getContextPath()%>/instances/client/Navigation Bar Tab/Account.jsp">Account</a>
-                        <a class="nav-link first-navbar-link-change mx-3 color color-white center" data-bs-toggle="modal" data-bs-target="#exampleModal">Log In</a>
+                        <a class="nav-link first-navbar-link-change mx-3 color color-white center" data-bs-toggle="modal" data-bs-target="#clientFooterLoginModal">Log In</a>
                         <div class="modal fade" id="clientFooterLoginModal" tabindex="-1" aria-labelledby="clientFooterLoginModal" aria-hidden="true">
                             <%@ include file="../Navigation Bar Tab/Login Page.jsp" %>
                         </div>
@@ -38,7 +38,7 @@
 
                 <div class="col d-flex flex-column align-items-center mx-3">
                     <h2 class = "first-navbar-link-change primary-font">Contact</h2>
-                    <p><a class = "nav-link first-navbar-link-change" href=mailto:techgalaxy.pup@gmail.com">Tech Galaxy Email</a></p>
+                    <p><a class = "nav-link first-navbar-link-change" href="mailto:techgalaxy.pup@gmail.com">Tech Galaxy Email</a></p>
                 </div>
 
             </div>

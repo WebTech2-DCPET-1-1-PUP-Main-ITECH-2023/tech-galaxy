@@ -5,11 +5,9 @@ $(document).ready(function () {
 
     $("#userID").on( "focusout", function () {
         isUserIDValidated = validate('#userID', "#userIDLabel", /^[0-9a-zA-Z]*[0-9a-zA-Z]/,"Please use alphanumeric characters.", 1,5,true,true,true);
-        console.log(isUserIDValidated)
     });
     $("#userFirstName").on( "focusout", function () {
         isUserFirstNameValidated = validate('#userFirstName', "#userFirstNameLabel",/^[a-zA-Z]/,"Please use letters only.",1,0,true,true,false);
-        console.log(isUserFirstNameValidated)
     });
     $("#userMiddleName").on( "focusout", function () {
         isUserMiddleNameValidated = validate('#userMiddleName', "#userMiddleNameLabel", /^[a-zA-Z]/,"Please use letters only.",1,0,true,true,false);

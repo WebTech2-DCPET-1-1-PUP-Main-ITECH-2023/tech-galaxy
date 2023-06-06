@@ -43,7 +43,7 @@
             <a class="nav-link link-change color-white " href="<%=request.getContextPath()%>/instances/client/Categories Tab/Memory.jsp">Memory</a>
             <a class="nav-link link-change color-white " href="<%=request.getContextPath()%>/instances/client/Categories Tab/Storage.jsp">Storage</a>
             <a class="nav-link link-change color-white " href="<%=request.getContextPath()%>/instances/client/Categories Tab/Coolers.jsp">Coolers</a>
-            <a class="nav-link link-change color-white " href="<%=request.getContextPath()%>/instances/client/Categories Tab/Pheriperals.jsp">Peripherals</a>
+            <a class="nav-link link-change color-white " href="<%=request.getContextPath()%>/instances/client/Categories Tab/Peripherals.jsp">Peripherals</a>
             <a class="nav-link link-change color-white " href="<%=request.getContextPath()%>/instances/client/Categories Tab/Utilities.jsp">Utilities</a>
             <form class="d-flex" role="search">
                 <input class="form-control me-2" id ="clientSearchNavBar" type="search" placeholder="Search" aria-label="Search">

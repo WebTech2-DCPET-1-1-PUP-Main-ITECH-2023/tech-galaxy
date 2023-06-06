@@ -23,7 +23,7 @@
 
                         <div class="col">
                             <div class="card container-fluid">
-                                <img src="https://o.remove.bg/downloads/014f3936-19c5-430d-895b-af82680b1812/image-removebg-preview.png" class="" alt="...">
+                                <img src="https://www.teamgroupinc.com/en/upload/product_note_pic/a162141f2d8e33f03a2e1e47e78879f1.jpg" class="card-img-top" alt="...">
                                 <div class="card-body">
                                     <h5 class="card-title">TEAM XTREEM ARGB 16GB DDR4-3600 C14</h5>
                                     <p class = "card-text">₱10,100.00</p>
@@ -41,7 +41,7 @@
                         
                           <div class="col">
                             <div class="card container-fluid">
-                                <img src=https://o.remove.bg/downloads/96a01068-4d2d-4a21-842d-5f9dfcfd22d1/image-removebg-preview.png class="" alt="...">
+                                <img src="https://www.gskill.com/_upload/htmlEdit/05-ripjawsv-42mm-module-height.jpg" class="card-img-top" alt="...">
                                 <div class="card-body">
                                     <h5 class="card-title">G.Skill Ripjaws V 16GB DDR4-3600</h5>
                                     <p class = "card-text">₱4,699.00</p>
@@ -59,7 +59,7 @@
                         </div>
                          <div class="col">
                             <div class="card container-fluid">
-                                <img src="https://o.remove.bg/downloads/562bc033-0a45-4b4d-a0c0-3cfcb83b8ec1/image-removebg-preview.png" class="" alt="...">
+                                <img src="https://hexus.net/media/uploaded/2019/2/e3142000-bd4d-49b2-ba1b-d89fc55c961c.png" class="card-img-top" alt="...">
                                 <div class="card-body">
                                     <h5 class="card-title">Corsair Dominator Platinum RGB 32GB DDR4-3200</h5>
                                     <p class = "card-text">₱12,199.00</p>
@@ -76,7 +76,7 @@
                         </div>
                          <div class="col">
                                 <div class="card container-fluid">
-                                    <img src="https://o.remove.bg/downloads/1e36c8d3-109a-4172-81d5-26ca6efc96c4/image-removebg-preview.png" class="" alt="...">
+                                    <img src="https://cdn.mos.cms.futurecdn.net/grv4yhMocZSr8Rvm637HuP.jpg" class="card-img-top" alt="...">
                                     <div class="card-body">
                                         <h5 class="card-title"> G.Skill Trident Z Neo 32GB DDR4-3600</h5>
                                         <p class = "card-text">₱20,399.00</p>

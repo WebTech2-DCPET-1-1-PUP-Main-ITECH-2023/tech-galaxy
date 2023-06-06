@@ -23,7 +23,7 @@
 
                         <div class="col">
                             <div class="card container-fluid">
-                                <img src="https://o.remove.bg/downloads/e4e6de53-f9b3-4f83-922d-3445e274b60e/image-removebg-preview.png" class="" alt="...">
+                                <img src="https://cdn.mos.cms.futurecdn.net/XznGAj929i82MWrAHPH4Eo.jpg" class="card-img-top" alt="...">
                                 <div class="card-body">
                                     <h5 class="card-title">WD Black SN850X</h5>
                                     <p class = "card-text">Starting at ₱11,199.00</p>
@@ -41,7 +41,7 @@
                         
                           <div class="col">
                             <div class="card container-fluid">
-                                <img src=https://o.remove.bg/downloads/a2bc8fde-612b-4b13-946c-e2d4eb8995ad/image-removebg-preview.png class="" alt="...">
+                                <img src="https://gamingtrend.com/wp-content/uploads/2022/03/top-wd.jpg" class="card-img-top" alt="...">
                                 <div class="card-body">
                                     <h5 class="card-title">WD Black SN770</h5>
                                     <p class = "card-text">Starting at ₱5,800.00</p>
@@ -59,7 +59,7 @@
                         </div>
                          <div class="col">
                             <div class="card container-fluid">
-                                <img src="https://o.remove.bg/downloads/751f2a38-be31-4106-b1b2-e9600f14002d/image-removebg-preview.png" class="" alt="...">
+                                <img src="https://cdn.mos.cms.futurecdn.net/jCeb2wuhFxzSAfhqsejg9G.jpg" class="card-img-top" alt="...">
                                 <div class="card-body">
                                     <h5 class="card-title">SK Hynix Platinum P41</h5>
                                     <p class = "card-text">Starting at ₱8,595.00</p>
@@ -76,7 +76,7 @@
                         </div>
                          <div class="col">
                                 <div class="card container-fluid">
-                                    <img src="https://o.remove.bg/downloads/aa4478b7-84ba-41f2-b0fb-6636b037e6b1/image-removebg-preview.png" class="" alt="...">
+                                    <img src="https://cdn.mos.cms.futurecdn.net/YN5orz2HhJLLyBcpf3VpHL-1024-80.jpg.webp" class="card-img-top" alt="...">
                                     <div class="card-body">
                                         <h5 class="card-title">Silicon Power XS70 SSD</h5>
                                         <p class = "card-text">Starting At ₱7,235.24</p>
