@@ -86,7 +86,7 @@
             </div>
             <div class="row table-border-bottom py-1">
                 <div class = "col">
-                    User ID: "<c:out value="${addUsers.userID}"/>" has been added.
+                    <c:out value="${addUsers.userID}"/> has been added.
                 </div>
             </div>
             <button class="btn primary-font mt-3" id = "addUser" data-bs-toggle="modal" data-bs-target="#addUsersModal">Add Users</button>

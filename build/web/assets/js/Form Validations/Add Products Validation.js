@@ -24,6 +24,9 @@ $(document).ready(function () {
     $('#addProductsSave').click(function () {
         if (isProductIdValidated && isProductNameValidated && isDescriptionValidated && isSizeValidated && isPriceValidated && isQuantityValidated) {
             alert("Form Registration Success!");
+        } else {
+            event.preventDefault();
+            alert("Form Registration Failed!");
         }
     })
 })

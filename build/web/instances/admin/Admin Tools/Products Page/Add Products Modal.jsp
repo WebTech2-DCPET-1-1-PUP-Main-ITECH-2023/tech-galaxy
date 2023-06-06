@@ -25,45 +25,46 @@
                                 <label for="productID" class="col-form-label color-white">Product ID</label>
                             </div>
                             <div class="col-8">
-                                <input required type="number" id="productID" name="productID" class="color-white form-control product-inputs" placeholder="Required; Integer; must be greater than 0.">
+                                <input required type="number" id="productID" name="productID" class="form-control product-inputs" placeholder="Required; Integer; must be greater than 0.00">
                             </div>
                         </div>
-                        <div class = "row align-items-center my-2">
+                        <div class="row">
                             <p class = "col"></p>
-                            <p id = "productIDLabel" class= "col-8 form-label"></p>
+                            <p id = "productIDLabel" class = "col-8 form-label"></p>
                         </div>
+                        
                         <div class="row align-items-center my-2">
                             <div class="col">
                                 <label for="productName" class="col-form-label color-white">Product Name</label>
                             </div>
                             <div class="col-8">
-                                <input required type="text" id="productName" name="productName" class="color-white form-control product-inputs" placeholder="Required; Letters only; must be at least 3 characters">
+                                <input required type="text" id="productName" name="productName" class="form-control product-inputs" placeholder="Required; Integer; must be greater than 0.00">
                             </div>
-
                         </div>
                         <div class="row">
                             <p class = "col"></p>
                             <p id = "productNameLabel" class = "col-8 form-label"></p>
                         </div>
+                        
                         <div class="row align-items-center my-2">
                             <div class="col">
                                 <label for="description" class="col-form-label color-white">Description</label>
                             </div>
                             <div class="col-8">
-                                <input required type="text" id="description" name="description" class="color-white form-control product-inputs" placeholder="Required; Letters only; must be at least 3 characters">
+                                <input required type="text" id="description" name="description" class="form-control product-inputs" placeholder="Required; Integer; must be greater than 0.00">
                             </div>
-
                         </div>
                         <div class="row">
                             <p class = "col"></p>
                             <p id = "descriptionLabel" class = "col-8 form-label"></p>
                         </div>
+                        
                         <div class="row align-items-center my-2">
                             <div class="col">
                                 <label for="size" class="col-form-label color-white">Size</label>
                             </div>
                             <div class="col-8">
-                                <input required type="text" id="size" name="size" class="color-white form-control product-inputs" placeholder="Alphanumeric; [e.g., 30 mL]">
+                                <input required type="text" id="size" name="size" class="form-control product-inputs" placeholder="Required; Integer; must be greater than 0.00">
                             </div>
                         </div>
                         <div class="row">

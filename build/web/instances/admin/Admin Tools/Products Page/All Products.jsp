@@ -86,7 +86,7 @@
             </div>
             <div class="row table-border-bottom py-1">
                 <div class = "col">
-                    Product Name: "<c:out value="${addProducts.productName}"/>" with a product ID of "<c:out value="${addProducts.productID}"/>" has been added to inventory.
+                    <c:out value="${addProducts.productName}"/> with <c:out value="${addProducts.productID}"/> has been added to inventory.
                 </div>
             </div>
             <button class="btn primary-font mt-3" id = "addProduct" data-bs-toggle="modal" data-bs-target="#addProductsModal">Add Product</button>

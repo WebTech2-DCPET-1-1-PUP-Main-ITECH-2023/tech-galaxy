@@ -30,7 +30,7 @@ $(document).ready(function () {
     $("#mobileNumber").on( "focusout", function () {
         isMobileNumberValidated = validate('#mobileNumber', "#mobileNumberLabel", /^[0-9]*[0-9]*[0-9]/,"Please use numeric characters only.",11,0,true,true,false);
     });
-    $('#submit').click(function () {
+    $('#submit').click(function (event) {
         if (isUsernameValidated && isPasswordValidated && isConfirmPasswordValidated && isFirstNameValidated && isMiddleNameValidated && isLastNameValidated && isAddressValidated && isBirthDateValidated && isMobileNumberValidated) {
             alert("Form Registration Success!");
         } else {

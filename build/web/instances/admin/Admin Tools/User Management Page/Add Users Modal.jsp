@@ -16,7 +16,7 @@
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h1 class="color-white modal-title fs-5">Products Form</h1>
+                    <h1 class="color-white modal-title fs-5">Users Form</h1>
                 </div>
                 <div class="modal-body">
                     <form method="POST" action="<%=request.getContextPath()%>/addUsers">
@@ -25,21 +25,21 @@
                                 <label for="userID" class="col-form-label color-white">User ID</label>
                             </div>
                             <div class="col-8">
-                                <input required type="text" id="userID" name="userID" class="color-white form-control product-inputs" placeholder="Required; Alphanumeric; 5 characters">
+                                <input required type="text" id="userID" name="userID" class="form-control product-inputs" placeholder="Required; Integer; must be greater than 0.00">
                             </div>
                         </div>
-                        <div class = "row align-items-center my-2">
+                        <div class="row">
                             <p class = "col"></p>
-                            <p id = "userIDLabel" class= "col-8 form-label"></p>
+                            <p id = "userIDLabel" class = "col-8 form-label"></p>
                         </div>
+
                         <div class="row align-items-center my-2">
                             <div class="col">
                                 <label for="userFirstName" class="col-form-label color-white">First Name</label>
                             </div>
                             <div class="col-8">
-                                <input required type="text" id="userFirstName" name="userFirstName" class="color-white form-control product-inputs" placeholder="Required; Letters only; must be at least 1 character(s)">
+                                <input required type="text" id="userFirstName" name="userFirstName" class="form-control product-inputs" placeholder="Required; Integer; must be greater than 0.00">
                             </div>
-
                         </div>
                         <div class="row">
                             <p class = "col"></p>
@@ -48,12 +48,11 @@
 
                         <div class="row align-items-center my-2">
                             <div class="col">
-                                <label for="userMiddleName" class="col-form-label color-white">Middle Name</label>
+                                <label for="userMiddleName" class="col-form-label color-white">Middlle Name</label>
                             </div>
                             <div class="col-8">
-                                <input required type="text" id="userMiddleName" name="userMiddleName" class="color-white form-control product-inputs" placeholder="Required; Letters only; must be at least 3 characters">
+                                <input required type="text" id="userMiddleName" name="userMiddleName" class="form-control product-inputs" placeholder="Required; Integer; must be greater than 0.00">
                             </div>
-
                         </div>
                         <div class="row">
                             <p class = "col"></p>
@@ -65,7 +64,7 @@
                                 <label for="userLastName" class="col-form-label color-white">Last Name</label>
                             </div>
                             <div class="col-8">
-                                <input required type="text" id="userLastName" name="userLastName" class="color-white form-control product-inputs" placeholder="Required; Letters only; must be atleast 1 character(s)">
+                                <input required type="text" id="userLastName" name="userLastName" class="form-control product-inputs" placeholder="Required; Integer; must be greater than 0.00">
                             </div>
                         </div>
                         <div class="row">

@@ -12,7 +12,6 @@ export default function validateNumber(testId, testIdLabel, regex, regexTestErro
         $(testIdLabel).text("Number must be greater than 0/0.00" + newLine);
     } else {
         isValidated = true;
-        $(testIdLabel).text("");
     }
     return isValidated;
 }
