@@ -18,7 +18,7 @@
     <body>
         <%@ include file="../Custom Components/NavBar.jsp" %>
          <div class = "container-fluid row bg px-3 py-3">
-            <div><h1 class = "primary-color-underline primary-font">GPU</h1>
+            <div><h1 class = "primary-color-underline primary-font">Peripherals</h1>
                 <div class="row row-cols-1 row-cols-md-4 g-4 py-3 container-fluid">
 
                     <div class="col">

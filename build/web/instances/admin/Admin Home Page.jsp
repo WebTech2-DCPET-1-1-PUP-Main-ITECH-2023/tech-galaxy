@@ -20,13 +20,13 @@
         <div class ="container-fluid my-4 mx-3 d-flex flex-column">
             <h1 class = "primary-color-underline primary-font text-center">Admin Side Directory</h1>
             <div class="my-1">
-                <a href="<%=request.getContextPath()%>/instances/admin/Admin Tools/Products Page/All Products.jsp">
+                <a href="<%=request.getContextPath()%>/products">
                     <div class="container-fluid admin-page-directory-links my-3">
                         <h1 class="directory-title primary-font color-primary">Products Page</h1>
                         <p class="color-white">Manages and modifies the products of tech galaxy</p>
                     </div>
                 </a>
-                <a href="<%=request.getContextPath()%>/instances/admin/Admin Tools/User Management Page/User Management.jsp">
+                <a href="<%=request.getContextPath()%>/userManagement">
                     <div class="container-fluid admin-page-directory-links my-3">
                         <h1 class="directory-title primary-font color-primary">User Management Page</h1>
                         <p class="color-white">Manages and modifies the users of tech galaxy</p>

@@ -27,12 +27,12 @@
                     <input type="password" class="form-control my-3" id="clientPassword" placeholder="Password:" disabled>
                     <div class ="d-flex flex-column align-items-center">
                         <p class = "my-2 color-white">Don’t have an account yet? Register here</p>
-                        <a href="<%=request.getContextPath()%>/instances/client/Navigation Bar Tab/Customer Registration.jsp"><button class="btn">Register</button></a>
+                        <a href="<%=request.getContextPath()%>/customerRegistrationForm"><button class="btn">Register</button></a>
                     </div>
                 </div>
                 <div class="modal-footer">
                     <button class="btn" data-bs-dismiss="modal">Close</button>
-                    <a href = "<%=request.getContextPath()%>/instances/admin/Admin Home Page.jsp">
+                    <a href = "<%=request.getContextPath()%>/admin">
                         <button class="btn">Login</button>
                     </a>
                 </div>

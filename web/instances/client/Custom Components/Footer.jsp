@@ -23,15 +23,16 @@
                 <div class="col d-flex flex-column align-items-center mx-3 center">
                     <h2 class = "first-navbar-link-change primary-font">Navigation</h2>
                     <div class = "navbar-nav">
-                        <a class="nav-link first-navbar-link-change mx-3 color color-white primary-font" aria-current="page" href="<%=request.getContextPath()%>/instances/client/Navigation Bar Tab/Wallet.jsp">Wallet</a>
-                        <a class="nav-link first-navbar-link-change mx-3 color color-white primary-font" href="<%=request.getContextPath()%>/instances/client/Navigation Bar Tab/Wishlist.jsp">Wishlist</a>
-                        <a class="nav-link first-navbar-link-change mx-3 color color-white primary-font" href="<%=request.getContextPath()%>/instances/client/Navigation Bar Tab/About.jsp">About</a>
-                        <a class="nav-link first-navbar-link-change mx-3 color color-white primary-font" href="<%=request.getContextPath()%>/instances/client/Navigation Bar Tab/Account.jsp">Account</a>
+                        <a class="nav-link first-navbar-link-change mx-3 color color-white primary-font" aria-current="page" href="<%=request.getContextPath()%>/wallet">Wallet</a>
+                        <a class="nav-link first-navbar-link-change mx-3 color color-white primary-font" href="<%=request.getContextPath()%>/wishlist">Wishlist</a>
+                        <a class="nav-link first-navbar-link-change mx-3 color color-white primary-font" href="<%=request.getContextPath()%>/about">About</a>
+                        <a class="nav-link first-navbar-link-change mx-3 color color-white primary-font" href="<%=request.getContextPath()%>/account">Account</a>
                         <a class="nav-link first-navbar-link-change mx-3 color color-white center" data-bs-toggle="modal" data-bs-target="#clientFooterLoginModal">Log In</a>
                         <div class="modal fade" id="clientFooterLoginModal" tabindex="-1" aria-labelledby="clientFooterLoginModal" aria-hidden="true">
-                            <%@ include file="../Navigation Bar Tab/Login Page.jsp" %>
+                            <%String footerLogIn = "/logIn";%>
+                            <jsp:include page="<%= footerLogIn%>" />
                         </div>
-                        <a class="nav-link first-navbar-link-change mx-3 color color-white" href="<%=request.getContextPath()%>/instances/client/Navigation Bar Tab/Customer Registration.jsp">Register</a>
+                        <a class="nav-link first-navbar-link-change mx-3 color color-white" href="<%=request.getContextPath()%>/customerRegistration">Register</a>
                     </div>
 
                 </div>

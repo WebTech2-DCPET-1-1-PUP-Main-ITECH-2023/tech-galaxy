@@ -23,8 +23,8 @@
                 <div class="col d-flex flex-column align-items-center mx-3 center">
                     <h2 class = "first-navbar-link-change primary-font">Admin Directory</h2>
                     <div class = "navbar-nav">
-                        <a class="nav-link first-navbar-link-change mx-3 color color-white primary-font" aria-current="page" href="<%=request.getContextPath()%>/instances/client/Navigation Bar Tab/Wallet.jsp">Products Page</a>
-                        <a class="nav-link first-navbar-link-change mx-3 color color-white primary-font" href="<%=request.getContextPath()%>/instances/admin/Admin Tools/User Management Page/User Management.jsp">User Management</a>
+                        <a class="nav-link first-navbar-link-change mx-3 color color-white primary-font" aria-current="page" href="<%=request.getContextPath()%>/productsPage">Products Page</a>
+                        <a class="nav-link first-navbar-link-change mx-3 color color-white primary-font" href="<%=request.getContextPath()%>/addUsers">User Management</a>
                         <a class="nav-link first-navbar-link-change mx-3 color color-white center" data-bs-toggle="modal" data-bs-target="#adminFooterLoginModal">Log In</a>
                         <div class="modal fade" id="adminFooterLoginModal" tabindex="-1" aria-labelledby="adminFooterLoginModal" aria-hidden="true">
                             <%@ include file="../Navigation Bar Tab/Login Page.jsp" %>
