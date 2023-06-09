@@ -38,7 +38,6 @@ body {
 .form-control:active {
     box-shadow: 0 0 0 0.25rem rgba(60, 64, 67, 0.25); /* Change box shadow on focus or active state */
 }
-
 /* global*/
 
 /* NavBar.jsp */
@@ -185,6 +184,7 @@ footer {
 
 .primary-font {
     font-weight: bold;
+    font-weight: bold;
     font-family: var(--primaryfont);
 }
 
@@ -292,6 +292,6 @@ a {
     height: 100%;
     width: 100%;
 }
-.set-width{
+.set-width {
     width: 20%;
 }

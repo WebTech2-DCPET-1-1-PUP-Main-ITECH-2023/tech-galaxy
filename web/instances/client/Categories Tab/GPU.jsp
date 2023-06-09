@@ -25,9 +25,9 @@
                         <div class="card container-fluid">
                             <img src="https://www.nvidia.com/content/dam/en-zz/Solutions/geforce/ada/rtx-4090/geforce-ada-4090-web-og-1200x630.jpg" class="" alt="...">
                             <div class="card-body">
-                                <h5 class="card-title">Nvidia GeForce RTX 4090</h5>
-                                <p class = "card-text">₱121,999.00</p>
-                                <ul>
+                                <h5 class="card-title primary-font">Nvidia GeForce RTX 4090</h5>
+                                <p class = "card-text secondary-font">₱121,999.00</p>
+                                <ul class = "card-text secondary-font">
                                     <li>Shaders: 16,432</li>
                                     <li>Boost clock: 2,520MHz</li>
                                     <li>TFLOPs: 82.6</li>
@@ -44,9 +44,9 @@
                         <div class="card container-fluid">
                             <img src="https://www.amd.com/system/files/2022-10/1678052-radeon-7900-xtx-og-1200x628.jpg" class="" alt="...">
                             <div class="card-body">
-                                <h5 class="card-title">AMD Radeon RX 7900 XTX</h5>
-                                <p class = "card-text">₱71,000.00</p>
-                                <ul>
+                                <h5 class="card-title primary-font">AMD Radeon RX 7900 XTX</h5>
+                                <p class = "card-text secondary-font">₱71,000.00</p>
+                                <ul class = "card-text secondary-font">
                                     <li>Shaders: 6144</li>
                                     <li>Boost clock: 2,500MHz</li>
                                     <li>TFLOPs: 61.4</li>
@@ -63,9 +63,9 @@
                         <div class="card container-fluid">
                             <img src="https://www.nvidia.com/content/dam/en-zz/Solutions/geforce/ada/rtx-4070-4070ti/geforce-ada-4070-family-og-1200x630.jpg" class="" alt="...">
                             <div class="card-body">
-                                <h5 class="card-title">Nvidia GeForce RTX 4070</h5>
-                                <p class = "card-text">₱55,790.00</p>
-                                <ul>
+                                <h5 class="card-title primary-font">Nvidia GeForce RTX 4070</h5>
+                                <p class = "card-text secondary-font">₱55,790.00</p>
+                                <ul class = "card-text secondary-font">
                                     <li>Shaders: 5888</li>
                                     <li>Boost clock: 2,475MHz</li>
                                     <li>TFLOPs: 29.1</li>
@@ -81,9 +81,9 @@
                         <div class="card container-fluid">
                             <img src="https://www.nvidia.com/content/dam/en-zz/Solutions/geforce/ada/rtx-4060-4060ti/geforce-rtx-4060-ti-og-1200x630.jpg" class="" alt="...">
                             <div class="card-body">
-                                <h5 class="card-title">Nvidia GeForce RTX 4060 Ti</h5>
-                                <p class = "card-text">₱27,530.00</p>
-                                <ul>
+                                <h5 class="card-title primary-font">Nvidia GeForce RTX 4060 Ti</h5>
+                                <p class = "card-text secondary-font">₱27,530.00</p>
+                                <ul class = "card-text secondary-font">
                                      <li>Shaders: 4352</li>
                                     <li>Boost clock: 2,540MHz</li>
                                     <li>TFLOPs: 22.1</li>

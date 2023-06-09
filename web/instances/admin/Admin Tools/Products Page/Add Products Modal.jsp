@@ -16,13 +16,13 @@
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h1 class="color-white modal-title fs-5">Products Form</h1>
+                    <h1 class="color-white modal-title fs-5 primary-font">Products Form</h1>
                 </div>
                 <div class="modal-body">
                     <form method="POST" action="<%=request.getContextPath()%>/addProducts">
                         <div class="row align-items-center my-2">
                             <div class="col">
-                                <label for="productID" class="col-form-label color-white">Product ID</label>
+                                <label for="productID" class="col-form-label color-white secondary-font">Product ID</label>
                             </div>
                             <div class="col-8">
                                 <input required type="number" id="productID" name="productID" class="form-control product-inputs" placeholder="Required; Integer; must be greater than 0.00">
@@ -35,7 +35,7 @@
                         
                         <div class="row align-items-center my-2">
                             <div class="col">
-                                <label for="productName" class="col-form-label color-white">Product Name</label>
+                                <label for="productName" class="col-form-label color-white secondary-font">Product Name</label>
                             </div>
                             <div class="col-8">
                                 <input required type="text" id="productName" name="productName" class="form-control product-inputs" placeholder="Required; Integer; must be greater than 0.00">
@@ -48,7 +48,7 @@
                         
                         <div class="row align-items-center my-2">
                             <div class="col">
-                                <label for="description" class="col-form-label color-white">Description</label>
+                                <label for="description" class="col-form-label color-white secondary-font">Description</label>
                             </div>
                             <div class="col-8">
                                 <input required type="text" id="description" name="description" class="form-control product-inputs" placeholder="Required; Integer; must be greater than 0.00">
@@ -61,7 +61,7 @@
                         
                         <div class="row align-items-center my-2">
                             <div class="col">
-                                <label for="size" class="col-form-label color-white">Size</label>
+                                <label for="size" class="col-form-label color-white secondary-font">Size</label>
                             </div>
                             <div class="col-8">
                                 <input required type="text" id="size" name="size" class="form-control product-inputs" placeholder="Required; Integer; must be greater than 0.00">
@@ -74,7 +74,7 @@
 
                         <div class="row align-items-center my-2">
                             <div class="col">
-                                <label for="productPrice" class="col-form-label color-white">Price</label>
+                                <label for="productPrice" class="col-form-label color-white secondary-font">Price</label>
                             </div>
                             <div class="col-8">
                                 <input required type="text" id="productPrice" name="productPrice" class="form-control product-inputs" placeholder="Required; Integer; must be greater than 0.00">
@@ -87,7 +87,7 @@
 
                         <div class="row align-items-center my-2">
                             <div class="col">
-                                <label for="quantity" class="col-form-label color-white">Quantity</label>
+                                <label for="quantity" class="col-form-label color-white secondary-font">Quantity</label>
                             </div>
                             <div class="col-8">
                                 <input required type="number" id="quantity" name="quantity" class="form-control product-inputs" placeholder="Required; Integer; must be greater than 0.00">
@@ -99,7 +99,7 @@
                         </div>
 
                         <div class="modal-footer">
-                            <button id = "addProductsSave" class="btn">Save</button>
+                            <button id = "addProductsSave" class="btn primary-font">Save</button>
                         </div>
                     </form>
                 </div>

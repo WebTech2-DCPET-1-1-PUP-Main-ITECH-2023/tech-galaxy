@@ -25,9 +25,9 @@
                             <div class="card container-fluid">
                                 <img src="https://storage-asset.msi.com/global/picture/image/feature/mb/Z790/mag_z790_tomahawk_wifi/kv-pd.png" class="card-img-top" alt="...">
                                 <div class="card-body">
-                                    <h5 class="card-title">MAG Z790 TOMAHAWK WIFI</h5>
-                                    <p class = "card-text">₱18,750.00</p>
-                                    <ul>
+                                    <h5 class="card-title primary-font">MAG Z790 TOMAHAWK WIFI</h5>
+                                    <p class = "card-text secondary-font">₱18,750.00</p>
+                                    <ul class = "card-text secondary-font">
                                         <li>CPU support: Intel 12th and 13th Gen</li>
                                         <li>Memory support: 4x DIMM, Up to 128GB, DDR5-7200+(OC)</li>
                                         <li>Expansion slots: 1x PCIe 5.0 x16, 1x PCIe 4.0 x4, 1x PCIe 3.0 x1</li>
@@ -44,9 +44,9 @@
                             <div class="card container-fluid">
                                 <img src="https://static.tweaktown.com/content/1/0/10109_16_asrock-z690-taichi-razer-edition-motherboard-review_full.jpg" class="card-img-top" alt="...">
                                 <div class="card-body">
-                                    <h5 class="card-title">ASRock Z690 Taichi</h5>
-                                    <p class = "card-text">₱38,750</p>
-                                    <ul>
+                                    <h5 class="card-title primary-font">ASRock Z690 Taichi</h5>
+                                    <p class = "card-text secondary-font">₱38,750</p>
+                                    <ul class = "card-text secondary-font">
                                         <li>CPU support: Intel 12th Gen</li>
                                         <li>Socket: LGA 1700</li>
                                         <li>Size: ATX</li>
@@ -65,9 +65,9 @@
                             <div class="card container-fluid">
                                 <img src="https://www.gigabyte.com/FileUpload/Global/KeyFeature/1982/innergigabyteimages/AESTHETICS.jpg" class="card-img-top" alt="...">
                                 <div class="card-body">
-                                    <h5 class="card-title">GIGABYTE Z690 AORUS PRO MOTHERBOARD</h5>
-                                    <p class = "card-text">₱18,367.24</p>
-                                    <ul>
+                                    <h5 class="card-title primary-font">GIGABYTE Z690 AORUS PRO MOTHERBOARD</h5>
+                                    <p class = "card-text secondary-font">₱18,367.24</p>
+                                    <ul class = "card-text secondary-font">
                                         <li>CPU support: Intel 12th Gen</li>
                                         <li>Socket: LGA 1700</li>
                                         <li>Size: ATX</li>
@@ -84,9 +84,9 @@
                                 <div class="card container-fluid">
                                     <img src="https://www.pcworld.com/wp-content/uploads/2023/04/Screenshot-2022-12-29-at-2.12.40-PM.png?w=1024" class="card-img-top" alt="...">
                                     <div class="card-body">
-                                        <h5 class="card-title">Asus TUF Gaming B650 Plus WiFi</h5>
-                                        <p class = "card-text">₱15,969.99</p>
-                                        <ul>
+                                        <h5 class="card-title primary-font">Asus TUF Gaming B650 Plus WiFi</h5>
+                                        <p class = "card-text secondary-font">₱15,969.99</p>
+                                        <ul class = "card-text secondary-font">
                                             <li>CPU support: AMD Ryzen 7000</li>
                                             <li>Socket: AM5</li>
                                             <li>Size: ATX</li>

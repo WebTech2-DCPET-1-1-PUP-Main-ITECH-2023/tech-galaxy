@@ -4,7 +4,7 @@ $(document).ready(function () {
     let isUsernameValidated, isPasswordValidated, isConfirmPasswordValidated, isFirstNameValidated, isMiddleNameValidated, isLastNameValidated, isAddressValidated, isBirthDateValidated, isMobileNumberValidated = false;
 
     $("#username").on( "focusout", function () {
-        isUsernameValidated = validate('#username', "#usernameLabel", /^[0-9a-zA-Z]*[0-9a-zA-Z]/,"Please use alphanumeric characters.", 4,12,true,true,true);
+        isUsernameValidated = validate('#username', "#usernameLabel", /^[0-9a-zA-Z]*[0-9a-zA-Z]/,"Please use alphanumeric characters.", 4,5,true,true,true);
     });
     $("#password").on( "focusout", function () {
         isPasswordValidated = validate('#password', "#passwordLabel",/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@#$%^&+=]).*$/," Alphanumeric; At least 1 capital character; At least 1 small character; At least 1 number; At least 1 Special Character",8,16,true,true,true);
@@ -32,10 +32,10 @@ $(document).ready(function () {
     });
     $('#submit').click(function (event) {
         if (isUsernameValidated && isPasswordValidated && isConfirmPasswordValidated && isFirstNameValidated && isMiddleNameValidated && isLastNameValidated && isAddressValidated && isBirthDateValidated && isMobileNumberValidated) {
-            alert("Form Registration Success!");
+            alert("Form Validation Success!");
         } else {
             event.preventDefault();
-            alert("Form Registration Failed!");
+            alert("Form Validation Failed!");
         }
     })
 })

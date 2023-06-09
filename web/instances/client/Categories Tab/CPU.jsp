@@ -23,11 +23,11 @@
 
                         <div class="col">
                             <div class="card container-fluid">
-                                <img src="https://hardwarenexus.com/wp-content/uploads/2022/12/Intel-Core-i5-Processor.jpg.webp" class="card-img-top" alt="...">
+                                <img src="https://villman.com/product_photos/ezgif-4-7659920198_980y8_87d3i.gif" class="card-img-top" alt="...">
                                 <div class="card-body">
-                                    <h5 class="card-title">Intel Core i5-13400</h5>
-                                    <p class = "card-text">₱15,100.00</p>
-                                    <ul>
+                                    <h5 class="card-title primary-font">Intel Core i5-13400</h5>
+                                    <p class = "card-text secondary-font">₱15,100.00</p>
+                                    <ul class = "card-text secondary-font">
                                         <li>Architecture: Raptor Lake</li>
                                         <li>Socket: LGA 1700</li>
                                         <li>Cores/Threads: 10 (6P + 4E) / 16</li>
@@ -43,9 +43,9 @@
                             <div class="card container-fluid">
                                 <img src="https://d2j6dbq0eux0bg.cloudfront.net/images/81001528/3471314644.jpg" class="card-img-top" alt="...">
                                 <div class="card-body">
-                                    <h5 class="card-title">AMD Ryzen 5 7600</h5>
-                                    <p class = "card-text">₱14,250.00</p>
-                                    <ul>
+                                    <h5 class="card-title primary-font">AMD Ryzen 5 7600</h5>
+                                    <p class = "card-text secondary-font">₱14,250.00</p>
+                                    <ul class = "card-text secondary-font">
                                         <li>Architecture: Zen 4</li>
                                         <li>Socket: AM5</li>
                                         <li>Cores/Threads: 6/12</li>
@@ -59,11 +59,11 @@
                         </div>
                          <div class="col">
                             <div class="card container-fluid">
-                                <img src="https://cdn.mos.cms.futurecdn.net/Z2heTbscnwpDsQNjJzxH2X.jpg" class="card-img-top" alt="...">
+                                <img src="https://villman.com/product_photos/ezgif-4-0b93ec0e73_jq0k5.gif" class="card-img-top" alt="...">
                                 <div class="card-body">
-                                    <h5 class="card-title">Intel Core i7-13700K</h5>
-                                    <p class = "card-text">₱26,295.00</p>
-                                    <ul>
+                                    <h5 class="card-title primary-font">Intel Core i7-13700K</h5>
+                                    <p class = "card-text secondary-font">₱26,295.00</p>
+                                    <ul class = "card-text secondary-font">
                                         <li>Architecture: Alder Lake</li>
                                         <li>Socket: LGA 1700</li>
                                         <li>Cores/Threads: 12 (8P+8E) / 24</li>
@@ -78,9 +78,9 @@
                                 <div class="card container-fluid">
                                     <img src="https://www.amd.com/system/files/styles/992px/private/2023-01/1769031-star-wars-jedi-survivor-ryzen-7000-lockup-1260x709_2.jpg?itok=GzUUuo31" class="card-img-top" alt="...">
                                     <div class="card-body">
-                                        <h5 class="card-title"> AMD Ryzen 9 7950X3D</h5>
-                                        <p class = "card-text">₱36,495.00</p>
-                                        <ul>
+                                        <h5 class="card-title primary-font"> AMD Ryzen 9 7950X3D</h5>
+                                        <p class = "card-text secondary-font">₱36,495.00</p>
+                                        <ul class = "card-text secondary-font">
                                             <li>Architecture: Zen 4</li>
                                             <li>Socket: AM5</li>
                                             <li>Cores/Threads: 16/32</li>

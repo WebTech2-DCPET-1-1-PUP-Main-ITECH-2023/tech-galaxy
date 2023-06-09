@@ -25,9 +25,9 @@
                         <div class="card container-fluid">
                             <img src="https://pcx.com.ph/wp-content/uploads/2022/04/PCX-Centaur-Prime-Xiii-RTX-4080-OC-768x768.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
-                                <h5 class="card-title">GFH CENTAUR PRIME (XIII) GeForce RTX™ 4080 Intel Core i9 Gaming Desktop</h5>
-                                <p class = "card-text">₱229,000.00</p>
-                                <ul>
+                                <h5 class="card-title primary-font">GFH CENTAUR PRIME (XIII) GeForce RTX™ 4080 Intel Core i9 Gaming Desktop</h5>
+                                <p class = "card-text secondary-font">₱229,000.00</p>
+                                <ul class = "card-text secondary-font">
                                     <li>Intel® Core™ i9-13900K Processor (36M Cache, up to 5.80 GHz)</li>
                                     <li>ASUS Prime Z790-P WIFI-CSM LGA1700 ATX Motherboard</li>
                                     <li>ASUS TUF Gaming GeForce RTX™ 4080 OC Edition</li>
@@ -39,9 +39,9 @@
                         <div class="card container-fluid">
                             <img src="https://pcx.com.ph/wp-content/uploads/2022/10/PCX-GFH-DRAKE-FROST-K-NEW-600x600.png" class="card-img-top" alt="...">
                             <div class="card-body">
-                                <h5 class="card-title">GFH DRAKE FROST (K) Radeon RX 6600 XT Gaming Desktop</h5>
-                                <p class = "card-text">₱131,995.00</p>
-                                <ul>
+                                <h5 class="card-title primary-font">GFH DRAKE FROST (K) Radeon RX 6600 XT Gaming Desktop</h5>
+                                <p class = "card-text secondary-font">₱131,995.00</p>
+                                <ul class = "card-text secondary-font">
                                     <li>Intel Core i9-11900K processor with a clock speed of up to 5.30 GHz</li>
                                     <li>ASUS ROG STRIX Z590-A GAMING WIFI motherboard</li>
                                     <li>AMD Radeon RX 6600 XT graphics card with 8GB of GDDR6 memory</li>
@@ -56,9 +56,9 @@
                         <div class="card container-fluid">
                             <img src="https://pcx.com.ph/wp-content/uploads/2022/09/PCX-GFH-CENTAUR-STRIX-i7-NEW-600x600.png" class="card-img-top" alt="...">
                             <div class="card-body">
-                                <h5 class="card-title">GFH CENTAUR STRIX (i7) GeForce RTX™ 4070 Dual OC Gaming Desktop Package</h5>
-                                <p class = "card-text">₱135,995.00</p>
-                                <ul>
+                                <h5 class="card-title primary-font">GFH CENTAUR STRIX (i7) GeForce RTX™ 4070 Dual OC Gaming Desktop Package</h5>
+                                <p class = "card-text secondary-font">₱135,995.00</p>
+                                <ul class = "card-text secondary-font">
                                     <li>Intel® Core™ i7-12700F Processor</li>
                                     <li>ASUS Strix Z690-A Gaming WIFI</li>
                                     <li>ASUS GeForce RTX ™ 4070 Dual OC Gaming</li>
@@ -74,9 +74,9 @@
                         <div class="card container-fluid">
                             <img src="https://pcx.com.ph/wp-content/uploads/2022/10/PCX-GFH-CHIMERA-NX-OC-600x600.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
-                                <h5 class="card-title">GFH CHIMERA NX (OC) GeForce® GTX 1650 Gaming Desktop</h5>
-                                <p class = "card-text">₱33,995.00 – ₱46,995.00</p>
-                                <ul>
+                                <h5 class="card-title primary-font">GFH CHIMERA NX (OC) GeForce® GTX 1650 Gaming Desktop</h5>
+                                <p class = "card-text secondary-font">₱33,995.00 – ₱46,995.00</p>
+                                <ul class = "card-text secondary-font">
                                     <li>Intel® Core™ I3-13100F 13TH Gen processor</li>
                                     <li>ASUS Prime H610M-E D4 motherboard</li>
                                     <li>ASUS GeForce GTX 1650 TUF OC 4GB DDR6 128Bit graphics card</li>

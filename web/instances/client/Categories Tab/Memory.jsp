@@ -25,9 +25,9 @@
                             <div class="card container-fluid">
                                 <img src="https://www.teamgroupinc.com/en/upload/product_note_pic/a162141f2d8e33f03a2e1e47e78879f1.jpg" class="card-img-top" alt="...">
                                 <div class="card-body">
-                                    <h5 class="card-title">TEAM XTREEM ARGB 16GB DDR4-3600 C14</h5>
-                                    <p class = "card-text">₱10,100.00</p>
-                                    <ul>
+                                    <h5 class="card-title primary-font">TEAM XTREEM ARGB 16GB DDR4-3600 C14</h5>
+                                    <p class = "card-text secondary-font">₱10,100.00</p>
+                                    <ul class = "card-text secondary-font">
                                         <li>Speed: 3600MHz</li>
                                         <li>Timing: 14-15-15-35</li>
                                         <li>CAS latency: 14</li>
@@ -43,9 +43,9 @@
                             <div class="card container-fluid">
                                 <img src="https://www.gskill.com/_upload/htmlEdit/05-ripjawsv-42mm-module-height.jpg" class="card-img-top" alt="...">
                                 <div class="card-body">
-                                    <h5 class="card-title">G.Skill Ripjaws V 16GB DDR4-3600</h5>
-                                    <p class = "card-text">₱4,699.00</p>
-                                    <ul>
+                                    <h5 class="card-title primary-font">G.Skill Ripjaws V 16GB DDR4-3600</h5>
+                                    <p class = "card-text secondary-font">₱4,699.00</p>
+                                    <ul class = "card-text secondary-font">
                                         <li>Speed: 3600MHz</li>
                                         <li>Timing: 18-22-22-42</li>
                                         <li>CAS Latency: 18</li>
@@ -61,9 +61,9 @@
                             <div class="card container-fluid">
                                 <img src="https://hexus.net/media/uploaded/2019/2/e3142000-bd4d-49b2-ba1b-d89fc55c961c.png" class="card-img-top" alt="...">
                                 <div class="card-body">
-                                    <h5 class="card-title">Corsair Dominator Platinum RGB 32GB DDR4-3200</h5>
-                                    <p class = "card-text">₱12,199.00</p>
-                                    <ul>
+                                    <h5 class="card-title primary-font">Corsair Dominator Platinum RGB 32GB DDR4-3200</h5>
+                                    <p class = "card-text secondary-font">₱12,199.00</p>
+                                    <ul class = "card-text secondary-font">
                                         <li>Speed: 3200MHz</li>
                                         <li>Timing: 16-18-18-36</li>
                                         <li>CAS Latency: 16</li>
@@ -78,9 +78,9 @@
                                 <div class="card container-fluid">
                                     <img src="https://cdn.mos.cms.futurecdn.net/grv4yhMocZSr8Rvm637HuP.jpg" class="card-img-top" alt="...">
                                     <div class="card-body">
-                                        <h5 class="card-title"> G.Skill Trident Z Neo 32GB DDR4-3600</h5>
-                                        <p class = "card-text">₱20,399.00</p>
-                                        <ul>
+                                        <h5 class="card-title primary-font"> G.Skill Trident Z Neo 32GB DDR4-3600</h5>
+                                        <p class = "card-text secondary-font">₱20,399.00</p>
+                                        <ul class = "card-text secondary-font">
                                             <li>Speed: 3600MHz</li>
                                             <li>Timing: 18-22-22-42</li>
                                             <li>CAS Latency: 18</li>

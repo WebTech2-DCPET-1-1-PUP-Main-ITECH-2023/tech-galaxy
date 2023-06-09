@@ -25,9 +25,9 @@
                         <div class="card container-fluid">
                             <img src="https://assets2.razerzone.com/images/razer-deathadder-v2/razer-deathadder-v2-OGimage.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
-                                <h5 class="card-title">Razer DeathAdder V2</h5>
-                                <p class = "card-text">₱2,295.00</p>
-                                <ul>
+                                <h5 class="card-title primary-font">Razer DeathAdder V2</h5>
+                                <p class = "card-text secondary-font">₱2,295.00</p>
+                                <ul class = "card-text secondary-font">
                                     <li>DPI: 20,000</li>
                                     <li>Sensor: Optical</li>
                                     <li>Interface: USB</li>
@@ -44,9 +44,9 @@
                         <div class="card container-fluid">
                             <img src="https://www.techspot.com/articles-info/2399/images/2022-02-25-image-7.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
-                                <h5 class="card-title">Wooting Two HE</h5>
-                                <p class = "card-text">₱4,982.00</p>
-                                <ul>
+                                <h5 class="card-title primary-font">Wooting Two HE</h5>
+                                <p class = "card-text secondary-font">₱4,982.00</p>
+                                <ul class = "card-text secondary-font">
                                     <li>Switch: Lekker (Gateron)</li>
                                     <li>Size: Full size</li>
                                     <li>Backlight: RGB LED</li>
@@ -63,9 +63,9 @@
                         <div class="card container-fluid">
                             <img src="https://www.techspot.com/articles-info/2591/images/2022-12-27-image-7.jpg"class="card-img-top" alt="...">
                                  <div class="card-body">
-                                <h5 class="card-title"> Alienware 34 QD-OLED (AW3423DWF)</h5>
-                                <p class = "card-text">₱121,234.00</p>
-                                <ul>
+                                <h5 class="card-title primary-font"> Alienware 34 QD-OLED (AW3423DWF)</h5>
+                                <p class = "card-text secondary-font">₱121,234.00</p>
+                                <ul class = "card-text secondary-font">
                                     <li>Screen size: 34-inch</li>
                                     <li>Panel type: IPS</li>
                                     <li>Aspect ratio: 21:9</li>
@@ -82,9 +82,9 @@
                         <div class="card container-fluid">
                             <img src="https://static.gigabyte.com/StaticFile/Image/Global/09bb09115b0dcd771f5b07f461f7cebf/Product/31844/webp/1000"class="card-img-top" alt="...">
                             <div class="card-body">
-                                <h5 class="card-title">Gigabyte M32UC</h5>
-                                <p class = "card-text">₱41,895.00</p>
-                                <ul>
+                                <h5 class="card-title primary-font">Gigabyte M32UC</h5>
+                                <p class = "card-text secondary-font">₱41,895.00</p>
+                                <ul class = "card-text secondary-font">
                                     <li>Screen size: 32-inch</li>
                                     <li>Panel type: VA</li>
                                     <li>Aspect ratio: 16:9</li>

@@ -20,10 +20,10 @@ $(document).ready(function () {
     });
     $('#addUsersSave').click(function (event) {
         if (isUserIDValidated && isUserFirstNameValidated && isUserMiddleNameValidated && isUserLastNameValidated && isUserRole) {
-            alert("Form Registration Success!");
+            alert("Form Validation Success!");
         } else {
             event.preventDefault();
-            alert("Form Registration Failed!");
+            alert("Form Validation Failed!");
         }
     })
 })

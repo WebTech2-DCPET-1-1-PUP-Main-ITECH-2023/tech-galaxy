@@ -23,10 +23,10 @@ $(document).ready(function () {
     });
     $('#addProductsSave').click(function () {
         if (isProductIdValidated && isProductNameValidated && isDescriptionValidated && isSizeValidated && isPriceValidated && isQuantityValidated) {
-            alert("Form Registration Success!");
+            alert("Form Validation Success!");
         } else {
             event.preventDefault();
-            alert("Form Registration Failed!");
+            alert("Form Validation Failed!");
         }
     })
 })

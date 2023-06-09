@@ -36,7 +36,7 @@
 
                     <div class = "row wishlist-card p-4 mx-4 mt-4 color-white rounded">
                         <div class = "set-width d-flex flex-column justify-content-center col-4">
-                            <img src="../../../assets/images/Team/gladwin.jpg" class="team-img rounded" alt="...">
+                            <img src="<%=request.getContextPath()%>/assets/images/Team/gladwin.jpg" class="team-img rounded" alt="...">
                         </div>
                         <div class="col wishlist-card-body d-flex flex-column justify-content-center">
                             <h1 class="">Gladwin Ferdz Del Rosario</h5>
@@ -49,7 +49,7 @@
                 <div>
                     <div class = "row wishlist-card p-4 mx-4 mt-4 color-white rounded">
                         <div class = "set-width d-flex flex-column justify-content-center col-4">
-                            <img src="../../../assets/images/Team/roland.jpg" class="team-img rounded" alt="...">
+                            <img src="<%=request.getContextPath()%>/assets/images/Team/roland.jpg" class="team-img rounded" alt="...">
                         </div>
                         <div class="col wishlist-card-body d-flex flex-column justify-content-center">
                             <h1 class="">Roland Mioten</h5>
@@ -62,7 +62,7 @@
                 <div>
                     <div class = "row wishlist-card p-4 mx-4 mt-4 color-white rounded">
                         <div class = "set-width d-flex flex-column justify-content-center col-4">
-                            <img src="../../../assets/images/Team/baron.jpg" class="team-img rounded" alt="...">
+                            <img src="<%=request.getContextPath()%>/assets/images/Team/baron.jpg" class="team-img rounded" alt="...">
                         </div>
                         <div class="col wishlist-card-body d-flex flex-column justify-content-center">
                             <h1 class="">Baron Bueno</h5>
@@ -75,7 +75,7 @@
                 <div>
                     <div class = "row wishlist-card p-4 mx-4 mt-4 color-white rounded">
                         <div class = "set-width d-flex flex-column justify-content-center col-4">
-                            <img src="../../../assets/images/Team/nicole.jpg" class="team-img rounded" alt="...">
+                            <img src="<%=request.getContextPath()%>/assets/images/Team/nicole.jpg" class="team-img rounded" alt="...">
                         </div>
                         <div class="col wishlist-card-body d-flex flex-column justify-content-center">
                             <h1 class="">Nicole Banzuela</h5>

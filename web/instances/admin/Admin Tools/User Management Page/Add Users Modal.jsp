@@ -16,13 +16,13 @@
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h1 class="color-white modal-title fs-5">Users Form</h1>
+                    <h1 class="color-white modal-title fs-5 primary-font">Users Form</h1>
                 </div>
                 <div class="modal-body">
                     <form method="POST" action="<%=request.getContextPath()%>/addUsers">
                         <div class="row align-items-center my-2">
                             <div class="col">
-                                <label for="userID" class="col-form-label color-white">User ID</label>
+                                <label for="userID" class="col-form-label color-white secondary-font">User ID</label>
                             </div>
                             <div class="col-8">
                                 <input required type="text" id="userID" name="userID" class="form-control product-inputs" placeholder="Required; Integer; must be greater than 0.00">
@@ -35,7 +35,7 @@
 
                         <div class="row align-items-center my-2">
                             <div class="col">
-                                <label for="userFirstName" class="col-form-label color-white">First Name</label>
+                                <label for="userFirstName" class="col-form-label color-white secondary-font">First Name</label>
                             </div>
                             <div class="col-8">
                                 <input required type="text" id="userFirstName" name="userFirstName" class="form-control product-inputs" placeholder="Required; Integer; must be greater than 0.00">
@@ -48,7 +48,7 @@
 
                         <div class="row align-items-center my-2">
                             <div class="col">
-                                <label for="userMiddleName" class="col-form-label color-white">Middlle Name</label>
+                                <label for="userMiddleName" class="col-form-label color-white secondary-font">Middlle Name</label>
                             </div>
                             <div class="col-8">
                                 <input required type="text" id="userMiddleName" name="userMiddleName" class="form-control product-inputs" placeholder="Required; Integer; must be greater than 0.00">
@@ -61,7 +61,7 @@
 
                         <div class="row align-items-center my-2">
                             <div class="col">
-                                <label for="userLastName" class="col-form-label color-white">Last Name</label>
+                                <label for="userLastName" class="col-form-label color-white secondary-font">Last Name</label>
                             </div>
                             <div class="col-8">
                                 <input required type="text" id="userLastName" name="userLastName" class="form-control product-inputs" placeholder="Required; Integer; must be greater than 0.00">
@@ -74,7 +74,7 @@
 
                         <div class="row align-items-center my-2">
                             <div class="col">
-                                <label for="userRole" class="col-form-label color-white">User Role</label>
+                                <label for="userRole" class="col-form-label color-white secondary-font">User Role</label>
                             </div>
                             <div class="col-8">
                                 <select required class="form-control user-inputs" id="userRole" name="userRole" required>
@@ -91,7 +91,7 @@
                         </div>
 
                         <div class="modal-footer">
-                            <button id = "addUsersSave" class="btn">Save</button>
+                            <button id = "addUsersSave" class="btn primary-font">Save</button>
                         </div>
                     </form>
                 </div>

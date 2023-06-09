@@ -18,7 +18,7 @@
             <form>
                 <div class="row align-items-center my-2">
                     <div class="col col-lg-1">
-                        <label for="searchUserID" class="col-form-label color-white">User ID:</label>
+                        <label for="searchUserID" class="col-form-label color-white primary-font">User ID:</label>
                     </div>
                     <div class="col col-lg-2">
                         <input type="text" id="searchUserID" class="form-control product-inputs" aria-labelledby="passwordHelpInline">
@@ -27,7 +27,7 @@
 
                 <div class="row align-items-center my-2">
                     <div class="col col-lg-1">
-                        <label for="searchUserName" class="col-form-label color-white">User Name:</label>
+                        <label for="searchUserName" class="col-form-label color-white primary-font">User Name:</label>
                     </div>
                     <div class="col col-lg-2">
                         <input type="password" id="searchUserName" class="form-control product-inputs" aria-labelledby="passwordHelpInline">
@@ -45,22 +45,22 @@
         </div>
         <div class="px-5 py-4 color-white">
             <div class="row text-center table-border-bottom pb-2">
-                <div class="col">
+                <div class="col primary-font">
                     User ID
                 </div>
-                <div class="col">
+                <div class="col primary-font">
                     User Name
                 </div>
-                <div class="col">
+                <div class="col primary-font">
                     Description
                 </div>
-                <div class="col">
+                <div class="col primary-font">
                     User Role
                 </div>
-                <div class="col">
+                <div class="col primary-font">
                     Login Status
                 </div>
-                <div class="col">
+                <div class="col primary-font">
                     Account Status
                 </div>
             </div>

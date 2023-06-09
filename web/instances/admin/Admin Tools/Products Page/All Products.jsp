@@ -18,7 +18,7 @@
             <form>
                 <div class="row align-items-center my-2">
                     <div class="col col-lg-1">
-                        <label for="searchProductId" class="col-form-label color-white">Product ID:</label>
+                        <label for="searchProductId" class="col-form-label color-white primary-font">Product ID:</label>
                     </div>
                     <div class="col col-lg-2">
                         <input type="text" id="searchProductId" class="form-control product-inputs">
@@ -27,7 +27,7 @@
 
                 <div class="row align-items-center my-2">
                     <div class="col col-lg-1">
-                        <label for="searchProductName" class="col-form-label color-white">Product Name:</label>
+                        <label for="searchProductName" class="col-form-label color-white primary-font">Product Name:</label>
                     </div>
                     <div class="col col-lg-2">
                         <input type="password" id="searchProductName" class="form-control product-inputs">
@@ -45,22 +45,22 @@
         </div>
         <div class="px-5 py-4 color-white">
             <div class="row text-center table-border-bottom pb-2">
-                <div class="col">
+                <div class="col primary-font">
                     Product ID
                 </div>
-                <div class="col">
+                <div class="col primary-font">
                     Product Name
                 </div>
-                <div class="col">
+                <div class="col primary-font">
                     Description
                 </div>
-                <div class="col">
+                <div class="col primary-font">
                     Size
                 </div>
-                <div class="col">
+                <div class="col primary-font">
                     Prize
                 </div>
-                <div class="col">
+                <div class="col primary-font">
                     Quantity
                 </div>
             </div>

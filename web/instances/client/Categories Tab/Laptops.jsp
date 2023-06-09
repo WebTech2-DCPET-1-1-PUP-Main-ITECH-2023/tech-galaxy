@@ -25,9 +25,9 @@
                             <div class="card container-fluid">
                                 <img src="https://images.acer.com/is/image/acer/Predator-Helios-300-PH-315-54-Backliton-Black-01a-1?$Visual-Filter-XL$" class="card-img-top" alt="...">
                                 <div class="card-body">
-                                    <h5 class="card-title">Acer Predator Helios 300 PH315-52-54KC</h5>
-                                    <p class = "card-text">₱61,749.00</p>
-                                    <ul>
+                                    <h5 class="card-title primary-font">Acer Predator Helios 300 PH315-52-54KC</h5>
+                                    <p class = "card-text secondary-font">₱61,749.00</p>
+                                    <ul class = "card-text secondary-font">
                                         <li>Windows 10 Home</li>
                                         <li>Intel Core i7-10875H</li>
                                         <li>32GB LPDDR4</li>
@@ -40,11 +40,11 @@
                         
                           <div class="col">
                             <div class="card container-fluid">
-                                <img src="https://i.pcmag.com/imagery/reviews/038PiIbnEo36ILsKLjlj6oW-2.fit_lim.size_1050x.jpg" class="card-img-top" alt="...">
+                                <img src="https://villman.com/product_photos/ezgif-3-f732c96dba_ipprq.gif" class="card-img-top" alt="...">
                                 <div class="card-body">
-                                    <h5 class="card-title">Legion 7i (16, Gen 7)</h5>
-                                    <p class = "card-text">₱109,295.00</p>
-                                    <ul>
+                                    <h5 class="card-title primary-font">Legion 7i (16, Gen 7)</h5>
+                                    <p class = "card-text secondary-font">₱109,295.00</p>
+                                    <ul class = "card-text secondary-font">
                                         <li>12th Generation Intel® Core™ i5-12500H Processor (E-cores up to 3.30 GHz, P-cores up to 4.50 GHz)</li>
                                         <li>Windows 11 Home 64 Single Language</li>
                                         <li>NVIDIA® GeForce RTX™ 3050 Ti 4GB GDDR6</li>
@@ -58,11 +58,11 @@
                         </div>
                          <div class="col">
                             <div class="card container-fluid">
-                                <img src="https://scontent.fmnl7-1.fna.fbcdn.net/v/t39.30808-6/251779400_2372132132929443_807508151673142500_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=0debeb&_nc_eui2=AeF0_EK4_zVXpQyIuXgJBiP5gwDq5qRNBEKDAOrmpE0EQjMn429T5c2NgkgqZe3tNGZTG0YHUJankOSDMWRsZDFH&_nc_ohc=oC7R46puHXoAX9Tvurb&_nc_ht=scontent.fmnl7-1.fna&oh=00_AfCGkPs3WqhRIYVi0cvJR7O9RrZbQHRR4Vzoam6GOpupfg&oe=64824DBE" class="card-img-top" alt="...">
+                                <img src="https://villman.com/product_photos/nitro-5-amd-5000-gif-300px-100521_ihz74.gif" class="card-img-top" alt="...">
                                 <div class="card-body">
-                                    <h5 class="card-title">ACER Nitro5 AN515-45-R2NV AMD Ryzen 7 (Shale Black)</h5>
-                                    <p class = "card-text">₱66,999.00</p>
-                                    <ul>
+                                    <h5 class="card-title primary-font">ACER Nitro5 AN515-45-R2NV AMD Ryzen 7 (Shale Black)</h5>
+                                    <p class = "card-text secondary-font">₱66,999.00</p>
+                                    <ul class = "card-text secondary-font">
                                         <li>Windows 10 Home SL 64BIT</li>
                                         <li>AMD Ryzen 7 5800H</li>
                                         <li>16GB DDR4</li>
@@ -77,9 +77,9 @@
                                 <div class="card container-fluid">
                                     <img src="https://asset.msi.com/resize/image/global/product/product_1672904428c1c83f8f03bb887124d3d5c0bb2eb2e8.png62405b38c58fe0f07fcef2367d8a9ba1/400.png" class="card-img-top" alt="...">
                                     <div class="card-body">
-                                        <h5 class="card-title">Titan GT77HX 13VI i9-13980HX RTX4090</h5>
-                                        <p class = "card-text">₱272,900</p>
-                                        <ul>
+                                        <h5 class="card-title primary-font">Titan GT77HX 13VI i9-13980HX RTX4090</h5>
+                                        <p class = "card-text secondary-font">₱272,900</p>
+                                        <ul class = "card-text secondary-font">
                                             <li>17.3" UHD (3840x2160), 144Hz, Mini LED, HDR 1000, 100% DCI-P3, IPS-Level panel</li>
                                             <li>RTX4090 Laptop GPU GDDR6 16GB</li>
                                             <li>Raptor Lake i9-13980HX</li>
