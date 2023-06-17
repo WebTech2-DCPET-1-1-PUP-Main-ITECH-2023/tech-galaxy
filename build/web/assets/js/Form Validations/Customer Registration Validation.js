@@ -7,7 +7,7 @@ $(document).ready(function () {
         isUsernameValidated = validate('#username', "#usernameLabel", /^[0-9a-zA-Z]*[0-9a-zA-Z]/,"Please use alphanumeric characters.", 4,5,true,true,true);
     });
     $("#password").on( "focusout", function () {
-        isPasswordValidated = validate('#password', "#passwordLabel",/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@#$%^&+=]).*$/," Alphanumeric; At least 1 capital character; At least 1 small character; At least 1 number; At least 1 Special Character",8,16,true,true,true);
+        isPasswordValidated = validate('#password', "#passwordLabel",/^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[!@#$%^&*()\-_+={}\[\]|\\:;"'<>,.?/]).+$/," Alphanumeric; At least 1 capital character; At least 1 small character; At least 1 number; At least 1 Special Character",8,16,true,true,true);
     });
     $("#confirmPassword").on( "focusout", function () {
         isConfirmPasswordValidated = validateConfirm('#confirmPassword', "#confirmPasswordLabel", "#password", true);

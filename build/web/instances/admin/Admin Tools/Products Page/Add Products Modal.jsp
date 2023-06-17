@@ -51,7 +51,7 @@
                                 <label for="description" class="col-form-label color-white secondary-font">Description</label>
                             </div>
                             <div class="col-8">
-                                <input required type="text" id="description" name="description" class="form-control product-inputs" placeholder="Required; Integer; must be greater than 0.00">
+                                <input required type="text" id="description" name="description" class="form-control product-inputs" placeholder="Required; Letters only; must be at least 3 characters">
                             </div>
                         </div>
                         <div class="row">
@@ -64,7 +64,7 @@
                                 <label for="size" class="col-form-label color-white secondary-font">Size</label>
                             </div>
                             <div class="col-8">
-                                <input required type="text" id="size" name="size" class="form-control product-inputs" placeholder="Required; Integer; must be greater than 0.00">
+                                <input type="text" id="size" name="size" class="form-control product-inputs" placeholder="Alphanumeric; [e.g., 30 mL]">
                             </div>
                         </div>
                         <div class="row">
@@ -77,7 +77,7 @@
                                 <label for="productPrice" class="col-form-label color-white secondary-font">Price</label>
                             </div>
                             <div class="col-8">
-                                <input required type="text" id="productPrice" name="productPrice" class="form-control product-inputs" placeholder="Required; Integer; must be greater than 0.00">
+                                <input required type="text" id="productPrice" name="productPrice" class="form-control product-inputs" placeholder="Required;  Double (0.00); must be greater than 0.00">
                             </div>
                         </div>
                         <div class="row">

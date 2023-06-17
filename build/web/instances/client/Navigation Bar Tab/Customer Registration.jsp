@@ -50,12 +50,12 @@
                     <form id = "customerRegistrationForm" method="post" action="<%=request.getContextPath()%>/customerRegistrationForm">
                         <div class="mb-3">
                             <label class="form-label ">Preferred Username:</label>
-                            <input required placeholder="Required, alphanumeric characters only, minimum: 4, maximum: 12" type="text" id = "username" name = "username" class="form-control">
+                            <input required placeholder="Required, alphanumeric characters only, minimum: 4, maximum: 5" type="text" id = "username" name = "username" class="form-control">
                             <p id = "usernameLabel" class = "form-label"></p>
                         </div>
                         <div class="mb-3">
                             <label class="form-label">Password:</label>
-                            <input required placeholder="Required, Alphanumeric; 8-16; Atleast with 1 capital, small, number, and special." id = "password" type="password" name = "password" class="form-control">
+                            <input required placeholder="Required, Alphanumeric; 8-16 characters; Atleast with 1 capital, small, number, and special." id = "password" type="password" name = "password" class="form-control">
                             <p id = "passwordLabel" class = "form-label"></p>
                         </div>
                         <div class="mb-3">

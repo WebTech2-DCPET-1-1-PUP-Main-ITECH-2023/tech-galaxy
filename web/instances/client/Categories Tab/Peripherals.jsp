@@ -23,7 +23,7 @@
 
                     <div class="col">
                         <div class="card container-fluid">
-                            <img src="https://assets2.razerzone.com/images/razer-deathadder-v2/razer-deathadder-v2-OGimage.jpg" class="card-img-top" alt="...">
+                            <img src="https://cdn.shopify.com/s/files/1/0442/2749/4055/products/Razer-Deathadder-Ergonomic-Wired-Gaming-Mouse-V2-NEW-3_1024x1024.png?v=1604022139" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title primary-font">Razer DeathAdder V2</h5>
                                 <p class = "card-text secondary-font">₱2,295.00</p>

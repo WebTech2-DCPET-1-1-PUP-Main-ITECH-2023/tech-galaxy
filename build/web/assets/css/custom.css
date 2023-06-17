@@ -11,6 +11,7 @@
     --secondaryfont: "Rubik", sans-serif;
 }
 
+
 /* global*/
 body {
     background-color: var(--secondaryColor);
@@ -43,14 +44,10 @@ body {
 /* NavBar.jsp */
 .navbar {
     background-color: var(--secondaryColor);
-    border-bottom: #3C4043;
-    border-bottom: 1px solid #3C4043;
+    border-bottom: var(--defaultBorderButton);
 }
 .color-white {
     color: white;
-}
-.color-primary {
-    color: #6f42c1;
 }
 .btn {
     color: #6f42c1;
@@ -183,7 +180,6 @@ footer {
 }
 
 .primary-font {
-    font-weight: bold;
     font-weight: bold;
     font-family: var(--primaryfont);
 }

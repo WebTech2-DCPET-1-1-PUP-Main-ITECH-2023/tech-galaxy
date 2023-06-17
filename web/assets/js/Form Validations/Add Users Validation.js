@@ -10,7 +10,7 @@ $(document).ready(function () {
         isUserFirstNameValidated = validate('#userFirstName', "#userFirstNameLabel",/^[a-zA-Z]/,"Please use letters only.",1,0,true,true,false);
     });
     $("#userMiddleName").on( "focusout", function () {
-        isUserMiddleNameValidated = validate('#userMiddleName', "#userMiddleNameLabel", /^[a-zA-Z]/,"Please use letters only.",1,0,true,true,false);
+        isUserMiddleNameValidated = validate('#userMiddleName', "#userMiddleNameLabel", /^[a-zA-Z]*$/,"Please use letters only.",0,0,false,false,false);
     });
     $("#userLastName").on( "focusout", function () {
         isUserLastNameValidated = validate('#userLastName', "#userLastNameLabel", /^[a-zA-Z]/,"Please use letters only.",1,0,true,true,false);

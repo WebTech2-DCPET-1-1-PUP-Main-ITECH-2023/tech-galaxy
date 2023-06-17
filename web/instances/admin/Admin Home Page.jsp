@@ -18,7 +18,7 @@
     <body>
         <%@include file="Custom Components/NavBar.jsp" %>
         <div class ="container-fluid my-4 mx-3 d-flex flex-column">
-            <h1 class = "primary-color-underline primary-font text-center">Admin Side Directory</h1>
+            <h1 class = "primary-color-underline primary-font text-center">Admin Directory</h1>
             <div class="my-1">
                 <a href="<%=request.getContextPath()%>/products">
                     <div class="container-fluid admin-page-directory-links my-3">

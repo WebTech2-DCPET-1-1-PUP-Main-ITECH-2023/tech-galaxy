@@ -25,7 +25,7 @@
                                 <label for="userID" class="col-form-label color-white secondary-font">User ID</label>
                             </div>
                             <div class="col-8">
-                                <input required type="text" id="userID" name="userID" class="form-control product-inputs" placeholder="Required; Integer; must be greater than 0.00">
+                                <input required type="text" id="userID" name="userID" class="form-control product-inputs" placeholder="Required; Alphanumeric; 5 Characters">
                             </div>
                         </div>
                         <div class="row">
@@ -38,7 +38,8 @@
                                 <label for="userFirstName" class="col-form-label color-white secondary-font">First Name</label>
                             </div>
                             <div class="col-8">
-                                <input required type="text" id="userFirstName" name="userFirstName" class="form-control product-inputs" placeholder="Required; Integer; must be greater than 0.00">
+                                <input required type="text" id="userFirstName" name="userFirstName" class="form-control product-inputs" placeholder="Required; Letters only; must be at least 1
+character(s)">
                             </div>
                         </div>
                         <div class="row">
@@ -51,7 +52,7 @@
                                 <label for="userMiddleName" class="col-form-label color-white secondary-font">Middlle Name</label>
                             </div>
                             <div class="col-8">
-                                <input required type="text" id="userMiddleName" name="userMiddleName" class="form-control product-inputs" placeholder="Required; Integer; must be greater than 0.00">
+                                <input type="text" id="userMiddleName" name="userMiddleName" class="form-control product-inputs" placeholder="Letters only; must be at least 1 character(s)">
                             </div>
                         </div>
                         <div class="row">
@@ -64,7 +65,8 @@
                                 <label for="userLastName" class="col-form-label color-white secondary-font">Last Name</label>
                             </div>
                             <div class="col-8">
-                                <input required type="text" id="userLastName" name="userLastName" class="form-control product-inputs" placeholder="Required; Integer; must be greater than 0.00">
+                                <input required type="text" id="userLastName" name="userLastName" class="form-control product-inputs" placeholder="Required; Letters only; must be at least 1
+character(s)">
                             </div>
                         </div>
                         <div class="row">
