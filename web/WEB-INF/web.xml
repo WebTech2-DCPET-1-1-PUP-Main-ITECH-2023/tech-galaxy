@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>CustomerRegistration</servlet-name>
+        <servlet-class>ph.techgalaxy.customerregistration.controller.CustomerRegistration</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Products</servlet-name>
+        <servlet-class>ph.techgalaxy.products.controller.Products</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Users</servlet-name>
+        <servlet-class>ph.techgalaxy.users.controller.Users</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CustomerRegistration</servlet-name>
+        <url-pattern>/customerRegistration</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Products</servlet-name>
+        <url-pattern>/products</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Users</servlet-name>
+        <url-pattern>/users</url-pattern>
+    </servlet-mapping>
+    
+    
+    <!-- File Mapping -->
+    <servlet>
+        <servlet-name>ClientHomePage</servlet-name>
+        <jsp-file>/instances/client/Client Home Page.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ClientHomePage</servlet-name>
+        <url-pattern>/clientHomePage</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>Wishlist</servlet-name>
+        <jsp-file>/instances/client/Navigation Bar Tab/Wishlist.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Wishlist</servlet-name>
+        <url-pattern>/wishlist</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>Wallet</servlet-name>
+        <jsp-file>/instances/client/Navigation Bar Tab/Wallet.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Wallet</servlet-name>
+        <url-pattern>/wallet</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>CustomerRegistrationPage</servlet-name>
+        <jsp-file>/instances/client/Navigation Bar Tab/Customer Registration.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CustomerRegistrationPage</servlet-name>
+        <url-pattern>/customerRegistrationPage</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Cart</servlet-name>
+        <jsp-file>/instances/client/Navigation Bar Tab/Cart.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Cart</servlet-name>
+        <url-pattern>/cart</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>Account</servlet-name>
+        <jsp-file>/instances/client/Navigation Bar Tab/Account.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Account</servlet-name>
+        <url-pattern>/account</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>About</servlet-name>
+        <jsp-file>/instances/client/Navigation Bar Tab/About.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>About</servlet-name>
+        <url-pattern>/about</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>CPU</servlet-name>
+        <jsp-file>/instances/client/Categories Tab/CPU.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CPU</servlet-name>
+        <url-pattern>/cpu</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>GPU</servlet-name>
+        <jsp-file>/instances/client/Categories Tab/GPU.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>GPU</servlet-name>
+        <url-pattern>/gpu</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>Coolers</servlet-name>
+        <jsp-file>/instances/client/Categories Tab/Coolers.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Coolers</servlet-name>
+        <url-pattern>/coolers</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>Laptops</servlet-name>
+        <jsp-file>/instances/client/Categories Tab/Laptops.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Laptops</servlet-name>
+        <url-pattern>/laptops</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>Memory</servlet-name>
+        <jsp-file>/instances/client/Categories Tab/Memory.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Memory</servlet-name>
+        <url-pattern>/memory</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>Motherboard</servlet-name>
+        <jsp-file>/instances/client/Categories Tab/Motherboard.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Motherboard</servlet-name>
+        <url-pattern>/motherboard</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>Peripherals</servlet-name>
+        <jsp-file>/instances/client/Categories Tab/Peripherals.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Peripherals</servlet-name>
+        <url-pattern>/peripherals</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>Prebuilt</servlet-name>
+        <jsp-file>/instances/client/Categories Tab/Prebuilt.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Prebuilt</servlet-name>
+        <url-pattern>/prebuilt</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>Storage</servlet-name>
+        <jsp-file>/instances/client/Categories Tab/Storage.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Storage</servlet-name>
+        <url-pattern>/storage</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>Utilities</servlet-name>
+        <jsp-file>/instances/client/Categories Tab/Utilities.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Utilities</servlet-name>
+        <url-pattern>/utilities</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>ClientNavBar</servlet-name>
+        <jsp-file>/instances/client/Custom Components/NavBar.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ClientNavBar</servlet-name>
+        <url-pattern>/clientNavBar</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>ClientFooter</servlet-name>
+        <jsp-file>/instances/client/Categories Tab/Footer.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ClientFooter</servlet-name>
+        <url-pattern>/clientFooter</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>AdminHomePage</servlet-name>
+        <jsp-file>/instances/admin/Admin Home Page.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AdminHomePage</servlet-name>
+        <url-pattern>/adminHomePage</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>AdminFooter</servlet-name>
+        <jsp-file>/instances/admin/Custom Components/Footer.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AdminFooter</servlet-name>
+        <url-pattern>/adminFooter</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>AdminNavBar</servlet-name>
+        <jsp-file>/instances/admin/Custom Components/NavBar.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AdminNavBar</servlet-name>
+        <url-pattern>/adminNavBar</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>AddProductsModal</servlet-name>
+        <jsp-file>/instances/admin/Admin Tools/Products Page/Add Products Modal.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AddProductsModal</servlet-name>
+        <url-pattern>/addProductsModal</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>AllProducts</servlet-name>
+        <jsp-file>/instances/admin/Admin Tools/Products Page/All Products.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AllProducts</servlet-name>
+        <url-pattern>/allProducts</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>AddUsersModal</servlet-name>
+        <jsp-file>/instances/admin/Admin Tools/User Management Page/Add Users Modal.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AddUsersModal</servlet-name>
+        <url-pattern>/addUsersModal</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>UserManagement</servlet-name>
+        <jsp-file>/instances/admin/Admin Tools/User Management Page/User Management.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UserManagement</servlet-name>
+        <url-pattern>/userManagement</url-pattern>
+    </servlet-mapping>
+    
+    
+    
+    
+    
+    
+    
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
