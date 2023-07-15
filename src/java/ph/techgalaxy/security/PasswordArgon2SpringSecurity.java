@@ -15,14 +15,14 @@ import org.springframework.security.crypto.argon2.Argon2PasswordEncoder;
  * @author ACER
  */
 public class PasswordArgon2SpringSecurity {
-    public static String matchPasswords(String salt, String rawPassword, String hash) {
+    public boolean matchPasswords(String salt, String rawPassword, String hash) {
         Argon2PasswordEncoder encoder = new Argon2PasswordEncoder();
-        String result;
+        boolean result;
         rawPassword = salt + rawPassword;
         if (encoder.matches(rawPassword, hash)) {
-            result = "verified";
+            result = true;
         } else {
-            result = "not verified";
+            result = false;
         }
         return result;
     }

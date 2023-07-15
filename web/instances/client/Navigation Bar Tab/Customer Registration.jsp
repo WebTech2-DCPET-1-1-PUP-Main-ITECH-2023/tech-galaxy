@@ -20,7 +20,7 @@
                     <div class ="col-7 container-fluid give-primary-bg rounded p-4 mx-2 ">
                         <div class = "d-flex justify-content-center"><h1 class = "secondary-color-underline primary-font">Account Registration</h1></div>
                         <p class ="form-label"><c:out value="${customerRegistration.username}"/> has been added.</p>
-                        <form id = "customerRegistrationForm" method="post" action="<%=request.getContextPath()%>/customerRegistration">
+                        <form id = "customerRegistrationForm" method="post" action="<%=request.getContextPath()%>/customerRegistrationServlet">
                             <div class="mb-3">
                                 <label class="form-label ">Preferred Username:</label>
                                 <input required placeholder="Required, alphanumeric characters only, minimum: 4, maximum: 5" type="text" id = "username" name = "username" class="form-control">

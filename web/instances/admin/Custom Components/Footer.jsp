@@ -24,7 +24,7 @@
                     <h2 class = "first-navbar-link-change primary-font">Admin Directory</h2>
                     <div class = "navbar-nav">
                         <a class="nav-link first-navbar-link-change mx-3 color color-white primary-font" aria-current="page" href="<%=request.getContextPath()%>/allProducts">Products Page</a>
-                        <a class="nav-link first-navbar-link-change mx-3 color color-white primary-font" href="<%=request.getContextPath()%>/userManagement">User Management</a>
+                        <a class="nav-link first-navbar-link-change mx-3 color color-white primary-font" href="<%=request.getContextPath()%>/users/create">User Management</a>
                         <a class="nav-link first-navbar-link-change mx-3 color color-white center" data-bs-toggle="modal" data-bs-target="#adminFooterLoginModal">Log In</a>
                         <div class="modal fade" id="adminFooterLoginModal" tabindex="-1" aria-labelledby="adminFooterLoginModal" aria-hidden="true">
                             <div class="modal-dialog modal-dialog-centered">

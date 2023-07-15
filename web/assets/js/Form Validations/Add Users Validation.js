@@ -17,7 +17,7 @@ $(document).ready(function () {
         isUserLastNameValidated = validate('#userLastName', "#userLastNameLabel", /^[a-zA-Z]/, "Please use letters only.", 1, 0, true, true, false);
     });
     $("#userRole").on("focusout", function () {
-        isUserRole = validateOption('#userRole', "#userRoleLabel", /^[a-zA-Z]+$/, "Please choose from the selection only.", 1, 0, true, true, false);
+        isUserRole = validateOption('#userRole', "#userRoleLabel", /^[a-zA-Z]+$/, "Please choose from the selection only.", 1);
     });
     $('#addUsersSave').click(function (event) {
         if (isUserIDValidated && isUserFirstNameValidated && isUserMiddleNameValidated && isUserLastNameValidated && isUserRole) {

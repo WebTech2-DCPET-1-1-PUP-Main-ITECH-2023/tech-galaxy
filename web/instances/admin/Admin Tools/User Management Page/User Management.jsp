@@ -45,48 +45,93 @@
         </div>
         <div class="px-5 py-4 color-white">
             <div class="row text-center table-border-bottom pb-2">
-                <div class="col primary-font">
+                <div class="col primary-font center">
                     User ID
                 </div>
-                <div class="col primary-font">
-                    User Name
+                <div class="col primary-font center">
+                    First Name
                 </div>
-                <div class="col primary-font">
-                    Description
+                <div class="col primary-font center">
+                    Middle name
                 </div>
-                <div class="col primary-font">
+                <div class="col primary-font center">
+                    Last name
+                </div>
+                <div class="col primary-font center">
+                    Address
+                </div>
+                <div class="col primary-font center">
+                    Birthday
+                </div>
+                <div class="col primary-font center">
+                    Mobile Number
+                </div>
+                <div class="col primary-font center">
                     User Role
                 </div>
-                <div class="col primary-font">
+                <div class="col primary-font center">
                     Login Status
                 </div>
-                <div class="col primary-font">
+                <div class="col primary-font center">
                     Account Status
                 </div>
-            </div>
-            <div class="row table-border-bottom py-1">
-                <div class="col">
-                    -
-                </div>
-                <div class="col">
-                    -
-                </div>
-                <div class="col">
-                    -
-                </div>
-                <div class="col">
-                    -
-                </div>
-                <div class="col">
-                    -
-                </div>
-                <div class="col">
-                    -
+                <div class="col primary-font center">
+                    Action
                 </div>
             </div>
+            <c:forEach items="${usersList}" var="user">
+                <div class="row table-border-bottom py-2">
+                    <div class="col center">
+                        ${user.userId}
+                    </div>
+                    <div class="col center">
+                        ${user.firstName}
+                    </div>
+                    <div class="col center">
+                        ${user.middleName}
+                    </div>
+                    <div class="col center">
+                        ${user.lastName}
+                    </div>
+                    <div class="col center">
+                        ${user.completeAddress}
+                    </div>
+                    <div class="col center">
+                        ${user.birthDay}
+                    </div>
+                    <div class="col center">
+                        ${user.mobileNumber}
+                    </div>
+                    <div class="col center">
+                        ${user.userRole}
+                    </div>
+                    <div class="col center">
+                        ${user.loginStatus}
+                    </div>
+                    <div class="col center">
+                        ${user.accountStatus}
+                    </div>
+                    <div class="col center">
+                        <div>
+                            <form method="POST" action="<%=request.getContextPath()%>/users/update/form">
+                                <input type="hidden" name="verifier" value="/users/update/form" />
+                                <input type="hidden" name="userId" value="${user.userId}" />
+                                <button class="btn btn-sm btn-link">Update</button>
+                            </form>
+                        </div>
+                        <div>
+                            <form method="POST" action="<%=request.getContextPath()%>/users/delete">
+                                <input type="hidden" name="verifier" value="/users/delete" />
+                                <input type="hidden" name="userId" value="${user.userId}" />
+                                <button class="btn btn-sm btn-link">Delete</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </c:forEach>
             <div class="row table-border-bottom py-1">
                 <div class = "col">
-                    <c:out value="${users.userID}"/> has been added.
+                    <c:out value="${message}"/>
                 </div>
             </div>
             <button class="btn primary-font mt-3" id = "addUser" data-bs-toggle="modal" data-bs-target="#addUsersModal">Add Users</button>
@@ -94,6 +139,6 @@
                 <%@ include file="Add Users Modal.jsp" %>
             </div>
         </div>
-                <%@ include file="../../Custom Components/Footer.jsp" %>
+        <%@ include file="../../Custom Components/Footer.jsp" %>
     </body>
 </html>

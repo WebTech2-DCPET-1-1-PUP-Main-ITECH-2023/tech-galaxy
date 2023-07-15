@@ -16,7 +16,7 @@
         <link href="<%=request.getContextPath()%>/assets/css/custom.css" rel="stylesheet">
     </head>
     <body>
-        <%@ include file="../Custom Components/NavBar.jsp" %>
+        <%@ include file="../Custom Components/LoggedInNavBar.jsp" %>
         <div class ="container-fluid d-flex justify-content-center my-5 mx-7">
             <div class = "accounts py-3 mx-3">
                 <h1 class = "primary-color-underline primary-font d-flex justify-content-center">User Account</h1>
@@ -57,6 +57,6 @@
             </div>
 
         </div>
-        <%@ include file="../Custom Components/Footer.jsp" %>
+        <%@ include file="../Custom Components/LoggedInFooter.jsp" %>
     </body>
 </html>

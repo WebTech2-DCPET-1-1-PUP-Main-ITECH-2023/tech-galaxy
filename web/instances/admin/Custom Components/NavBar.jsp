@@ -11,7 +11,6 @@
         <link href="<%=request.getContextPath()%>/assets/css/custom.css" rel="stylesheet">
     </head>
     <body>
-
         <nav class="navbar">
             <div class="container-fluid d-flex flex-wrap align-items-center justify-content-between py-2 px-4">
                 <a class="navbar-brand d-flex flex-row align-items-center justify-content-center" href="<%=request.getContextPath()%>">
@@ -21,33 +20,12 @@
                 <div class = "d-flex flex-row flex-wrap align-items-center justify-content-center secondary-font">
                     <a class="nav-link first-navbar-link-change mx-3 color color-white primary-font center" href="<%=request.getContextPath()%>/adminHomePage">Admin Directory</a>
                     <a class="nav-link first-navbar-link-change mx-3 color color-white primary-font center" href="<%=request.getContextPath()%>/allProducts">Products Page</a>
-                    <a class="nav-link first-navbar-link-change mx-3 color color-white primary-font center" href="<%=request.getContextPath()%>/users">User Management</a>
-
-                    <button class="btn ms-3 primary-font" data-bs-toggle="modal" data-bs-target="#adminLogInModal">Log In</button></div>
-                <div class="modal fade" id="adminLogInModal" tabindex="-1" aria-labelledby="adminLogInModal" aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h1 class="primary-color-underline modal-title fs-5">Log In</h1>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body">
-                                <input type="text" class="form-control my-3" id="addUsername" placeholder="Username:" disabled>
-                                <input type="password" class="form-control my-3" id="addPassword" placeholder="Password:" disabled>
-                            </div>
-                            <div class="modal-footer">
-                                <button class="btn" data-bs-dismiss="modal">Close</button>
-                                <a href = "<%=request.getContextPath()%>/instances/admin/Admin Home Page.jsp">
-                                    <button class="btn">Login</button>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
+                    <a class="nav-link first-navbar-link-change mx-3 color color-white primary-font center" href="<%=request.getContextPath()%>/userManagement">User Management</a>
+                    <form method="post" action = "<%=request.getContextPath()%>/logOut">
+                        <button class="btn ms-3 primary-font" type="submit">Log In</button>
+                    </form>
                 </div>
             </div>
-
-        </div>
-
-    </nav>
-</body>
+        </nav>
+    </body>
 </html>

@@ -20,20 +20,28 @@
         <div class ="container-fluid my-4 mx-3 d-flex flex-column">
             <h1 class = "primary-color-underline primary-font text-center">Admin Directory</h1>
             <div class="my-1">
-                <a href="<%=request.getContextPath()%>/products">
-                    <div class="container-fluid admin-page-directory-links my-3">
-                        <h1 class="directory-title primary-font color-primary">Products Page</h1>
-                        <p class="color-white">Manages and modifies the products of tech galaxy</p>
-                    </div>
-                </a>
-                <a href="<%=request.getContextPath()%>/users">
-                    <div class="container-fluid admin-page-directory-links my-3">
-                        <h1 class="directory-title primary-font color-primary">User Management Page</h1>
-                        <p class="color-white">Manages and modifies the users of tech galaxy</p>
-                    </div>
-                </a>
+                <form method="POST" action="<%=request.getContextPath()%>/products/read">
+                    <input type="hidden" name="verifier" value="/products/view" />
+                    <button>
+                        <div class="container-fluid admin-page-directory-links my-3">
+                            <h1 class="directory-title primary-font color-white">Products Page</h1>
+                            <p class="color-white">Manages and modifies the products of tech galaxy</p>
+                        </div>
+                    </button>
+                    </a>
+                </form>
+
+                <form method="POST" action="<%=request.getContextPath()%>/users/read">
+                    <input type="hidden" name="verifier" value="/users/view" />
+                    <button>
+                        <div class="container-fluid admin-page-directory-links my-3">
+                            <h1 class="directory-title primary-font color-white">User Management Page</h1>
+                            <p class="color-white">Manages and modifies the users of tech galaxy</p>
+                        </div>
+                    </button>
+                </form>
             </div>
         </div>
-                <%@include file="Custom Components/Footer.jsp" %>
+        <%@include file="Custom Components/Footer.jsp" %>
     </body>
 </html>

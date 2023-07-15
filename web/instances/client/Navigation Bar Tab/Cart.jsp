@@ -16,7 +16,7 @@
         <link href="<%=request.getContextPath()%>/assets/css/custom.css" rel="stylesheet">
     </head>
     <body>
-        <%@ include file="../Custom Components/NavBar.jsp" %>
+        <%@ include file="../Custom Components/LoggedInNavBar.jsp" %>
         <div class = "container-fluid my-4">
             <h1 class = "primary-color-underline primary-font d-flex justify-content-center">My Cart</h1>
             <div class = "row wishlist-card p-4 mx-4 mt-4 color-white">
@@ -71,6 +71,6 @@
                 </div>
             </div>
         </div>
-        <%@ include file="../Custom Components/Footer.jsp" %>
+        <%@ include file="../Custom Components/LoggedInFooter.jsp" %>
     </body>
 </html>

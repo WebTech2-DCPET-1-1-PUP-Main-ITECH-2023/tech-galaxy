@@ -227,6 +227,7 @@ a {
     font-size: 16px;
     transition-duration: 0.4s;
     cursor: pointer;
+    background-color: #6f42c1;
 
 }
 
@@ -287,6 +288,11 @@ a {
     width: 80%;
 }
 .border-test{
+    border: var(--defaultBorderButton);
+}
+
+.border-update {
+    
     border: var(--defaultBorderButton);
 }
 .team-img{

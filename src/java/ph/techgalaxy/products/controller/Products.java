@@ -1,16 +1,16 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Servlet.java to edit this template
- */
 package ph.techgalaxy.products.controller;
 
 import java.io.IOException;
-import java.io.PrintWriter;
+import java.util.ArrayList;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+
 import ph.techgalaxy.products.dao.ProductsDao;
 import ph.techgalaxy.products.model.ProductsModel;
 
@@ -19,15 +19,56 @@ public class Products extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        String action = request.getServletPath();
-        System.out.println(action);
-        switch (action) {
-            case "/products":
-                getProducts(request, response);
-                break;
-            default:
-                showProductsForm(request, response);
-                break;
+        String inputAction = request.getParameter("verifier");
+        if (null == inputAction) {
+            try {
+                viewProducts(request, response);
+            } catch (ClassNotFoundException ex) {
+                Logger.getLogger(Products.class.getName()).log(Level.SEVERE, null, ex);
+            }
+        } else {
+            switch (inputAction) {
+                case "update":
+                {
+                    try {
+                        updateProduct(request, response);
+                    } catch (ClassNotFoundException ex) {
+                        Logger.getLogger(Products.class.getName()).log(Level.SEVERE, null, ex);
+                    }
+                }
+                    break;
+
+                case "create":
+                {
+                    try {
+                        createProduct(request, response);
+                    } catch (ClassNotFoundException ex) {
+                        Logger.getLogger(Products.class.getName()).log(Level.SEVERE, null, ex);
+                    }
+                }
+                    break;
+
+                case "delete":
+                {
+                    try {
+                        deleteProduct(request, response);
+                    } catch (ClassNotFoundException ex) {
+                        Logger.getLogger(Products.class.getName()).log(Level.SEVERE, null, ex);
+                    }
+                }
+                    break;
+
+                default:
+                {
+                    try {
+                        viewProducts(request, response);
+                    } catch (ClassNotFoundException ex) {
+                        Logger.getLogger(Products.class.getName()).log(Level.SEVERE, null, ex);
+                    }
+                }
+                    break;
+
+            }
         }
     }
 
@@ -37,27 +78,50 @@ public class Products extends HttpServlet {
         doGet(request, response);
     }
 
-    private void getProducts(HttpServletRequest request, HttpServletResponse response)
-            throws ServletException, IOException {
+    private void viewProducts(HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException, ClassNotFoundException {
+        ProductsDao productsDao = new ProductsDao();
+        ArrayList<ProductsModel> productsList = productsDao.getProductsList();
+        request.setAttribute("productsList", productsList);
+        RequestDispatcher rd = request.getRequestDispatcher("/instances/admin/Admin Tools/Products Page/All Products.jsp");
+        rd.forward(request, response);
+    }
+
+    private void updateProduct(HttpServletRequest request, HttpServletResponse response)
+            throws IOException, ClassNotFoundException {
         int productID = Integer.parseInt(request.getParameter("productID"));
         String productName = request.getParameter("productName");
         String description = request.getParameter("description");
         String size = request.getParameter("size");
-        double productPrice = Double.parseDouble(request.getParameter("productPrice"));
+        double price = Double.parseDouble(request.getParameter("price"));
         int quantity = Integer.parseInt(request.getParameter("quantity"));
-        ProductsModel addProducts = new ProductsModel(productID, productName, description, size, productPrice, quantity);
-        ProductsDao addProductsDao = new ProductsDao();
-        ProductsModel getAddProducts = addProductsDao.getProductDetails(addProducts);
-        request.setAttribute("products", getAddProducts);
-        RequestDispatcher rd = getServletContext().getRequestDispatcher("/instances/admin/Admin Tools/Products Page/All Products.jsp");
-        rd.forward(request, response);
 
-
+        ProductsDao productsDao = new ProductsDao();
+        ProductsModel updateProduct = new ProductsModel(productID, productName, description, size, price, quantity);
+        productsDao.updateProduct(updateProduct);
+        response.sendRedirect(request.getContextPath() + "/Products");
     }
 
-    private void showProductsForm(HttpServletRequest request, HttpServletResponse response)
-            throws ServletException, IOException {
-        RequestDispatcher rd = getServletContext().getRequestDispatcher("/instances/admin/Admin Tools/Products Page/All Products.jsp");
-        rd.forward(request, response);
+    private void createProduct(HttpServletRequest request, HttpServletResponse response)
+            throws IOException, ClassNotFoundException {
+        int productID = Integer.parseInt(request.getParameter("productID"));
+        String productName = request.getParameter("productName");
+        String description = request.getParameter("description");
+        String size = request.getParameter("size");
+        double price = Double.parseDouble(request.getParameter("price"));
+        int quantity = Integer.parseInt(request.getParameter("quantity"));
+
+        ProductsDao productsDao = new ProductsDao();
+        ProductsModel newProduct = new ProductsModel(productID, productName, description, size, price, quantity);
+        productsDao.createProduct(newProduct);
+        response.sendRedirect(request.getContextPath() + "/Products");
+    }
+
+    private void deleteProduct(HttpServletRequest request, HttpServletResponse response)
+            throws IOException, ClassNotFoundException {
+        int productID = Integer.parseInt(request.getParameter("productID"));
+        ProductsDao productsDao = new ProductsDao();
+        productsDao.deleteProduct(productID);
+        response.sendRedirect(request.getContextPath() + "/Products");
     }
 }

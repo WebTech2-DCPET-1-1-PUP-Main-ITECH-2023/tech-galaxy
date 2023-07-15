@@ -11,7 +11,7 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
     </head>
     <body>
-        <%@ include file="../Custom Components/NavBar.jsp" %>
+        <%@ include file="../Custom Components/LoggedInNavBar.jsp" %>
         <div class = "container-fluid">
             <div class = "my-4">
                 <h1 class = "primary-color-underline primary-font d-flex justify-content-center">My Wallet</h1>
@@ -65,6 +65,6 @@
                 </div>
             </div>
         </div>
-        <%@ include file="../Custom Components/Footer.jsp" %>
+        <%@ include file="../Custom Components/LoggedInFooter.jsp" %>
     </body>
 </html>

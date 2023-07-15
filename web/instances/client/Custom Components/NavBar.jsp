@@ -1,3 +1,4 @@
+<%@ taglib prefix = "c" uri = "http://java.sun.com/jsp/jstl/core" %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -22,43 +23,15 @@
                     <p class = "color-white m-0 px-3 logo-hover primary-font">Tech Galaxy</p>
                 </a>
                 <div class = "d-flex flex-row flex-wrap align-items-center justify-content-center secondary-font">
-                    <a class="nav-link first-navbar-link-change mx-3 color color-white primary-font center" aria-current="page" href="<%=request.getContextPath()%>/wallet">Wallet</a>
-                    <a class="nav-link first-navbar-link-change mx-3 color color-white primary-font center" href="<%=request.getContextPath()%>/wishlist">Wishlist</a>
-                    <a class="nav-link first-navbar-link-change mx-3 color color-white primary-font center" href="<%=request.getContextPath()%>/about">About</a>
-                    <a class="nav-link first-navbar-link-change mx-3 color color-white primary-font center" href="<%=request.getContextPath()%>/account">Account</a>
-                    <a class="nav-link first-navbar-link-change mx-3 pb-2 center" href="<%=request.getContextPath()%>/cart"><i class="cart-icon bi bi-cart-plus"></i></a>
-
-                    <button class="btn ms-3 primary-font" data-bs-toggle="modal" data-bs-target="#clientLogInModal">Log In</button></div>
+                    <a class="nav-link first-navbar-link-change mx-3 color color-white primary-font center" aria-current="page" href="<%=request.getContextPath()%>/pleaseLogInFirst">Wallet</a>
+                    <a class="nav-link first-navbar-link-change mx-3 color color-white primary-font center" href="<%=request.getContextPath()%>/pleaseLogInFirst">Wishlist</a>
+                    <a class="nav-link first-navbar-link-change mx-3 color color-white primary-font center" href="<%=request.getContextPath()%>/pleaseLogInFirst">About</a>
+                    <a class="nav-link first-navbar-link-change mx-3 color color-white primary-font center" href="<%=request.getContextPath()%>/pleaseLogInFirst">Account</a>
+                    <a class="nav-link first-navbar-link-change mx-3 pb-2 center" href="<%=request.getContextPath()%>/pleaseLogInFirst"><i class="cart-icon bi bi-cart-plus"></i></a>
+                    <button type="button" class="btn ms-3 primary-font" data-bs-toggle="modal" data-bs-target="#clientLogInModal" id="clientLogInModalOpen">Log In</button>
+                </div>
                 <div class="modal fade" id="clientLogInModal" tabindex="-1" aria-labelledby="clientLogInModal" aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h1 class="primary-color-underline modal-title fs-5">Log In</h1>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body">
-                                <div class = "my-1">
-                                    <input type="text" class="form-control my-2" id="clientUsername" placeholder="Username:">
-                                    <p id = "clientUsernameError" class = "form-label"></p>
-                                </div>
-
-                                <div class ="row my-1">
-                                    <div class ="col my-1"><input type="password" class="form-control my-1" id="clientLogInPassword" placeholder="Password:"></div>
-                                    <div class ="col-1 d-flex justify-content-center align-items-center align-content-center my-1"><i id="clientLogInPasswordToggle" class="bi bi-eye-fill eye"></i></div>
-                                </div>
-                                <p id = "clientLogInPasswordError" class = "form-label"></p>
-                                <div class="d-flex flex-column align-items-center my-1"><a><p class="my-1 nav-link first-navbar-link-change color-white primary-font">Forgot Password?</p></a></div>
-                                <div class ="d-flex flex-column align-items-center my-1">
-                                    <p class = "my-2 color-white">Don’t have an account yet? Register here</p>
-                                    <a href="<%=request.getContextPath()%>/customerRegistration"><p class = "btn my-1">Register</p></a>
-                                </div>
-                            </div>
-                            <div class="modal-footer">
-                                <button class="btn" data-bs-dismiss="modal">Close</button>
-                                <button class="btn" id = "clientLogIn">Login</button>
-                            </div>
-                        </div>
-                    </div>
+                    <%@ include file="../Navigation Bar Tab/Log In Modal.jsp" %>
                 </div>
             </div>
 

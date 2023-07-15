@@ -4,7 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="634f2540-663b-410b-a446-9e5f7d5d6b4e" name="Changes" comment="" />
+    <list default="true" id="634f2540-663b-410b-a446-9e5f7d5d6b4e" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nbproject/private/private.xml" beforeDir="false" afterPath="$PROJECT_DIR$/nbproject/private/private.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/ph/techgalaxy/users/controller/Users.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/ph/techgalaxy/users/controller/Users.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/ph/techgalaxy/users/dao/UsersDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/ph/techgalaxy/users/dao/UsersDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/ph/techgalaxy/users/model/UsersModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/ph/techgalaxy/users/model/UsersModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/instances/admin/Admin Home Page.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/instances/admin/Admin Home Page.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/instances/admin/Admin Tools/User Management Page/Add Users Modal.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/instances/admin/Admin Tools/User Management Page/Add Users Modal.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/instances/admin/Admin Tools/User Management Page/User Management.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/instances/admin/Admin Tools/User Management Page/User Management.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/instances/admin/Custom Components/Footer.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/instances/admin/Custom Components/Footer.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/instances/admin/Custom Components/NavBar.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/instances/admin/Custom Components/NavBar.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/instances/client/Client Home Page.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/instances/client/Client Home Page.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/instances/client/Custom Components/NavBar.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/instances/client/Custom Components/NavBar.jsp" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -34,7 +48,7 @@
     "WebServerToolWindowFactoryState": "false",
     "dart.analysis.tool.window.visible": "false",
     "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "D:/GLADWIN PROJECTS/DIPLOMA IN COMPUTER ENGINEERING TECHNOLOGY/FIRST YEAR/SECOND SEMESTER/WEB TECHNOLOGY AND PROGRAMMING 2/WORKING PROJECT/Original Project/Tech Galaxy",
+    "last_opened_file_path": "D:/GLADWIN PROJECTS/DIPLOMA IN COMPUTER ENGINEERING TECHNOLOGY/FIRST YEAR/SECOND SEMESTER/WEB TECHNOLOGY AND PROGRAMMING 2/MODULES/hrmgr latest",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -150,9 +164,6 @@
       <predefined_log_file id="Tomcat Host Manager Log" />
       <option name="contextPath" value="/Tech_Galaxy" />
       <option name="docBase" value="D:\GLADWIN PROJECTS\DIPLOMA IN COMPUTER ENGINEERING TECHNOLOGY\FIRST YEAR\SECOND SEMESTER\WEB TECHNOLOGY AND PROGRAMMING 2\WORKING PROJECT\Original Project\Tech Galaxy\web" />
-      <option name="envOptions">
-        <map />
-      </option>
       <option name="extraClassPath" value="" />
       <option name="tomcatInfo">
         <TomcatInfo>
@@ -200,6 +211,8 @@
       <workItem from="1687955585601" duration="86000" />
       <workItem from="1687955683026" duration="1264000" />
       <workItem from="1688019835907" duration="439000" />
+      <workItem from="1688228072294" duration="31000" />
+      <workItem from="1688559907022" duration="78000" />
     </task>
     <servers />
   </component>

@@ -64,20 +64,22 @@ public class CustomerRegistration extends HttpServlet {
         String mobilenumber = request.getParameter("mobileNumber");
         String accountStatus = "valid";
         String loginStatus = "offline";
-        String userRole = "customer";
+        String userRole = "Customer";
 
         CustomerRegistrationModel customerRegistrationForm = new CustomerRegistrationModel(username, password, salt, firstname, middlename, lastname, completeaddress, birthday, mobilenumber, accountStatus, loginStatus, userRole);
         CustomerRegistrationDao customerRegistrationFormDao = new CustomerRegistrationDao();
 
         customerRegistrationFormDao.createCustomer(customerRegistrationForm);
-        RequestDispatcher rd = getServletContext().getRequestDispatcher("/instances/client/Navigation Bar Tab/Customer Registration.jsp");
+        String message = "Successfully added customer: " + username;
+        request.setAttribute("message",message);
+        RequestDispatcher rd = getServletContext().getRequestDispatcher("/users");
         rd.forward(request, response);
 
     }
 
     private void showRegistrationForm(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        RequestDispatcher rd = getServletContext().getRequestDispatcher("/instances/client/Navigation Bar Tab/Customer Registration.jsp");
+        RequestDispatcher rd = getServletContext().getRequestDispatcher("/users");
         rd.forward(request, response);
     }
 }

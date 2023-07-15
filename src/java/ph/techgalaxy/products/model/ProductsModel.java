@@ -17,18 +17,17 @@ public class ProductsModel {
     private int quantity;
 
     public ProductsModel(
-            int productID,
-            String productName,
-            String description,
-            String size,
-            double productPrice,
-            int quantity) {
+            int productID, String productName, String description, String size, double productPrice, int quantity) {
         this.productID = productID;
         this.productName = productName;
         this.description = description;
         this.size = size;
         this.productPrice = productPrice;
         this.quantity = quantity;
+    }
+
+    public ProductsModel() {
+        
     }
 
     public int getProductID() {

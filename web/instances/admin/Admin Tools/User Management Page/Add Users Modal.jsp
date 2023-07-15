@@ -21,7 +21,8 @@
                     <h1 class="color-white modal-title fs-5 primary-font">Users Form</h1>
                 </div>
                 <div class="modal-body">
-                    <form method="POST" action="<%=request.getContextPath()%>/users">
+                    <form method="POST" action="<%=request.getContextPath()%>/users/create">
+                        <input type="hidden" name="verifier" value="/users/create" />
                         <div class="row align-items-center my-2">
                             <div class="col">
                                 <label for="userID" class="col-form-label color-white secondary-font">User ID</label>

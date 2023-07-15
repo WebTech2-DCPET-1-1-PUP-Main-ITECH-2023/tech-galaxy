@@ -11,7 +11,7 @@
     </head>
     <body>
         
-        <%@ include file="../Custom Components/NavBar.jsp" %>
+        <%@ include file="../Custom Components/LoggedInNavBar.jsp" %>
         <div class = "container-fluid color-white">
             <div class = "mx-3 my-4">
                 <h1 class = "primary-color-underline primary-font d-flex justify-content-center">About Tech Galaxy</h1>
@@ -87,6 +87,6 @@
                 </div>
             </div>
         </div>
-        <%@ include file="../Custom Components/Footer.jsp" %>
+        <%@ include file="../Custom Components/LoggedInFooter.jsp" %>
     </body>
 </html>
