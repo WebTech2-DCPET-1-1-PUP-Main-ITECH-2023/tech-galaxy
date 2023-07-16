@@ -134,10 +134,7 @@
                     <c:out value="${message}"/>
                 </div>
             </div>
-            <button class="btn primary-font mt-3" id = "addUser" data-bs-toggle="modal" data-bs-target="#addUsersModal">Add Users</button>
-            <div class="modal fade" id="addUsersModal" tabindex="-1" aria-labelledby="addProductsModal" aria-hidden="true">
-                <%@ include file="Add Users Modal.jsp" %>
-            </div>
+            <a href="<%=request.getContextPath()%>/users/create/form" class="btn primary-font mt-3" id = "addUser" >Add Users</a>
         </div>
         <%@ include file="../../Custom Components/Footer.jsp" %>
     </body>

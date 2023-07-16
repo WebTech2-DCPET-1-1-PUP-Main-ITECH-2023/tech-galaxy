@@ -15,73 +15,69 @@
         <script src="<%=request.getContextPath()%>/assets/js/Form Validations/Toggle Password.js"></script>
     </head>
     <body>
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h1 class="color-white modal-title fs-5 primary-font">Users Form</h1>
-                </div>
-                <div class="modal-body">
+        <%@ include file="../../Custom Components/NavBar.jsp" %>
+        <div class="d-flex justify-content-center">
+            <div class = "container-sm m-4">
+                <div class = "border-update p-4">
+                    <h2 class="color-white primary-font center mb-4">Users Form</h2>
                     <form method="POST" action="<%=request.getContextPath()%>/users/create">
-                        <input type="hidden" name="verifier" value="/users/create" />
-                        <div class="row align-items-center my-2">
-                            <div class="col">
+                        <div class="row align-items-center my-2 d-flex justify-content-center">
+                            <div class="col-1">
                                 <label for="userID" class="col-form-label color-white secondary-font">User ID</label>
                             </div>
-                            <div class="col-8">
+                            <div class="col-5">
                                 <input required type="text" id="userID" name="userID" class="form-control product-inputs" placeholder="Required; Alphanumeric; 5 Characters">
                             </div>
                         </div>
-                        <div class="row">
-                            <p class = "col"></p>
-                            <p id = "userIDLabel" class = "col-8 form-label"></p>
+                        <div class="row align-items-center my-2 d-flex justify-content-center">
+                            <p class = "col-1"></p>
+                            <p id = "userIDLabel" class = "col-5 form-label"></p>
                         </div>
 
-                        <div class="row align-items-center my-2">
-                            <div class="col">
+                        <div class="row align-items-center my-2 d-flex justify-content-center">
+                            <div class="col-1">
                                 <label for="userFirstName" class="col-form-label color-white secondary-font">First Name</label>
                             </div>
-                            <div class="col-8">
-                                <input required type="text" id="userFirstName" name="userFirstName" class="form-control product-inputs" placeholder="Required; Letters only; must be at least 1
-                                       character(s)">
+                            <div class="col-5">
+                                <input required type="text" id="userFirstName" name="userFirstName" class="form-control product-inputs" placeholder="Required; Letters only; must be at least 1 character(s)">
                             </div>
                         </div>
-                        <div class="row">
-                            <p class = "col"></p>
-                            <p id = "userFirstNameLabel" class = "col-8 form-label"></p>
+                        <div class="row align-items-center my-2 d-flex justify-content-center">
+                            <p class = "col-1"></p>
+                            <p id = "userFirstNameLabel" class = "col-5 form-label"></p>
                         </div>
 
-                        <div class="row align-items-center my-2">
-                            <div class="col">
+                        <div class="row align-items-center my-2 d-flex justify-content-center my-2">
+                            <div class="col-1">
                                 <label for="userMiddleName" class="col-form-label color-white secondary-font">Middle Name</label>
                             </div>
-                            <div class="col-8">
+                            <div class="col-5">
                                 <input type="text" id="userMiddleName" name="userMiddleName" class="form-control product-inputs" placeholder="Letters only; must be at least 1 character(s)">
                             </div>
                         </div>
-                        <div class="row">
-                            <p class = "col"></p>
-                            <p id = "userMiddleNameLabel" class = "col-8 form-label"></p>
+                        <div class="row align-items-center my-2 d-flex justify-content-center">
+                            <p class = "col-1"></p>
+                            <p id = "userMiddleNameLabel" class = "col-5 form-label"></p>
                         </div>
 
-                        <div class="row align-items-center my-2">
-                            <div class="col">
+                        <div class="row align-items-center my-2 d-flex justify-content-center my-2">
+                            <div class="col-1">
                                 <label for="userLastName" class="col-form-label color-white secondary-font">Last Name</label>
                             </div>
-                            <div class="col-8">
-                                <input required type="text" id="userLastName" name="userLastName" class="form-control product-inputs" placeholder="Required; Letters only; must be at least 1
-                                       character(s)">
+                            <div class="col-5">
+                                <input required type="text" id="userLastName" name="userLastName" class="form-control product-inputs" placeholder="Required; Letters only; must be at least 1 character(s)">
                             </div>
                         </div>
-                        <div class="row">
-                            <p class = "col"></p>
-                            <p id = "userLastNameLabel" class = "col-8 form-label"></p>
+                        <div class="row align-items-center my-2 d-flex justify-content-center">
+                            <p class = "col-1"></p>
+                            <p id = "userLastNameLabel" class = "col-5 form-label"></p>
                         </div>
 
-                        <div class="row align-items-center my-2">
-                            <div class="col">
+                        <div class="row align-items-center my-2 d-flex justify-content-center my-2">
+                            <div class="col-1">
                                 <label for="userRole" class="col-form-label color-white secondary-font">User Role</label>
                             </div>
-                            <div class="col-8">
+                            <div class="col-5">
                                 <select required class="form-control user-inputs" id="userRole" name="userRole" required>
                                     <option value="default">--select user role--</option>
                                     <option value="Administrator">Admin</option>
@@ -89,17 +85,17 @@
                                 </select>
                             </div>
                         </div>
-                        <div class="row">
-                            <p class = "col"></p>
-                            <p id = "userRoleLabel" class = "col-8 form-label"></p>
+                        <div class="row align-items-center my-2 d-flex justify-content-center">
+                            <p class = "col-1"></p>
+                            <p id = "userRoleLabel" class = "col-5 form-label"></p>
                         </div>
-
-                        <div class="modal-footer">
+                        <div class = "d-flex justify-content-center">
                             <button id = "addUsersSave" class="btn primary-font">Save</button>
                         </div>
                     </form>
                 </div>
             </div>
         </div>
+        <%@ include file="../../Custom Components/Footer.jsp" %>
     </body>
 </html>

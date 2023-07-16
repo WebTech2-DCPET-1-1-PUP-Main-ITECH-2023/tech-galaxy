@@ -33,6 +33,24 @@ public class UsersModel {
             String completeAddress,
             String birthDay,
             String mobileNumber,
+            String userRole) {
+        this.userId = userId;
+        this.firstName = firstName;
+        this.middleName = middleName;
+        this.lastName = lastName;
+        this.completeAddress = completeAddress;
+        this.birthDay = birthDay;
+        this.mobileNumber = mobileNumber;
+        this.userRole = userRole;
+    }
+    
+    public UsersModel(String userId,
+            String firstName,
+            String middleName,
+            String lastName,
+            String completeAddress,
+            String birthDay,
+            String mobileNumber,
             String userRole,
             String loginStatus,
             String accountStatus) {

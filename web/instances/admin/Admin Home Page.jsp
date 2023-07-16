@@ -32,7 +32,6 @@
                 </form>
 
                 <form method="POST" action="<%=request.getContextPath()%>/users/read">
-                    <input type="hidden" name="verifier" value="/users/view" />
                     <button>
                         <div class="container-fluid admin-page-directory-links my-3">
                             <h1 class="directory-title primary-font color-white">User Management Page</h1>

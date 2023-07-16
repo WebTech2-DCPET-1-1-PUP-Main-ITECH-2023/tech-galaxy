@@ -17,6 +17,7 @@ import ph.techgalaxy.database.ConnectionPool;
 public class CustomerRegistrationDao {
 
     public boolean createCustomer(CustomerRegistrationModel customerRegistrationForm) throws ClassNotFoundException {
+        System.out.println("Customer Registration DAO");
         boolean success = false;
         Connection conn = null;
         PreparedStatement ps = null;

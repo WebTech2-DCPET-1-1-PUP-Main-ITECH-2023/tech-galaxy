@@ -23,7 +23,7 @@
                 <div class = "border-update py-4">
                     <form method="POST" action="<%=request.getContextPath()%>/users/update">
                         <input type="hidden" name="verifier" value="/users/update" />
-                        <h1 class="color-white modal-title fs-5 primary-font center mb-4">Update Users Form</h1>
+                        <h1 class="color-white primary-font center mb-4">Update Users Form</h1>
                         <div class="row align-items-center my-2 d-flex justify-content-center">
                             <div class="col-1">
                                 <label for="userID" class="col-form-label color-white secondary-font">User ID</label>
@@ -35,39 +35,6 @@
                         <div class="row align-items-center d-flex justify-content-center">
                             <p class = "col-1"></p>
                             <p id = "userIDLabel" class = "col-5 form-label"></p>
-                        </div>
-
-                        <div class="row align-items-center my-2 d-flex justify-content-center">
-                            <div class="col-1">
-                                <label class="form-label">Password:</label>
-                            </div>
-                            <div class="col-5">
-                                <div class = "row">
-                                    <div class ="col"><input required placeholder="Required, Alphanumeric; 8-16 characters; Atleast with 1 capital, small, number, and special." type="password" name = "password" class="form-control" id = "password"></div>
-                                    <div class ="col-1"><i id="userPasswordToggle" class="bi bi-eye-fill eye"></i></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row align-items-center d-flex justify-content-center">
-                            <p class = "col-1"></p>
-                            <p id = "passwordLabel" class = "col-5 form-label"></p>
-                        </div>
-
-                        <div class="row align-items-center my-2 d-flex justify-content-center">
-                            <div class="col-1">
-                                <label class="form-label">Confirm Password:</label>
-                            </div>
-                            <div class="col-5">
-                                <div class = "row">
-                                    <div class ="col"><input required placeholder="Required, must be same with password" id = "confirmPassword" type="password" name = "confirmPassword" class="form-control"></div>
-                                    <div class ="col-1"><i  id = "userConfirmPasswordToggle" class="bi bi-eye-fill eye"></i></div>
-                                </div>
-                            </div>
-                            <div class="row align-items-center d-flex justify-content-center">
-                                <p class = "col-1"></p>
-                                <p id = "confirmPasswordLabel" class = "col-5 form-label"></p>
-                            </div>
-
                         </div>
 
                         <div class="row align-items-center my-2 d-flex justify-content-center">
@@ -113,7 +80,7 @@
                                 <label for="completeAddress" class="col-form-label color-white secondary-font"> Address</label>
                             </div>
                             <div class="col-5">
-                                <input required type="text" id="address" name="address" class="form-control product-inputs" placeholder="Required; Letters only; must be at least 1 character(s)" value="<c:out value='${usersList.completeAddress}'/>">
+                                <input type="text" id="address" name="address" class="form-control product-inputs" placeholder="Required; Letters only; must be at least 1 character(s)" value="<c:out value='${usersList.completeAddress}'/>">
                             </div>
                         </div>
                         <div class="row align-items-center d-flex justify-content-center">
@@ -125,7 +92,7 @@
                                 <label for="birthDay" class="col-form-label color-white secondary-font">Birthday</label>
                             </div>
                             <div class="col-5">
-                                <input required type="text" id="birthDate" name="birthDate" class="form-control product-inputs" placeholder="Required; Letters only; must be at least 1 character(s)" value="<c:out value='${usersList.birthDay}'/>">
+                                <input type="text" id="birthDate" name="birthDate" class="form-control product-inputs" placeholder="Required; Letters only; must be at least 1 character(s)" value="<c:out value='${usersList.birthDay}'/>">
                             </div>
                         </div>
                         <div class="row align-items-center d-flex justify-content-center">
@@ -137,7 +104,7 @@
                                 <label for="mobileNumber" class="col-form-label color-white secondary-font">Mobile Number</label>
                             </div>
                             <div class="col-5">
-                                <input required type="text" id="mobileNumber" name="mobileNumber" class="form-control product-inputs" placeholder="Required; Letters only; must be at least 1 character(s)" value="<c:out value='${usersList.mobileNumber}'/>">
+                                <input type="text" id="mobileNumber" name="mobileNumber" class="form-control product-inputs" placeholder="Required; Letters only; must be at least 1 character(s)" value="<c:out value='${usersList.mobileNumber}'/>">
                             </div>
                         </div>
                         <div class="row align-items-center d-flex justify-content-center">
@@ -167,52 +134,7 @@
                             <p class = "col-1"></p>
                             <p id = "userRoleLabel" class = "col-5 form-label"></p>
                         </div>
-
-                        <div class="row align-items-center my-2 d-flex justify-content-center">
-                            <div class="col-1">
-                                <label for="loginStatus" class="col-form-label color-white secondary-font">Login Status</label>
-                            </div>
-                            <div class="col-5">
-                                <select required class="form-control user-inputs" id="loginStatus" name="loginStatus" required>
-                                    <c:set var="loginStatus" value="${usersList.loginStatus}"></c:set>
-                                    <c:if test="${loginStatus=='Online'}">
-                                        <option value="Online">Online</option>
-                                        <option value="Offline">Offline</option>
-                                    </c:if>
-                                    <c:if test="${loginStatus=='Offline'}">
-                                        <option value="Offline">Offline</option>
-                                        <option value="Online">Online</option>
-                                    </c:if>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="row align-items-center d-flex justify-content-center">
-                            <p class = "col-1"></p>
-                            <p id = "loginStatusLabel" class = "col-5 form-label"></p>
-                        </div>
-
-                        <div class="row align-items-center my-2 d-flex justify-content-center">
-                            <div class="col-1">
-                                <label for="userRole" class="col-form-label color-white secondary-font">Account Status</label>
-                            </div>
-                            <div class="col-5">
-                                <select required class="form-control user-inputs" id="accountStatus" name="accountStatus" required>
-                                    <c:set var="accountStatus" value="${usersList.accountStatus}"></c:set>
-                                    <c:if test="${accountStatus=='valid'}">
-                                        <option value="valid">valid</option>
-                                        <option value="invalid">invalid</option>
-                                    </c:if>
-                                    <c:if test="${accountStatus=='invalid'}">
-                                        <option value="invalid">invalid</option>
-                                        <option value="valid">valid</option>
-                                    </c:if>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="row align-items-center d-flex justify-content-center">
-                            <p class = "col-1"></p>
-                            <p id = "accountStatusLabel" class = "col-5 form-label"></p>
-                        </div>
+                                    
                         <div class = "d-flex justify-content-center">
                             <button id = "addUsersSave" class="btn primary-font">Save</button>
                         </div>

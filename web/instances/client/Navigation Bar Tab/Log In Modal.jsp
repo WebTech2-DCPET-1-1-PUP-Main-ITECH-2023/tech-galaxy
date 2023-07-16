@@ -42,7 +42,7 @@
                         </div>
                         <div class ="d-flex flex-column align-items-center my-1">
                             <p class = "my-2 color-white">Don’t have an account yet? Register here</p>
-                            <a href="<%=request.getContextPath()%>/customerRegistration"><p class = "btn my-1">Register</p></a>
+                            <a href="<%=request.getContextPath()%>/customerRegistrationServlet/form"><p class = "btn my-1">Register</p></a>
                         </div>
                     </div>
                     <div class="modal-footer">

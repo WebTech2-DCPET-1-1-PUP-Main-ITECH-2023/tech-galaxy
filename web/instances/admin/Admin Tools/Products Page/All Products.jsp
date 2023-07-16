@@ -58,42 +58,59 @@
                     Size
                 </div>
                 <div class="col primary-font">
-                    Prize
+                    Price
                 </div>
                 <div class="col primary-font">
                     Quantity
                 </div>
-            </div>
-            <div class="row table-border-bottom py-1">
-                <div class="col">
-                    -
-                </div>
-                <div class="col">
-                    -
-                </div>
-                <div class="col">
-                    -
-                </div>
-                <div class="col">
-                    -
-                </div>
-                <div class="col">
-                    -
-                </div>
-                <div class="col">
-                    -
+                <div class="col primary-font">
+                    Actions
                 </div>
             </div>
+            <c:forEach items="${productsList}" var="products">
+                <div class="row table-border-bottom py-2">
+                    <div class="col center">
+                        ${products.productID}
+                    </div>
+                    <div class="col center">
+                        ${products.productName}
+                    </div>
+                    <div class="col center">
+                        ${products.description}
+                    </div>
+                    <div class="col center">
+                        ${products.size}
+                    </div>
+                    <div class="col center">
+                        ${products.productPrice}
+                    </div>
+                    <div class="col center">
+                        ${products.quantity}
+                    </div>
+
+                    <div class="col center">
+                        <div>
+                            <form method="POST" action="<%=request.getContextPath()%>/products/update/form">
+                                <input type="hidden" name="productID" value="${products.productID}" />
+                                <button class="btn btn-sm btn-link">Update</button>
+                            </form>
+                        </div>
+                        <div>
+                            <form method="POST" action="<%=request.getContextPath()%>/products/delete">
+                                <input type="hidden" name="productID" value="${products.productID}" />
+                                <button class="btn btn-sm btn-link">Delete</button>
+                            </form>                        </div>
+                    </div>
+                </div>
+            </c:forEach>
             <div class="row table-border-bottom py-1">
                 <div class = "col">
-                    <c:out value="${products.productName}"/> with <c:out value="${products.productID}"/> has been added to inventory.
+                    <c:out value="${message}"/>
                 </div>
             </div>
-            <button class="btn primary-font mt-3" id = "addProduct" data-bs-toggle="modal" data-bs-target="#addProductsModal">Add Product</button>
-            <div class="modal fade" id="addProductsModal" tabindex="-1" aria-labelledby="addProductsModal" aria-hidden="true">
-                <%@ include file="Add Products Modal.jsp" %>
-            </div>
+            <a href="<%=request.getContextPath()%>/products/create/form" class="btn primary-font mt-3" id = "addProductsSave">Add Products</a>
+
         </div>
-                <%@ include file="../../Custom Components/Footer.jsp" %>
+        <%@ include file="../../Custom Components/Footer.jsp" %>
     </body>
 </html>

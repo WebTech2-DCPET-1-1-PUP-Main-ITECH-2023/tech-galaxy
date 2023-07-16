@@ -26,51 +26,30 @@ public class Users extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        System.out.println("Start");
-        String inputAction = request.getParameter("verifier");
-        System.out.println("Input action: " + inputAction);
-        switch (inputAction) {
-            case "/users/update/form":
-                    try {
-                System.out.println("Switch Update");
-                showUserUpdateForm(request, response);
-            } catch (ClassNotFoundException ex) {
-                Logger.getLogger(Users.class.getName()).log(Level.SEVERE, null, ex);
-            }
-            break;
-            case "/users/update": {
-                try {
+        try {
+            String action = request.getServletPath();
+            switch (action) {
+                case "/users/create/form":
+                showUserCreateForm(request, response);
+                break;
+                case "/users/create":
+                    createUser(request, response);
+                    break;
+                case "/users/update/form":
+                    showUserUpdateForm(request, response);
+                    break;
+                case "/users/update":
                     updateUser(request, response);
-                } catch (ClassNotFoundException ex) {
-                    Logger.getLogger(Users.class.getName()).log(Level.SEVERE, null, ex);
-                }
+                    break;
+                case "/users/delete":
+                    deleteUser(request, response);
+                    break;
+                default:
+                    viewUsers(request, response);
+                    break;
             }
-            break;
-
-            case "/users/create":
-                try {
-                System.out.println("Switch Create");
-                createUser(request, response);
-            } catch (ClassNotFoundException ex) {
-                Logger.getLogger(Users.class.getName()).log(Level.SEVERE, null, ex);
-            }
-            break;
-            case "/users/delete":
-                try {
-                System.out.println("Switch Delete");
-                deleteUser(request, response);
-            } catch (ClassNotFoundException ex) {
-                Logger.getLogger(Users.class.getName()).log(Level.SEVERE, null, ex);
-            }
-            break;
-            default:
-                try {
-                System.out.println("Default read");
-                viewUsers(request, response);
-            } catch (ClassNotFoundException ex) {
-                Logger.getLogger(Users.class.getName()).log(Level.SEVERE, null, ex);
-            }
-            break;
+        } catch (ClassNotFoundException ex) {
+            Logger.getLogger(Users.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
 
@@ -79,8 +58,15 @@ public class Users extends HttpServlet {
             throws ServletException, IOException {
         doGet(request, response);
     }
+    
+    private void showUserCreateForm(HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException {
+        RequestDispatcher rd = getServletContext().getRequestDispatcher(
+                "/addUsers");
+        rd.forward(request, response);
+    }
 
-    private void createUser(HttpServletRequest request, HttpServletResponse response) throws ClassNotFoundException, IOException {
+    private void createUser(HttpServletRequest request, HttpServletResponse response) throws ClassNotFoundException, IOException, ServletException {
         String userId = request.getParameter("userID");
         PasswordArgon2SpringSecurity encrypt = new PasswordArgon2SpringSecurity();
         String salt = encrypt.generateAndStoreSalt();
@@ -92,18 +78,19 @@ public class Users extends HttpServlet {
         String userRole = request.getParameter("userRole");
 
         UsersDao usersDao = new UsersDao();
-        UsersModel users = new UsersModel(userId, password, salt, firstName, middleName, lastName, userRole, "Valid", "Offline");
+        UsersModel users = new UsersModel(userId, password, salt, firstName, middleName, lastName, userRole, "Offline", "Valid");
         usersDao.createUsers(users);
         request.setAttribute("user", users);
         String message = "Successfully added user: " + userId;
         request.setAttribute("message", message);
-        response.sendRedirect(request.getContextPath() + "/userManagement");
+        RequestDispatcher rd = getServletContext().getRequestDispatcher(
+                "/users/read");
+        rd.forward(request, response);
     }
 
     private void updateUser(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException, ClassNotFoundException {
         String userId = request.getParameter("userID");
-        String password = request.getParameter("password");
         String firstName = request.getParameter("firstName");
         String middleName = request.getParameter("middleName");
         String lastName = request.getParameter("lastName");
@@ -111,14 +98,9 @@ public class Users extends HttpServlet {
         String birthDay = request.getParameter("birthDate");
         String mobileNumber = request.getParameter("mobileNumber");
         String userRole = request.getParameter("userRole");
-        String loginStatus = request.getParameter("loginStatus");
-        String accountStatus = request.getParameter("accountStatus");
         UsersDao usersDao = new UsersDao();
-        PasswordArgon2SpringSecurity encrypt = new PasswordArgon2SpringSecurity();
-        String salt = encrypt.generateAndStoreSalt();
-        password = encrypt.encryptPassword(password, salt);
         UsersModel updateUsers = new UsersModel(
-                userId, password, salt, firstName, middleName, lastName, completeAddress, birthDay, mobileNumber, userRole, loginStatus, accountStatus);
+                userId, firstName, middleName, lastName, completeAddress, birthDay, mobileNumber, userRole);
         usersDao.updateUsers(updateUsers);
         String message = "Successfully updated user: " + userId;
         request.setAttribute("message", message);
@@ -145,7 +127,7 @@ public class Users extends HttpServlet {
         request.setAttribute("usersList", usersList);
         System.out.println("Users List: " + usersList);
         RequestDispatcher rd = getServletContext().getRequestDispatcher(
-                "/instances/admin/Admin Tools/User Management Page/User Management.jsp");
+                "/userManagement");
         rd.forward(request, response);
     }
 

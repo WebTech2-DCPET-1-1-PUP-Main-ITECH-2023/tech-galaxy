@@ -23,22 +23,22 @@ public class CustomerRegistration extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        String action = request.getServletPath();
-        System.out.println(action);
-        switch (action) {
-            case "/customerRegistration":
-            {
-                try {
+        try {
+            String action = request.getServletPath();
+            System.out.println(action);
+            switch (action) {
+                case "/customerRegistrationServlet/form":
+                    showRegistrationForm(request, response);
+                    break;
+                case "/customerRegistrationServlet":
                     getRegistrationForm(request, response);
-                } catch (ClassNotFoundException ex) {
-                    Logger.getLogger(CustomerRegistration.class.getName()).log(Level.SEVERE, null, ex);
-                }
+                    break;
+                default:
+                    showRegistrationForm(request, response);
+                    break;
             }
-                break;
-
-            default:
-                showRegistrationForm(request, response);
-                break;
+        } catch (ClassNotFoundException ex) {
+            Logger.getLogger(CustomerRegistration.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
 
@@ -50,6 +50,7 @@ public class CustomerRegistration extends HttpServlet {
 
     private void getRegistrationForm(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException, ClassNotFoundException {
+        System.out.println("Customer Registration Servlet");
         String username = request.getParameter("username");
         String requestedPassword = request.getParameter("password");
         PasswordArgon2SpringSecurity encrypt = new PasswordArgon2SpringSecurity();
@@ -62,8 +63,8 @@ public class CustomerRegistration extends HttpServlet {
         String birthday = request.getParameter("birthDate");
         
         String mobilenumber = request.getParameter("mobileNumber");
-        String accountStatus = "valid";
-        String loginStatus = "offline";
+        String accountStatus = "Valid";
+        String loginStatus = "Offline";
         String userRole = "Customer";
 
         CustomerRegistrationModel customerRegistrationForm = new CustomerRegistrationModel(username, password, salt, firstname, middlename, lastname, completeaddress, birthday, mobilenumber, accountStatus, loginStatus, userRole);
@@ -79,7 +80,8 @@ public class CustomerRegistration extends HttpServlet {
 
     private void showRegistrationForm(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        RequestDispatcher rd = getServletContext().getRequestDispatcher("/users");
+        System.out.println("Customer Registration Servlet Show Form");
+        RequestDispatcher rd = getServletContext().getRequestDispatcher("/customerRegistration");
         rd.forward(request, response);
     }
 }

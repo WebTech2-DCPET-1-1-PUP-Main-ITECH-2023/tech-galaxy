@@ -38,9 +38,10 @@ public class UsersDao {
                 users.setMiddleName(rs.getString("middleName"));
                 users.setLastName(rs.getString("lastName"));
                 users.setCompleteAddress(rs.getString("completeAddress"));
-                String retrievedBirthday = rs.getString("birthday");
-                LocalDate date = LocalDate.parse(retrievedBirthday, DateTimeFormatter.ofPattern("yyyy-MM-dd"));
-                String formattedDate = date.format(DateTimeFormatter.ofPattern("MM/dd/yyyy"));
+                String birthDay = rs.getString("birthday");
+                LocalDate date = LocalDate.parse(birthDay);
+                DateTimeFormatter formatter = DateTimeFormatter.ofPattern("MM/dd/yyyy");
+                String formattedDate = date.format(formatter);
                 users.setBirthDay(formattedDate);
                 users.setMobileNumber(rs.getString("mobileNumber"));
                 users.setAccountStatus(rs.getString("accountStatus"));
@@ -89,10 +90,11 @@ public class UsersDao {
                 + "firstName, "
                 + "middleName, "
                 + "lastName, "
+                + "birthday, "
                 + "accountStatus,"
                 + "loginStatus, "
                 + "userRole) "
-                + "values (?,?,?,?,?,?,?,?,?)";
+                + "values (?,?,?,?,?,?,?,?,?,?)";
         try {
             conn = ConnectionPool.getConnection();
             ps = conn.prepareStatement(query);
@@ -102,9 +104,10 @@ public class UsersDao {
             ps.setString(4, users.getFirstName());
             ps.setString(5, users.getMiddleName());
             ps.setString(6, users.getLastName());
-            ps.setString(7, users.getAccountStatus());
-            ps.setString(8, users.getLoginStatus());
-            ps.setString(9, users.getUserRole());
+            ps.setString(7, "2000-01-01");
+            ps.setString(8, users.getAccountStatus());
+            ps.setString(9, users.getLoginStatus());
+            ps.setString(10, users.getUserRole());
             int rowAffected = ps.executeUpdate();
             if (rowAffected != 0) {
                 success = true;
@@ -136,33 +139,27 @@ public class UsersDao {
         Connection conn = null;
         PreparedStatement ps = null;
         String query = "update users set "
-                + "password = ?, "
-                + "salt = ?, "
                 + "firstName = ?, "
                 + "middleName = ?, "
                 + "lastName = ?, "
                 + "completeAddress = ?, "
                 + "birthday = ?, "
                 + "mobileNumber = ?, "
-                + "userRole = ?, "
-                + "loginStatus = ?, "
-                + "accountStatus = ? "
+                + "userRole = ? "
                 + "where userId = ? ";
         try {
             conn = ConnectionPool.getConnection();
             ps = conn.prepareStatement(query);
-            ps.setString(1, users.getPassword());
-            ps.setString(2, users.getSalt());
-            ps.setString(3, users.getFirstName());
-            ps.setString(4, users.getMiddleName());
-            ps.setString(5, users.getLastName());
-            ps.setString(6, users.getCompleteAddress());
-            ps.setString(7, users.getBirthDay());
-            ps.setString(8, users.getMobileNumber());
-            ps.setString(9, users.getUserRole());
-            ps.setString(10, users.getLoginStatus());
-            ps.setString(11, users.getAccountStatus());
-            ps.setString(12, users.getUserId());
+            ps.setString(1, users.getFirstName());
+            ps.setString(2, users.getMiddleName());
+            ps.setString(3, users.getLastName());
+            ps.setString(4, users.getCompleteAddress());
+            LocalDate date = LocalDate.parse(users.getBirthDay(), DateTimeFormatter.ofPattern("MM/dd/yyyy"));
+            String formattedDate = date.format(DateTimeFormatter.ofPattern("yyyy-MM-dd"));
+            ps.setString(5, formattedDate);
+            ps.setString(6, users.getMobileNumber());
+            ps.setString(7, users.getUserRole());
+            ps.setString(8, users.getUserId());
             int rowAffected = ps.executeUpdate();
             if (rowAffected != 0) {
                 success = true;
@@ -190,6 +187,7 @@ public class UsersDao {
     }
 
     public UsersModel getUsersDetails(String id) throws ClassNotFoundException {
+        System.out.println("Get Users Details");
         UsersModel usersDetails = null;
         Connection conn = null;
         PreparedStatement ps = null;
@@ -204,16 +202,22 @@ public class UsersDao {
             rs = ps.executeQuery();
             if (rs.next()) {
                 String userId = rs.getString("userId");
+                System.out.println(userId);
                 String firstName = rs.getString("firstName");
                 String middleName = rs.getString("middleName");
                 String lastName = rs.getString("lastName");
                 String completeAddress = rs.getString("completeAddress");
                 String birthDay = rs.getString("birthday");
+                System.out.println(birthDay);
+                LocalDate date = LocalDate.parse(birthDay);
+                DateTimeFormatter formatter = DateTimeFormatter.ofPattern("MM/dd/yyyy");
+                String formattedDate = date.format(formatter);
+                System.out.println(formattedDate);
                 String mobileNumber = rs.getString("mobileNumber");
                 String accountStatus = rs.getString("accountStatus");
                 String loginStatus = rs.getString("loginStatus");
                 String userRole = rs.getString("userRole");
-                usersDetails = new UsersModel(userId, firstName, middleName, lastName, completeAddress, birthDay, mobileNumber, userRole, loginStatus, accountStatus);
+                usersDetails = new UsersModel(userId, firstName, middleName, lastName, completeAddress, formattedDate, mobileNumber, userRole, loginStatus, accountStatus);
             }
         } catch (SQLException e) {
             System.out.println("getUsersDetails Error: " + e);

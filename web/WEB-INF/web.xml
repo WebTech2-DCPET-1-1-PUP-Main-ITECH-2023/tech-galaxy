@@ -28,13 +28,25 @@
         <servlet-name>CustomerRegistration</servlet-name>
         <url-pattern>/customerRegistrationServlet</url-pattern>
     </servlet-mapping>
+        <servlet-mapping>
+        <servlet-name>CustomerRegistration</servlet-name>
+        <url-pattern>/customerRegistrationServlet/form</url-pattern>
+    </servlet-mapping>
     <servlet-mapping>
         <servlet-name>Products</servlet-name>
         <url-pattern>/products/create</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
         <servlet-name>Products</servlet-name>
+        <url-pattern>/products/create/form</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Products</servlet-name>
         <url-pattern>/products/update</url-pattern>
+    </servlet-mapping>
+        <servlet-mapping>
+        <servlet-name>Products</servlet-name>
+        <url-pattern>/products/update/form</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
         <servlet-name>Products</servlet-name>
@@ -51,6 +63,10 @@
     <servlet-mapping>
         <servlet-name>Users</servlet-name>
         <url-pattern>/users/create</url-pattern>
+    </servlet-mapping>
+        <servlet-mapping>
+        <servlet-name>Users</servlet-name>
+        <url-pattern>/users/create/form</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
         <servlet-name>Users</servlet-name>
@@ -262,12 +278,12 @@
         <url-pattern>/adminNavBar</url-pattern>
     </servlet-mapping>
     <servlet>
-        <servlet-name>AddProductsModal</servlet-name>
-        <jsp-file>/instances/admin/Admin Tools/Products Page/Add Products Modal.jsp</jsp-file>
+        <servlet-name>AddProducts</servlet-name>
+        <jsp-file>/instances/admin/Admin Tools/Products Page/Add Products.jsp</jsp-file>
     </servlet>
     <servlet-mapping>
-        <servlet-name>AddProductsModal</servlet-name>
-        <url-pattern>/addProductsModal</url-pattern>
+        <servlet-name>AddProducts</servlet-name>
+        <url-pattern>/addProducts</url-pattern>
     </servlet-mapping>
     <servlet>
         <servlet-name>AllProducts</servlet-name>
@@ -317,6 +333,24 @@
         <servlet-name>ChangePasswordPage</servlet-name>
         <url-pattern>/changePasswordPage</url-pattern>
     </servlet-mapping>
+        <servlet>
+        <servlet-name>AddUsers</servlet-name>
+        <jsp-file>/instances/admin/Admin Tools/User Management Page/Add Users.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AddUsers</servlet-name>
+        <url-pattern>/addUsers</url-pattern>
+    </servlet-mapping>
+            <servlet>
+        <servlet-name>UpdateProduct</servlet-name>
+        <jsp-file>/instances/admin/Admin Tools/Products Page/Update Product.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UpdateProduct</servlet-name>
+        <url-pattern>/updateProduct</url-pattern>
+    </servlet-mapping>
+    
+    
     <session-config>
         <session-timeout>
             30

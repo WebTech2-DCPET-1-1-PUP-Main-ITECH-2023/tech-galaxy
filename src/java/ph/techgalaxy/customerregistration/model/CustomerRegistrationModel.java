@@ -36,8 +36,6 @@ public class CustomerRegistrationModel {
             String accountStatus ,
             String loginStatus ,
             String userRole
-
-    
         ) {
             this.username = username;
             this.password = password;
