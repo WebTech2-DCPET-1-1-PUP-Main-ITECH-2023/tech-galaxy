@@ -1,4 +1,9 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%
+response.setHeader("Cache-Control","no-store");
+response.setHeader("Pragma","no-cache");
+response.setHeader ("Expires", "0"); //prevents caching at the proxy server
+%>
 <!DOCTYPE html>
 <html lang="en">
     <head>

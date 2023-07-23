@@ -30,8 +30,8 @@ public class Users extends HttpServlet {
             String action = request.getServletPath();
             switch (action) {
                 case "/users/create/form":
-                showUserCreateForm(request, response);
-                break;
+                    showUserCreateForm(request, response);
+                    break;
                 case "/users/create":
                     createUser(request, response);
                     break;
@@ -58,7 +58,7 @@ public class Users extends HttpServlet {
             throws ServletException, IOException {
         doGet(request, response);
     }
-    
+
     private void showUserCreateForm(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         RequestDispatcher rd = getServletContext().getRequestDispatcher(
@@ -79,10 +79,15 @@ public class Users extends HttpServlet {
 
         UsersDao usersDao = new UsersDao();
         UsersModel users = new UsersModel(userId, password, salt, firstName, middleName, lastName, userRole, "Offline", "Valid");
-        usersDao.createUsers(users);
+        boolean successful = usersDao.createUsers(users);
         request.setAttribute("user", users);
-        String message = "Successfully added user: " + userId;
+        if (successful) {
+        String message = userId + " has been added.";
         request.setAttribute("message", message);
+        } else {
+        String message = userId + " already exists";
+        request.setAttribute("message", message);
+        }
         RequestDispatcher rd = getServletContext().getRequestDispatcher(
                 "/users/read");
         rd.forward(request, response);
@@ -102,9 +107,11 @@ public class Users extends HttpServlet {
         UsersModel updateUsers = new UsersModel(
                 userId, firstName, middleName, lastName, completeAddress, birthDay, mobileNumber, userRole);
         usersDao.updateUsers(updateUsers);
-        String message = "Successfully updated user: " + userId;
+        String message = userId + " has been updated.";
         request.setAttribute("message", message);
-        response.sendRedirect(request.getContextPath() + "/users");
+        RequestDispatcher rd = getServletContext().getRequestDispatcher(
+                "/users/read");
+        rd.forward(request, response);
 
     }
 
@@ -114,9 +121,11 @@ public class Users extends HttpServlet {
         UsersDao employee = new UsersDao();
         employee.deleteUser(userId);
         System.out.println("Delete From Controller");
-        String message = "Successfully deleted user: " + userId;
+        String message = userId + " has been deleted.";
         request.setAttribute("message", message);
-        response.sendRedirect(request.getContextPath() + "/users/read");
+        RequestDispatcher rd = getServletContext().getRequestDispatcher(
+                "/users/read");
+        rd.forward(request, response);
     }
 
     private void viewUsers(HttpServletRequest request, HttpServletResponse response)
@@ -138,6 +147,8 @@ public class Users extends HttpServlet {
         UsersDao users = new UsersDao();
         UsersModel usersList = users.getUsersDetails(usersId);
         request.setAttribute("usersList", usersList);
+        String message = "Successfully updated user details.";
+        request.setAttribute("message", message);
         RequestDispatcher rd = getServletContext().getRequestDispatcher(
                 "/instances/admin/Admin Tools/User Management Page/Update.jsp");
         rd.forward(request, response);

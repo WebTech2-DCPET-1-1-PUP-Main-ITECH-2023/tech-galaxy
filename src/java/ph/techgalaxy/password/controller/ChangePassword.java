@@ -6,6 +6,7 @@ package ph.techgalaxy.password.controller;
 
 import java.io.IOException;
 import java.io.PrintWriter;
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -32,32 +33,43 @@ public class ChangePassword extends HttpServlet {
         doGet(request, response);
     }
 
-    protected void changePasswordModule(HttpServletRequest request, HttpServletResponse response) throws IOException {
+    protected void changePasswordModule(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
         String userID = request.getParameter("userID");
         String oldPassword = request.getParameter("oldPassword");
         String newPassword = request.getParameter("newPassword");
-        PasswordArgon2SpringSecurity encrypt = new PasswordArgon2SpringSecurity();
-        ChangePasswordDao changePasswordDao = new ChangePasswordDao();
-        ChangePasswordModel oldPasswordMatch = changePasswordDao.checkIfOldPasswordMatches(userID);
-        String passwordTobeChecked = oldPasswordMatch.getPassword();
-        String saltToBeChecked = oldPasswordMatch.getSalt();
-        boolean isOldPasswordMatch = encrypt.matchPasswords(saltToBeChecked, oldPassword, passwordTobeChecked);
-        if (!isOldPasswordMatch) {
-            String message = "Old Password is incorrect";
-            request.setAttribute("oldPasswordMessage", message);
-        } else {
-            if (!oldPassword.equals(newPassword)) {
-                String salt = encrypt.generateAndStoreSalt();
-                String hashedNewPassword = encrypt.encryptPassword(newPassword, salt);
-                ChangePasswordModel credentials = new ChangePasswordModel(hashedNewPassword, salt, userID);
-                changePasswordDao.changePassword(credentials);
-                response.sendRedirect(request.getContextPath() + "/changePasswordPage");
+        try {
+            PasswordArgon2SpringSecurity encrypt = new PasswordArgon2SpringSecurity();
+            ChangePasswordDao changePasswordDao = new ChangePasswordDao();
+            ChangePasswordModel oldPasswordMatch = changePasswordDao.checkIfOldPasswordMatches(userID);
+            String passwordTobeChecked = oldPasswordMatch.getPassword();
+            String saltToBeChecked = oldPasswordMatch.getSalt();
+            boolean isOldPasswordMatch = encrypt.matchPasswords(saltToBeChecked, oldPassword, passwordTobeChecked);
+            if (!isOldPasswordMatch) {
+                String message = "Old Password is incorrect";
+                request.setAttribute("oldPasswordMessage", message);
             } else {
-                String message = "Successfully updated user: " + userID;
-                request.setAttribute("message", message);
-                response.sendRedirect(request.getContextPath() + "/changePasswordPage");
-            }
+                if (!oldPassword.equals(newPassword)) {
+                    String salt = encrypt.generateAndStoreSalt();
+                    String hashedNewPassword = encrypt.encryptPassword(newPassword, salt);
+                    ChangePasswordModel credentials = new ChangePasswordModel(hashedNewPassword, salt, userID);
+                    changePasswordDao.changePassword(credentials);
+                    response.sendRedirect(request.getContextPath() + "/clientHomePage");
+                } else {
+                    String message = "Please do not use previous password";
+                    request.setAttribute("message", message);
+                    RequestDispatcher rd = getServletContext().getRequestDispatcher(
+                            "/changePasswordPage");
+                    rd.forward(request, response);
+                }
 
+            }
+        } catch (NullPointerException e) {
+            String message = userID + " not found";
+            request.setAttribute("message", message);
+            RequestDispatcher rd = getServletContext().getRequestDispatcher(
+                    "/changePasswordPage");
+            rd.forward(request, response);
         }
+
     }
 }

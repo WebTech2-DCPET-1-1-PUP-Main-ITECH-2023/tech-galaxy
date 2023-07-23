@@ -25,27 +25,6 @@
                     <div class = "navbar-nav">
                         <a class="nav-link first-navbar-link-change mx-3 color color-white primary-font" aria-current="page" href="<%=request.getContextPath()%>/allProducts">Products Page</a>
                         <a class="nav-link first-navbar-link-change mx-3 color color-white primary-font" href="<%=request.getContextPath()%>/users/create">User Management</a>
-                        <a class="nav-link first-navbar-link-change mx-3 color color-white center" data-bs-toggle="modal" data-bs-target="#adminFooterLoginModal">Log In</a>
-                        <div class="modal fade" id="adminFooterLoginModal" tabindex="-1" aria-labelledby="adminFooterLoginModal" aria-hidden="true">
-                            <div class="modal-dialog modal-dialog-centered">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h1 class="primary-color-underline modal-title fs-5">Log In</h1>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body">
-                                <input type="text" class="form-control my-3" id="addUsername" placeholder="Username:" disabled>
-                                <input type="password" class="form-control my-3" id="addPassword" placeholder="Password:" disabled>
-                            </div>
-                            <div class="modal-footer">
-                                <button class="btn" data-bs-dismiss="modal">Close</button>
-                                <a href = "<%=request.getContextPath()%>/instances/admin/Admin Home Page.jsp">
-                                    <button class="btn">Login</button>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                        </div>
                     </div>
 
                 </div>

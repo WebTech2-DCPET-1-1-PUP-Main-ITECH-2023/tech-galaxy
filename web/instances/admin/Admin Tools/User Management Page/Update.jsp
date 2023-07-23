@@ -24,6 +24,7 @@
                     <form method="POST" action="<%=request.getContextPath()%>/users/update">
                         <input type="hidden" name="verifier" value="/users/update" />
                         <h1 class="color-white primary-font center mb-4">Update Users Form</h1>
+                        <p class = "center color-white primary-font mb-4"><c:out value="${message}"/></p>
                         <div class="row align-items-center my-2 d-flex justify-content-center">
                             <div class="col-1">
                                 <label for="userID" class="col-form-label color-white secondary-font">User ID</label>

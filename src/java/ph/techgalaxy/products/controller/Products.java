@@ -29,7 +29,7 @@ public class Products extends HttpServlet {
                     createProduct(request, response);
                     break;
                 case "/products/update/form":
-                    showUserUpdateForm(request, response);
+                    showProductsUpdateForm(request, response);
                     break;
                 case "/products/update":
                     updateProduct(request, response);
@@ -59,12 +59,14 @@ public class Products extends HttpServlet {
         rd.forward(request, response);
     }
 
-    private void showUserUpdateForm(HttpServletRequest request, HttpServletResponse response)
+    private void showProductsUpdateForm(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException, ClassNotFoundException {
         int productId = Integer.parseInt(request.getParameter("productID"));
         ProductsDao products = new ProductsDao();
         ProductsModel productsList = products.getProductsDetails(productId);
         request.setAttribute("productsList", productsList);
+        String message = "Successfully updated product details.";
+        request.setAttribute("message", message);
         RequestDispatcher rd = getServletContext().getRequestDispatcher(
                 "/updateProduct");
         rd.forward(request, response);
@@ -80,7 +82,7 @@ public class Products extends HttpServlet {
     }
 
     private void updateProduct(HttpServletRequest request, HttpServletResponse response)
-            throws IOException, ClassNotFoundException {
+            throws IOException, ClassNotFoundException, ServletException {
         int productID = Integer.parseInt(request.getParameter("productID"));
         String productName = request.getParameter("productName");
         String description = request.getParameter("description");
@@ -91,11 +93,15 @@ public class Products extends HttpServlet {
         ProductsDao productsDao = new ProductsDao();
         ProductsModel updateProduct = new ProductsModel(productID, productName, description, size, price, quantity);
         productsDao.updateProduct(updateProduct);
-        response.sendRedirect(request.getContextPath() + "/products");
+        String message = productID + " with " + productName + " has been updated.";
+        request.setAttribute("message", message);
+        RequestDispatcher rd = getServletContext().getRequestDispatcher(
+                "/products");
+        rd.forward(request, response);
     }
 
     private void createProduct(HttpServletRequest request, HttpServletResponse response)
-            throws IOException, ClassNotFoundException {
+            throws IOException, ClassNotFoundException, ServletException {
         int productID = Integer.parseInt(request.getParameter("productID"));
         String productName = request.getParameter("productName");
         String description = request.getParameter("description");
@@ -104,15 +110,28 @@ public class Products extends HttpServlet {
         int quantity = Integer.parseInt(request.getParameter("quantity"));
         ProductsDao productsDao = new ProductsDao();
         ProductsModel newProduct = new ProductsModel(productID, productName, description, size, price, quantity);
-        productsDao.createProduct(newProduct);
-        response.sendRedirect(request.getContextPath() + "/products");
+        boolean succesful = productsDao.createProduct(newProduct);
+        if (succesful) {
+        String message = productName  + " with " + productID + " has been added.";
+        request.setAttribute("message", message);
+        } else {
+        String message = productID + " already exists";
+        request.setAttribute("message", message);
+        }
+        RequestDispatcher rd = getServletContext().getRequestDispatcher(
+                "/products");
+        rd.forward(request, response);
     }
 
     private void deleteProduct(HttpServletRequest request, HttpServletResponse response)
-            throws IOException, ClassNotFoundException {
+            throws IOException, ClassNotFoundException, ServletException {
         int productID = Integer.parseInt(request.getParameter("productID"));
         ProductsDao productsDao = new ProductsDao();
         productsDao.deleteProduct(productID);
-        response.sendRedirect(request.getContextPath() + "/products");
+        String message = productID + " has been deleted.";
+        request.setAttribute("message", message);
+        RequestDispatcher rd = getServletContext().getRequestDispatcher(
+                "/products");
+        rd.forward(request, response);
     }
 }

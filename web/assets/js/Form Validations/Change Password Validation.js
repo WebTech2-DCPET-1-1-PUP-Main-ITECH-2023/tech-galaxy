@@ -15,10 +15,10 @@ $(document).ready(function () {
     });
 
     $("#userID").on("focusout", function () {
-        isUserIDValidated = validateEmpty('#userID', "#userIDLabel", /^[0-9a-zA-Z]*[0-9a-zA-Z]/, "Please use alphanumeric characters.", 5, 5, true, true, true);
+        isUserIDValidated = validateEmpty('#userID', "#userIDLabel");
     });
     $("#oldPassword").on("focusout", function () {
-        isOldPasswordValidated = validate('#oldPassword', "#oldPasswordLabel", /^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[!@#$%^&*()\-_+={}\[\]|\\:;"'<>,.?/]).+$/, " Input may not have been following proper rules: Atleast 1 capital character; At least 1 small character; At least 1 number; At least 1 Special Character", 8, 16, true, true, true);
+        isOldPasswordValidated = validateEmpty('#oldPassword', "#oldPasswordLabel");
     });
     $("#newPassword").on("focusout", function () {
         isNewPasswordValidated = validate('#newPassword', "#newPasswordLabel", /^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[!@#$%^&*()\-_+={}\[\]|\\:;"'<>,.?/]).+$/, " Alphanumeric; At least 1 capital character; At least 1 small character; At least 1 number; At least 1 Special Character", 8, 16, true, true, true);

@@ -13,16 +13,16 @@
     <body>
         <nav class="navbar">
             <div class="container-fluid d-flex flex-wrap align-items-center justify-content-between py-2 px-4">
-                <a class="navbar-brand d-flex flex-row align-items-center justify-content-center" href="<%=request.getContextPath()%>">
+                <a class="navbar-brand d-flex flex-row align-items-center justify-content-center" href="<%=request.getContextPath()%>/customerHomePage">
                     <img src="<%=request.getContextPath()%>/assets/images/tech-galaxy.png" alt="Logo" width="70" height="40" class="d-inline-block align-text-top">
                     <p class = "color-white m-0 px-3 logo-hover primary-font">Tech Galaxy</p>
                 </a>
                 <div class = "d-flex flex-row flex-wrap align-items-center justify-content-center secondary-font">
                     <a class="nav-link first-navbar-link-change mx-3 color color-white primary-font center" href="<%=request.getContextPath()%>/adminHomePage">Admin Directory</a>
-                    <a class="nav-link first-navbar-link-change mx-3 color color-white primary-font center" href="<%=request.getContextPath()%>/allProducts">Products Page</a>
-                    <a class="nav-link first-navbar-link-change mx-3 color color-white primary-font center" href="<%=request.getContextPath()%>/userManagement">User Management</a>
+                    <a class="nav-link first-navbar-link-change mx-3 color color-white primary-font center" href="<%=request.getContextPath()%>/products">Products Page</a>
+                    <a class="nav-link first-navbar-link-change mx-3 color color-white primary-font center" href="<%=request.getContextPath()%>/users">User Management</a>
                     <form method="post" action = "<%=request.getContextPath()%>/logOut">
-                        <button class="btn ms-3 primary-font" type="submit">Log In</button>
+                        <button class="btn ms-3 primary-font" type="submit">Log Out</button>
                     </form>
                 </div>
             </div>

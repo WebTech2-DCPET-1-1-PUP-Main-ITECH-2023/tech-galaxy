@@ -19,7 +19,7 @@
             <div class ="row d-flex justify-content-center align-content-center">
                     <div class ="col-7 container-fluid give-primary-bg rounded p-4 mx-2 ">
                         <div class = "d-flex justify-content-center"><h1 class = "secondary-color-underline primary-font">Account Registration</h1></div>
-                        <p class ="form-label"><c:out value="${customerRegistration.username}"/> has been added.</p>
+                        <p class ="form-label"><c:out value="${message}"/></p>
                         <form id = "customerRegistrationForm" method="post" action="<%=request.getContextPath()%>/customerRegistrationServlet">
                             <div class="mb-3">
                                 <label class="form-label ">Preferred Username:</label>

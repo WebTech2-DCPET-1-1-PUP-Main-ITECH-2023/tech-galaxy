@@ -22,6 +22,7 @@
                 <div class = "border-update py-4">
                     <form method="POST" action="<%=request.getContextPath()%>/products/update">
                         <h1 class="color-white modal-title fs-5 primary-font center mb-4">Update Users Form</h1>
+                        <p class = "center color-white primary-font mb-4"><c:out value="${message}"/></p>
                         <div class="row align-items-center my-2 d-flex justify-content-center">
                             <div class="col-1">
                                 <label for="productID" class="col-form-label color-white secondary-font">Product ID</label>

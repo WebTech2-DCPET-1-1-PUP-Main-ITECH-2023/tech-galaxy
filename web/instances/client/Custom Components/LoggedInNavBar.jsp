@@ -19,7 +19,7 @@
     <body>
         <nav class="navbar">
             <div class="container-fluid d-flex flex-wrap align-items-center justify-content-between py-2 px-4">
-                <a class="navbar-brand d-flex flex-row align-items-center justify-content-center" href="<%=request.getContextPath()%>">
+                <a class="navbar-brand d-flex flex-row align-items-center justify-content-center" href="<%=request.getContextPath()%>/customerHomePage">
                     <img src="<%=request.getContextPath()%>/assets/images/tech-galaxy.png" alt="Logo" width="70" height="40" class="d-inline-block align-text-top">
                     <p class = "color-white m-0 px-3 logo-hover primary-font">Tech Galaxy</p>
                 </a>

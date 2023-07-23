@@ -71,9 +71,9 @@ public class CustomerRegistration extends HttpServlet {
         CustomerRegistrationDao customerRegistrationFormDao = new CustomerRegistrationDao();
 
         customerRegistrationFormDao.createCustomer(customerRegistrationForm);
-        String message = "Successfully added customer: " + username;
+        String message = username + " customer has been added.";
         request.setAttribute("message",message);
-        RequestDispatcher rd = getServletContext().getRequestDispatcher("/users");
+        RequestDispatcher rd = getServletContext().getRequestDispatcher("/customerRegistration");
         rd.forward(request, response);
 
     }

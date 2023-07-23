@@ -88,7 +88,7 @@
                                     <p class = "col-1"></p>
                                     <p id = "confirmNewPasswordLabel" class = "col-5 form-label"></p>
                                 </div>
-                                <p class = "center color-white primary-font my-1"><c:out value="${message}"/></p>
+                                <p class = "center color-white primary-font mb-4"><c:out value="${message}"/></p>
                                 <div class = "d-flex justify-content-center">
                                     <button id = "addUsersSave" class="btn primary-font">Save</button>
                                 </div>

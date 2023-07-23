@@ -1,9 +1,4 @@
-<%-- 
-    Document   : Log In Modal
-    Created on : 07 7, 23, 12:27:14 AM
-    Author     : ACER
---%>
-
+<%@ taglib prefix = "c" uri = "http://java.sun.com/jsp/jstl/core" %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -34,6 +29,8 @@
                         </div>
                         <p id = "clientLogInPasswordError" class = "form-label my-1"></p>
                         <p class = "center color-white primary-font my-1"><c:out value="${logInErrorMessage}"/></p>
+                        <p class = "center color-white primary-font my-1"><c:out value="${lockUserMessage}"/></p>
+                        <p class = "center color-white primary-font my-1"><c:out value="${comeback}"/></p>
                         <div class ="d-flex flex-column align-items-center my-1">
                             <p class = "color-white my-2">Forgot your Password?</p>
                             <a href="<%=request.getContextPath()%>/changePasswordPage">
@@ -47,7 +44,14 @@
                     </div>
                     <div class="modal-footer">
                         <button class="btn" data-bs-dismiss="modal">Close</button>
-                        <button class="btn" id = "clientLogIn">Login</button>
+                        <c:choose>
+                            <c:when test="${logInAttempts >= 3}">
+                                <button class="btn" id = "clientLogIn" disabled>Login</button>
+                            </c:when>
+                            <c:otherwise>
+                                <button class="btn" id = "clientLogIn">Login</button>
+                            </c:otherwise>
+                        </c:choose>
                     </div>
                 </form>
             </div>

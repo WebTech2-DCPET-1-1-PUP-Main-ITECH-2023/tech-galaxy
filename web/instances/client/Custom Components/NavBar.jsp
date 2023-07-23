@@ -40,16 +40,16 @@
     </nav>
     <nav class="navbar second-navbar py-2 px-4">
         <div class="container-fluid d-flex flex-row flex-wrap align-items-center justify-content-between">
-            <a class="nav-link link-change color-white center" href="<%=request.getContextPath()%>/laptops">Laptops</a>
-            <a class="nav-link link-change color-white center" href="<%=request.getContextPath()%>/prebuilt">Prebuilt</a>
-            <a class="nav-link link-change color-white center" href="<%=request.getContextPath()%>/motherboard">Motherboard</a>
-            <a class="nav-link link-change color-white center" href="<%=request.getContextPath()%>/cpu">CPU</a>
-            <a class="nav-link link-change color-white center" href="<%=request.getContextPath()%>/gpu">GPU</a>
-            <a class="nav-link link-change color-white center" href="<%=request.getContextPath()%>/memory">Memory</a>
-            <a class="nav-link link-change color-white center" href="<%=request.getContextPath()%>/storage">Storage</a>
-            <a class="nav-link link-change color-white center" href="<%=request.getContextPath()%>/coolers">Coolers</a>
-            <a class="nav-link link-change color-white center" href="<%=request.getContextPath()%>/peripherals">Peripherals</a>
-            <a class="nav-link link-change color-white center" href="<%=request.getContextPath()%>/utilities">Utilities</a>
+            <a class="nav-link link-change color-white center" href="<%=request.getContextPath()%>/pleaseLogInFirst">Laptops</a>
+            <a class="nav-link link-change color-white center" href="<%=request.getContextPath()%>/pleaseLogInFirst">Prebuilt</a>
+            <a class="nav-link link-change color-white center" href="<%=request.getContextPath()%>/pleaseLogInFirst">Motherboard</a>
+            <a class="nav-link link-change color-white center" href="<%=request.getContextPath()%>/pleaseLogInFirst">CPU</a>
+            <a class="nav-link link-change color-white center" href="<%=request.getContextPath()%>/pleaseLogInFirst">GPU</a>
+            <a class="nav-link link-change color-white center" href="<%=request.getContextPath()%>/pleaseLogInFirst">Memory</a>
+            <a class="nav-link link-change color-white center" href="<%=request.getContextPath()%>/pleaseLogInFirst">Storage</a>
+            <a class="nav-link link-change color-white center" href="<%=request.getContextPath()%>/pleaseLogInFirst">Coolers</a>
+            <a class="nav-link link-change color-white center" href="<%=request.getContextPath()%>/pleaseLogInFirst">Peripherals</a>
+            <a class="nav-link link-change color-white center" href="<%=request.getContextPath()%>/pleaseLogInFirst">Utilities</a>
             <form class="d-flex center" role="search">
                 <input class="form-control me-2" id ="clientSearchNavBar" type="search" placeholder="Search" aria-label="Search">
                 <button class="second-btn" type="submit">Search</button>

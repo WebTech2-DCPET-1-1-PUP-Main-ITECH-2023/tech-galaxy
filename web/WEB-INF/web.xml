@@ -109,6 +109,14 @@
         <servlet-name>ClientHomePage</servlet-name>
         <url-pattern>/clientHomePage</url-pattern>
     </servlet-mapping>
+        <servlet>
+        <servlet-name>CustomerHomePage</servlet-name>
+        <jsp-file>/instances/client/Customer Home Page.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CustomerHomePage</servlet-name>
+        <url-pattern>/customerHomePage</url-pattern>
+    </servlet-mapping>
     <servlet>
         <servlet-name>Wishlist</servlet-name>
         <jsp-file>/instances/client/Navigation Bar Tab/Wishlist.jsp</jsp-file>

@@ -46,8 +46,7 @@ public class LogOut extends HttpServlet {
         System.out.println("Logging out");
         HttpSession session = request.getSession();
         session.invalidate();
-        RequestDispatcher rd = getServletContext().getRequestDispatcher("/instances/client/Client Home Page.jsp");
-        rd.forward(request, response);
+        response.sendRedirect(request.getContextPath() + "/clientHomePage");
     }
 
 }
