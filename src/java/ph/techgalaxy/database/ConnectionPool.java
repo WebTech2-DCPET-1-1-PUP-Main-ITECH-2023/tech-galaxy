@@ -23,7 +23,7 @@ public class ConnectionPool {
             
             String url = "jdbc:mysql://localhost:3306/estore?serverTimezone=UTC";
             
-            conn = (Connection) DriverManager.getConnection(url, "root", "#BlackRevolt2023");
+            conn = (Connection) DriverManager.getConnection(url, "root", "test");
         } catch(SQLException e) {
             System.out.println("SQLException" + e);
         }
