@@ -21,7 +21,7 @@ public class ConnectionPool {
             String driver = "com.mysql.cj.jdbc.Driver";
             Class.forName(driver);
             
-            String url = "jdbc:mysql://localhost:3306/estore?serverTimezone=UTC";
+            String url = "database";
             
             conn = (Connection) DriverManager.getConnection(url, "root", "test");
         } catch(SQLException e) {
